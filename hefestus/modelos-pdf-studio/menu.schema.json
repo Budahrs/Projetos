@@ -1,0 +1,13 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Pacote de menu Hefestus",
+ "type":"object",
+ "required":["formato","versao","id","nome","designer"],
+ "properties":{
+  "formato":{"const":"hefestus.menu"},"versao":{"const":1},"id":{"type":"string"},"nome":{"type":"string","minLength":1},
+  "designer":{"type":"object","required":["abas"],"properties":{"limiteVisivel":{"type":"integer","minimum":2,"maximum":6},"abas":{"type":"array","minItems":1,"items":{"type":"object","required":["id","nome","grupos"],"properties":{"id":{"type":"string"},"nome":{"type":"string","minLength":1},"grupos":{"type":"array","minItems":1,"items":{"type":"object","required":["id","nome","comandos"],"properties":{"id":{"type":"string"},"nome":{"type":"string","minLength":1},"comandos":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/comando"}}}}}}}}}},
+  "bancoFerramentas":{"type":"array","items":{"type":"object","required":["id","nome","execucao"],"properties":{"id":{"type":"string"},"nome":{"type":"string"},"execucao":{"type":"object"}}}},
+  "codigos":{"type":"object","additionalProperties":{"type":"object","required":["origem"],"properties":{"origem":{"type":"string"},"estado":{"type":"string"},"texto":{"type":"string"}}}}
+ },
+ "$defs":{"comando":{"type":"object","required":["id","rotulo"],"properties":{"id":{"type":"string","pattern":"^[a-zA-Z0-9_-]+$"},"rotulo":{"type":"string","minLength":1},"ferramentaId":{"type":"string"},"templateId":{"type":"string"},"destaque":{"type":"boolean"},"descricao":{"type":"string"}}}}
+}

@@ -1,0 +1,36 @@
+AXIOM STUDIO - notas das versões r29 a r34
+==========================================
+
+COMO USAR
+1. Dê duplo clique em Iniciar_Axiom_Studio.bat (instala o que falta e abre o app).
+2. Uma vez, dê duplo clique em Criar_Atalho_Axiom_Studio.bat para criar os atalhos
+   "Axiom Studio" e "HeartPulse NOC" na área de trabalho.
+3. Se aparecer erro de Python, o .bat procura sozinho o Python instalado
+   (inclui %LOCALAPPDATA%\Programs\Python\Python3*) e recria a pasta .venv se estiver quebrada.
+
+NOVIDADES
+r29  Ícones e atalhos; Painel VNC com transições suaves entre prints; HeartPulse NOC
+     (arquivo final gerado pelo sistema em dist\, aberto por /heartpulse).
+r30  Bibliotecas (Ferramentas > Biblioteca de ferramentas): auto-layout (dagre),
+     exportar PowerPoint/Excel/CSV, importar planilha como equipamentos.
+r31  Menu "Ferramentas", navegação por teclado nos menus, busca de comandos com recentes.
+r32  Menus reorganizados: Ferramentas em 5 seções por tarefa com busca (Montar o painel /
+     Trazer dados / Exibir e transmitir / Salvar e exportar / Sistema). Faixa de opções com
+     grupos unidos, sem grupos vazios, Design logo após Inserir.
+r33  Modo avançado: botão "Modo simples" à esquerda das abas (ou Ctrl+Shift+M) volta ao modo simples.
+r34  PowerPoint NATIVO e editável (formas e conectores) gerado pelo servidor com python-pptx.
+     Sem servidor, usa o modo imagem (um print por slide).
+     Rode Iniciar_Axiom_Studio.bat de novo para instalar python-pptx (requirements-vnc.txt).
+
+r35  Importar por URL: IPs da rede interna (10.x, 172.16-31.x, 192.168.x) agora são aceitos
+     (para restringir: DAEDALUS_WEB_BLOCK_PRIVATE=1 no .env). Links de mapa do Zabbix
+     (zabbix.php?action=map.view&sysmapid=N) viram tela nativa pela API; o app pede URL + token de API
+     uma vez e grava no .env. Páginas que exigem login são avisadas em vez de importar a tela de login.
+     Erros de rede agora dizem o motivo (login, 404, tempo esgotado, conexão recusada).
+
+r36  Uma função, um lugar: removidos ~45 botões repetidos da faixa (camadas, alinhar, distribuir,
+     selecionar tudo, Tela por URL, API REST, Inventário, Verificar API, Versões, Carrossel...).
+     Inserir > Tela por URL agora abre a janela de URL (antes só focava o campo do topo).
+
+BACKUP
+backup_r29\ guarda o main.py, o .bat e o .ps1 originais.

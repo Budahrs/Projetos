@@ -1,0 +1,122 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { classificar } from "../js/nucleo/classificador.js";
+import { contratoDe, verificarLimites, migrarTipo, auditarContratos } from "../js/nucleo/contrato.js";
+import { validarVinculos, referenciasUsadas, executarVinculo } from "../js/nucleo/vinculos.js";
+import { RoteiroPrimeirosPassos, passoDoEvento, PASSOS } from "../js/nucleo/primeirosPassos.js";
+import { Armazem } from "../js/nucleo/armazem.js";
+import { Nucleo } from "../js/nucleo/nucleo.js";
+import { examinarDocumento } from "../js/nucleo/recuperacao.js";
+
+const caixa = (id, x, y, l, a, estilo = {}) => ({ id, tipo: "caixa", x, y, largura: l, altura: a, estilo });
+const txt = (id, x, y, l, a, texto, estilo = {}) => ({ id, tipo: "texto", x, y, largura: l, altura: a, texto, estilo });
+
+test("classificador: botão, campo, selo, interruptor, cartão, menu e navegação", () => {
+  const botao = classificar([caixa("c", 0, 0, 140, 40, { fundo: "#2563eb", raio: 8 }), txt("t", 30, 8, 80, 24, "Enviar", { peso: 700 })]);
+  assert.equal(botao[0].tipo, "botao");
+  assert.ok(botao[0].confianca > 0.85);
+  assert.ok(botao[0].motivos.includes("cantos arredondados"));
+  const campo = classificar([caixa("c", 0, 0, 320, 40, { fundo: "#ffffff", borda: "#cbd5e1" }), txt("t", 10, 8, 120, 24, "Seu e-mail", { cor: "#9ca3af" })]);
+  assert.equal(campo[0].tipo, "campo");
+  assert.equal(classificar([caixa("c", 0, 0, 60, 22, { raio: 11, fundo: "#16a34a" }), txt("t", 8, 2, 44, 18, "Novo")])[0].tipo, "selo");
+  assert.equal(classificar([caixa("c", 0, 0, 44, 24, { raio: 12, fundo: "#16a34a" }), { id: "b", tipo: "elipse", x: 22, y: 2, largura: 20, altura: 20 }])[0].tipo, "interruptor");
+  const cartao = classificar([caixa("c", 0, 0, 280, 200, { raio: 12 }), txt("a", 16, 16, 200, 32, "Título", { tamanhoFonte: 22 }), txt("b", 16, 60, 240, 60, "Descrição do cartão", { tamanhoFonte: 14 })]);
+  assert.equal(cartao[0].tipo, "cartao");
+  const menu = classificar([txt("a", 10, 10, 100, 20, "Início"), txt("b", 10, 40, 100, 20, "Projetos"), txt("c", 10, 70, 100, 20, "Ajuda")]);
+  assert.equal(menu[0].tipo, "menu");
+  const nav = classificar([txt("a", 10, 10, 60, 20, "Início"), txt("b", 100, 10, 60, 20, "Sobre"), txt("c", 190, 10, 60, 20, "Contato")], { largura: 1280, altura: 800 });
+  assert.equal(nav[0].tipo, "navegacao");
+  assert.ok(nav[0].motivos.includes("no topo da tela"));
+  assert.deepEqual(classificar([caixa("c", 0, 0, 500, 500)]), [], "sem certeza, não propõe");
+});
+
+test("núcleo: reconhecer propõe; aceitar agrupa com tipo fixo num passo desfazível", () => {
+  const n = new Nucleo(); n.novo(false);
+  const c = n.criar("caixa", 100, 100, { largura: 140, altura: 40, estilo: { fundo: "#2563eb", raio: 8 } });
+  const t = n.criar("texto", 130, 108, { largura: 80, altura: 24, texto: "Enviar" });
+  n.selecionarVarios([c, t]);
+  const [p] = n.reconhecerComponentes();
+  assert.equal(p.tipo, "botao");
+  assert.equal(n.elementos().length, 2, "propor não muda nada");
+  const passos = n.historico().itens.length;
+  const g = n.aplicarReconhecimento(p);
+  assert.equal(n.elemento(g).semantica.tipo, "botao");
+  assert.equal(n.elemento(g).nome, "Botão 1");
+  assert.equal(n.elemento(c).pai, g);
+  assert.equal(n.historico().itens.length, passos + 1);
+  assert.deepEqual(examinarDocumento(n.doc).problemas, []);
+  n.renomear?.(g, "PrimaryCTA");
+  n.definir(g, { nome: "PrimaryCTA" });
+  assert.equal(n.elemento(g).semantica.tipo, "botao", "renomear não muda o tipo");
+  n.desfazer(); n.desfazer();
+  assert.equal(n.elemento(g), undefined);
+});
+
+test("contrato: props são a API, limites avisam e tipo só muda com migração explícita", () => {
+  const n = new Nucleo(); n.novo(false);
+  const b = n.criar("botao", 0, 0, { rotulo: "Enviar", contrato: { larguraMin: 80, larguraMax: 240, classes: "btn btn--primary", react: "PrimaryButton" } });
+  const ct = contratoDe(n.elemento(b), b);
+  assert.deepEqual(ct.props.rotulo, "Enviar");
+  assert.deepEqual(ct.bindings, { elementoHTML: "button", classes: ["btn", "btn--primary"], react: "PrimaryButton" });
+  assert.deepEqual(n.limitesViolados(b, { largura: 60 }).map(a => a.correcao), [{ largura: 80 }]);
+  assert.equal(n.limitesViolados(b, { largura: 120 }).length, 0);
+  n.geometria(b, { largura: 300 });
+  const aud = n.auditar().filter(i => i.regra === "contrato");
+  assert.equal(aud.length, 1);
+  n.corrigirAuditoria(aud);
+  assert.equal(n.elemento(b).largura, 240);
+  assert.throws(() => migrarTipo(n.elemento(b), "cartao"), /exige confirmação/);
+  n.migrarTipoSemantico(b, "cartao", "virou link de cartão");
+  assert.equal(n.elemento(b).semantica.tipo, "cartao");
+  assert.equal(n.elemento(b).semantica.migracoes[0].de, "botao");
+  assert.equal(verificarLimites({ tipo: "caixa" }).length, 0, "sem contrato declarado, nada a avisar");
+  assert.deepEqual(auditarContratos([{ id: "x", tipo: "texto", largura: 10, altura: 10 }]), []);
+});
+
+test("vínculos: referência versionada vira evento com sinal; auditoria mostra ⚡ quando quebra", async () => {
+  const a = await new Armazem().abrir();
+  await a.guardar({ programa: "texto", id: "maiusculas", versao: "1.2.0", runtime: "web", conteudo: "(s, o) => String(s).toUpperCase() + (o.sufixo ?? '')" });
+  await a.guardar({ programa: "axiom", id: "relatorioPdf", versao: "1.0.0", runtime: "python", conteudo: "def gerar(): ..." });
+  const n = new Nucleo(); n.novo(false);
+  const b = n.criar("botao", 0, 0, { nome: "Converter" });
+  n.vincular(b, { ref: "ferramenta/texto/maiusculas@^1.0.0", args: { sufixo: "!" } });
+  n.vincular(b, { evento: "onHover", ref: "ferramenta/axiom/relatorioPdf@^1.0.0" });
+  const el = n.elemento(b);
+  assert.equal(el.vinculos.length, 2);
+  const ev = el.eventos.find(e => e.vinculoId === "v1");
+  assert.equal(ev.dispara, "converter_chama_maiusculas");
+  assert.equal(ev.vinculo, "ferramenta/texto/maiusculas@^1.0.0");
+  assert.deepEqual(examinarDocumento(n.doc).problemas, []);
+  const probs = validarVinculos(n.elementos(), a);
+  assert.deepEqual(probs.map(p => p.gravidade), ["info"], "python não roda no navegador: vira só sinal");
+  assert.equal(await executarVinculo(el.vinculos[0], a, "abc"), "ABC!");
+  await assert.rejects(executarVinculo(el.vinculos[1], a, 1), /só emite o sinal/);
+  assert.deepEqual([...referenciasUsadas(n.elementos(), a).keys()].sort(), ["ferramenta/axiom/relatorioPdf@1.0.0", "ferramenta/texto/maiusculas@1.2.0"]);
+  n.vincular(b, { ref: "ferramenta/texto/maiusculas@^2.0.0" });
+  const quebrado = validarVinculos(n.elementos(), a).find(p => p.gravidade === "erro");
+  assert.match(quebrado.mensagem, /^⚡ texto\/maiusculas: nenhuma versão em \^2\.0\.0 \(há 1\.2\.0\)/);
+  n.desvincular(b, "v3");
+  assert.equal(n.elemento(b).eventos.filter(e => e.vinculoId).length, 2);
+  assert.throws(() => n.vincular(b, { ref: "isso não é ref" }), /referência inválida/);
+});
+
+test("primeiros passos: marca pelo que a pessoa faz e mede contra as metas", () => {
+  let t = 1_000_000;
+  const r = new RoteiroPrimeirosPassos(null, () => t).comecar();
+  assert.equal(r.proximo().id, "botao");
+  t += 8_000; assert.equal(r.observar("Inserir Botão 1"), true);
+  t += 15_000; r.observar("Alterar estilo.fundo de Botão 1");
+  t += 20_000; r.marcar("previa");
+  t += 40_000; r.observar("Salvar modelo na biblioteca");
+  t += 50_000; r.observar("Baixar HTML");
+  const rel = r.relatorio();
+  assert.equal(r.concluido, true);
+  assert.equal(rel.total, 133);
+  assert.equal(rel.aprovado, true);
+  assert.deepEqual(rel.passos.map(p => p.dentroDaMeta), [true, true, true, true, true, true]);
+  assert.equal(r.marcar("botao"), false, "cada passo conta uma vez");
+  const copia = new RoteiroPrimeirosPassos(JSON.parse(JSON.stringify(r.guardar())));
+  assert.equal(copia.concluido, true);
+  assert.equal(passoDoEvento("Mover Botão 1"), null);
+  assert.equal(PASSOS.length, 6);
+});

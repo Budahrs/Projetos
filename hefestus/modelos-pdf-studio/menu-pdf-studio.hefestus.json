@@ -1,0 +1,5587 @@
+{
+  "formato": "hefestus.componente",
+  "versao": 2,
+  "id": "pdfStudioTarefas",
+  "meta": {
+    "nome": "PDF Studio · menu e ferramentas",
+    "categoria": "Painéis",
+    "descricao": "Seis áreas por tarefa; comandos pdf|id. Modelo editável que orienta o menu WPF.",
+    "tags": [
+      "pdf",
+      "menu",
+      "ferramentas",
+      "acessibilidade"
+    ],
+    "versao": "1.0.0",
+    "criadoEm": "2026-10-18T19:32:40.144Z",
+    "atualizadoEm": "2026-10-18T19:32:40.144Z"
+  },
+  "tamanho": {
+    "largura": 2452,
+    "altura": 924
+  },
+  "tokens": {
+    "cores": [
+      "#e7ebee",
+      "#1f2937",
+      "#ffffff",
+      "#ced8df",
+      "#182b36",
+      "#eef3f6",
+      "#1d4ed8"
+    ],
+    "fontes": [
+      "sistema"
+    ]
+  },
+  "arvore": [
+    {
+      "id": "m0",
+      "nome": "PDF Studio · catálogo por tarefa",
+      "tipo": "container",
+      "propriedades": {
+        "x": 0,
+        "y": 0,
+        "largura": 2452,
+        "altura": 924,
+        "z": 0,
+        "rotacao": 0,
+        "espelharH": false,
+        "espelharV": false,
+        "visivel": true,
+        "travado": false,
+        "estilo": {
+          "fundo": "#e7ebee",
+          "cor": "#1f2937",
+          "borda": "transparent",
+          "larguraBorda": 0,
+          "raio": 0,
+          "tamanhoFonte": 14,
+          "peso": 400,
+          "sombra": "nenhuma",
+          "opacidade": 1,
+          "fonte": "sistema",
+          "alinhamento": "",
+          "entrelinha": 1.3,
+          "desfoque": 0,
+          "vidro": 0
+        },
+        "estados": {
+          "hover": {
+            "fundo": ""
+          },
+          "active": {
+            "fundo": ""
+          },
+          "focus": {
+            "contorno": "",
+            "fundo": ""
+          },
+          "disabled": {
+            "fundo": "",
+            "cor": "",
+            "opacidade": 0.5
+          }
+        },
+        "transicao": {
+          "duracao": 150,
+          "easing": "ease-out"
+        },
+        "eventos": [],
+        "acessibilidade": {
+          "role": "",
+          "ariaLabel": ""
+        },
+        "layout": {
+          "modo": "linha",
+          "espaco": 16,
+          "margem": 16,
+          "alinhar": "inicio",
+          "abracar": true
+        },
+        "tipo": "container",
+        "nome": "PDF Studio · catálogo por tarefa"
+      },
+      "filhos": [
+        {
+          "id": "m1",
+          "nome": "IA e automação",
+          "tipo": "container",
+          "propriedades": {
+            "x": 16,
+            "y": 16,
+            "largura": 390,
+            "altura": 178,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "IA e automação"
+          },
+          "filhos": [
+            {
+              "id": "m2",
+              "nome": "IA e automação",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 28,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "IA e automação",
+                "tipo": "texto",
+                "nome": "IA e automação"
+              }
+            },
+            {
+              "id": "m3",
+              "nome": "Botão Lote / fluxos",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 28,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|batch",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Lote / fluxos",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Lote / fluxos"
+              }
+            },
+            {
+              "id": "m4",
+              "nome": "Botão Resumir documento",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 28,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|summary",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Resumir documento",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Resumir documento"
+              }
+            },
+            {
+              "id": "m5",
+              "nome": "Botão Traduzir texto ou PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 28,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|translate",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Traduzir texto ou PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Traduzir texto ou PDF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "nome": "Arquivo e páginas",
+          "tipo": "container",
+          "propriedades": {
+            "x": 422,
+            "y": 16,
+            "largura": 390,
+            "altura": 892,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "Arquivo e páginas"
+          },
+          "filhos": [
+            {
+              "id": "m7",
+              "nome": "Arquivo e páginas",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 434,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "Arquivo e páginas",
+                "tipo": "texto",
+                "nome": "Arquivo e páginas"
+              }
+            },
+            {
+              "id": "m8",
+              "nome": "Botão Novo PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|new",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Novo PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Novo PDF"
+              }
+            },
+            {
+              "id": "m9",
+              "nome": "Botão Imagens → PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|fromimages",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Imagens → PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Imagens → PDF"
+              }
+            },
+            {
+              "id": "m10",
+              "nome": "Botão Juntar PDFs",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|merge",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Juntar PDFs",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Juntar PDFs"
+              }
+            },
+            {
+              "id": "m11",
+              "nome": "Botão Extrair páginas",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 188,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|extract",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Extrair páginas",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Extrair páginas"
+              }
+            },
+            {
+              "id": "m12",
+              "nome": "Botão Dividir por página",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 230,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|split",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Dividir por página",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Dividir por página"
+              }
+            },
+            {
+              "id": "m13",
+              "nome": "Botão Imprimir",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 272,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|print",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Imprimir",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Imprimir"
+              }
+            },
+            {
+              "id": "m14",
+              "nome": "Botão Propriedades",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 314,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|metadata",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Propriedades",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Propriedades"
+              }
+            },
+            {
+              "id": "m15",
+              "nome": "Botão Girar 90°",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 356,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|rotate",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Girar 90°",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Girar 90°"
+              }
+            },
+            {
+              "id": "m16",
+              "nome": "Botão Mover antes",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 398,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|left",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Mover antes",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Mover antes"
+              }
+            },
+            {
+              "id": "m17",
+              "nome": "Botão Mover depois",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 440,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|right",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Mover depois",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Mover depois"
+              }
+            },
+            {
+              "id": "m18",
+              "nome": "Botão Duplicar página",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 482,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|duplicate",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Duplicar página",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Duplicar página"
+              }
+            },
+            {
+              "id": "m19",
+              "nome": "Botão Página em branco",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 524,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|blank",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Página em branco",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Página em branco"
+              }
+            },
+            {
+              "id": "m20",
+              "nome": "Botão Excluir página",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 566,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|delete",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Excluir página",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Excluir página"
+              }
+            },
+            {
+              "id": "m21",
+              "nome": "Botão Numerar páginas",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 608,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|numbers",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Numerar páginas",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Numerar páginas"
+              }
+            },
+            {
+              "id": "m22",
+              "nome": "Botão Dividir em grupos",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 650,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|splitgroups",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Dividir em grupos",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Dividir em grupos"
+              }
+            },
+            {
+              "id": "m23",
+              "nome": "Botão Dividir por tamanho",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 692,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|splitsize",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Dividir por tamanho",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Dividir por tamanho"
+              }
+            },
+            {
+              "id": "m24",
+              "nome": "Botão Dividir por marcadores",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 734,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|splitbookmarks",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Dividir por marcadores",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Dividir por marcadores"
+              }
+            },
+            {
+              "id": "m25",
+              "nome": "Botão Intervalos personalizados",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 776,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|splitranges",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Intervalos personalizados",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Intervalos personalizados"
+              }
+            },
+            {
+              "id": "m26",
+              "nome": "Botão Intercalar PDFs",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 818,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|mix",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Intercalar PDFs",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Intercalar PDFs"
+              }
+            },
+            {
+              "id": "m27",
+              "nome": "Botão Inserir outro PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 434,
+                "y": 860,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|insertpdf",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Inserir outro PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Inserir outro PDF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m28",
+          "nome": "Editar e preencher",
+          "tipo": "container",
+          "propriedades": {
+            "x": 828,
+            "y": 16,
+            "largura": 390,
+            "altura": 640,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "Editar e preencher"
+          },
+          "filhos": [
+            {
+              "id": "m29",
+              "nome": "Editar e preencher",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 840,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "Editar e preencher",
+                "tipo": "texto",
+                "nome": "Editar e preencher"
+              }
+            },
+            {
+              "id": "m30",
+              "nome": "Botão Adicionar texto",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|text",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Adicionar texto",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Adicionar texto"
+              }
+            },
+            {
+              "id": "m31",
+              "nome": "Botão Realçar área",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|highlight",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Realçar área",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Realçar área"
+              }
+            },
+            {
+              "id": "m32",
+              "nome": "Botão Retângulo",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|rectangle",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Retângulo",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Retângulo"
+              }
+            },
+            {
+              "id": "m33",
+              "nome": "Botão Comentário",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 188,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|comment",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Comentário",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Comentário"
+              }
+            },
+            {
+              "id": "m34",
+              "nome": "Botão Inserir imagem",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 230,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|image",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Inserir imagem",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Inserir imagem"
+              }
+            },
+            {
+              "id": "m35",
+              "nome": "Botão Marca d'água",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 272,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|watermark",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Marca d'água",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Marca d'água"
+              }
+            },
+            {
+              "id": "m36",
+              "nome": "Botão Editar texto original / objetos",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 314,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|objects",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Editar texto original / objetos",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Editar texto original / objetos"
+              }
+            },
+            {
+              "id": "m37",
+              "nome": "Botão Criar campo de texto",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 356,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|fieldtext",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Criar campo de texto",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Criar campo de texto"
+              }
+            },
+            {
+              "id": "m38",
+              "nome": "Botão Criar caixa de seleção",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 398,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|fieldcheck",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Criar caixa de seleção",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Criar caixa de seleção"
+              }
+            },
+            {
+              "id": "m39",
+              "nome": "Botão Criar lista",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 440,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|fieldcombo",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Criar lista",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Criar lista"
+              }
+            },
+            {
+              "id": "m40",
+              "nome": "Botão Criar escolha única",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 482,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|fieldradio",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Criar escolha única",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Criar escolha única"
+              }
+            },
+            {
+              "id": "m41",
+              "nome": "Botão Preencher formulário",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 524,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|forms",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Preencher formulário",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Preencher formulário"
+              }
+            },
+            {
+              "id": "m42",
+              "nome": "Botão Recortar página",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 566,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|crop",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Recortar página",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Recortar página"
+              }
+            },
+            {
+              "id": "m43",
+              "nome": "Botão Remover recorte",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 840,
+                "y": 608,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|uncrop",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Remover recorte",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Remover recorte"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m44",
+          "nome": "Converter e exportar",
+          "tipo": "container",
+          "propriedades": {
+            "x": 1234,
+            "y": 16,
+            "largura": 390,
+            "altura": 598,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "Converter e exportar"
+          },
+          "filhos": [
+            {
+              "id": "m45",
+              "nome": "Converter e exportar",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 1246,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "Converter e exportar",
+                "tipo": "texto",
+                "nome": "Converter e exportar"
+              }
+            },
+            {
+              "id": "m46",
+              "nome": "Botão Página → PNG",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|png",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Página → PNG",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Página → PNG"
+              }
+            },
+            {
+              "id": "m47",
+              "nome": "Botão Todas → PNG",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|allpng",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Todas → PNG",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Todas → PNG"
+              }
+            },
+            {
+              "id": "m48",
+              "nome": "Botão Extrair imagens",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|extractimages",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Extrair imagens",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Extrair imagens"
+              }
+            },
+            {
+              "id": "m49",
+              "nome": "Botão Páginas → JPG",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 188,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|jpg",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Páginas → JPG",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Páginas → JPG"
+              }
+            },
+            {
+              "id": "m50",
+              "nome": "Botão Extrair texto / buscar",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 230,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|textout",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Extrair texto / buscar",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Extrair texto / buscar"
+              }
+            },
+            {
+              "id": "m51",
+              "nome": "Botão Word / Excel / PowerPoint → PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 272,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|officein",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Word / Excel / PowerPoint → PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Word / Excel / PowerPoint → PDF"
+              }
+            },
+            {
+              "id": "m52",
+              "nome": "Botão PDF → Word",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 314,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|docx",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF → Word",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF → Word"
+              }
+            },
+            {
+              "id": "m53",
+              "nome": "Botão PDF → Excel",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 356,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|xlsx",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF → Excel",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF → Excel"
+              }
+            },
+            {
+              "id": "m54",
+              "nome": "Botão PDF → PowerPoint",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 398,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|pptx",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF → PowerPoint",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF → PowerPoint"
+              }
+            },
+            {
+              "id": "m55",
+              "nome": "Botão PDF → Markdown",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 440,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|markdown",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF → Markdown",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF → Markdown"
+              }
+            },
+            {
+              "id": "m56",
+              "nome": "Botão PDF/X CMYK (experimental)",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 482,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|pdfx",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF/X CMYK (experimental)",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF/X CMYK (experimental)"
+              }
+            },
+            {
+              "id": "m57",
+              "nome": "Botão PDF/A",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 524,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|pdfa",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "PDF/A",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão PDF/A"
+              }
+            },
+            {
+              "id": "m58",
+              "nome": "Botão HTML → PDF",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1246,
+                "y": 566,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|html",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "HTML → PDF",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão HTML → PDF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m59",
+          "nome": "Proteger e revisar",
+          "tipo": "container",
+          "propriedades": {
+            "x": 1640,
+            "y": 16,
+            "largura": 390,
+            "altura": 430,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "Proteger e revisar"
+          },
+          "filhos": [
+            {
+              "id": "m60",
+              "nome": "Proteger e revisar",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 1652,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "Proteger e revisar",
+                "tipo": "texto",
+                "nome": "Proteger e revisar"
+              }
+            },
+            {
+              "id": "m61",
+              "nome": "Botão Remover senha da cópia",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|unlock",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Remover senha da cópia",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Remover senha da cópia"
+              }
+            },
+            {
+              "id": "m62",
+              "nome": "Botão Proteger com senha",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|protect",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Proteger com senha",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Proteger com senha"
+              }
+            },
+            {
+              "id": "m63",
+              "nome": "Botão Compactar",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|compress",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Compactar",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Compactar"
+              }
+            },
+            {
+              "id": "m64",
+              "nome": "Botão Reparar arquivo",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 188,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|repair",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Reparar arquivo",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Reparar arquivo"
+              }
+            },
+            {
+              "id": "m65",
+              "nome": "Botão Assinatura desenhada",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 230,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|drawsignature",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Assinatura desenhada",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Assinatura desenhada"
+              }
+            },
+            {
+              "id": "m66",
+              "nome": "Botão Assinar com A1 / PFX",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 272,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|sign",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Assinar com A1 / PFX",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Assinar com A1 / PFX"
+              }
+            },
+            {
+              "id": "m67",
+              "nome": "Botão Verificar assinaturas",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 314,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|verify",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Verificar assinaturas",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Verificar assinaturas"
+              }
+            },
+            {
+              "id": "m68",
+              "nome": "Botão Censurar área",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 356,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|redact",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Censurar área",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Censurar área"
+              }
+            },
+            {
+              "id": "m69",
+              "nome": "Botão Comparar PDFs",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 1652,
+                "y": 398,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|compare",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Comparar PDFs",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Comparar PDFs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "m70",
+          "nome": "Capturar e reconhecer",
+          "tipo": "container",
+          "propriedades": {
+            "x": 2046,
+            "y": 16,
+            "largura": 390,
+            "altura": 346,
+            "z": 0,
+            "rotacao": 0,
+            "espelharH": false,
+            "espelharV": false,
+            "visivel": true,
+            "travado": false,
+            "estilo": {
+              "fundo": "#ffffff",
+              "cor": "#1f2937",
+              "borda": "#ced8df",
+              "larguraBorda": 1,
+              "raio": 8,
+              "tamanhoFonte": 14,
+              "peso": 400,
+              "sombra": "nenhuma",
+              "opacidade": 1,
+              "fonte": "sistema",
+              "alinhamento": "",
+              "entrelinha": 1.3,
+              "desfoque": 0,
+              "vidro": 0
+            },
+            "estados": {
+              "hover": {
+                "fundo": ""
+              },
+              "active": {
+                "fundo": ""
+              },
+              "focus": {
+                "contorno": "",
+                "fundo": ""
+              },
+              "disabled": {
+                "fundo": "",
+                "cor": "",
+                "opacidade": 0.5
+              }
+            },
+            "transicao": {
+              "duracao": 150,
+              "easing": "ease-out"
+            },
+            "eventos": [],
+            "acessibilidade": {
+              "role": "",
+              "ariaLabel": ""
+            },
+            "layout": {
+              "modo": "coluna",
+              "espaco": 6,
+              "margem": 12,
+              "alinhar": "inicio",
+              "abracar": true
+            },
+            "tipo": "container",
+            "nome": "Capturar e reconhecer"
+          },
+          "filhos": [
+            {
+              "id": "m71",
+              "nome": "Capturar e reconhecer",
+              "tipo": "texto",
+              "propriedades": {
+                "x": 2058,
+                "y": 28,
+                "largura": 366,
+                "altura": 28,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "transparent",
+                  "cor": "#182b36",
+                  "borda": "transparent",
+                  "larguraBorda": 0,
+                  "raio": 6,
+                  "tamanhoFonte": 16,
+                  "peso": 400,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": ""
+                  },
+                  "active": {
+                    "fundo": ""
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [],
+                "acessibilidade": {
+                  "role": "",
+                  "ariaLabel": ""
+                },
+                "texto": "Capturar e reconhecer",
+                "tipo": "texto",
+                "nome": "Capturar e reconhecer"
+              }
+            },
+            {
+              "id": "m72",
+              "nome": "Botão OCR integrado",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 62,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|ocr",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "OCR integrado",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão OCR integrado"
+              }
+            },
+            {
+              "id": "m73",
+              "nome": "Botão Digitalizar (scanner)",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 104,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|scan",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Digitalizar (scanner)",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Digitalizar (scanner)"
+              }
+            },
+            {
+              "id": "m74",
+              "nome": "Botão Capturar área da tela",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 146,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|capture",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Capturar área da tela",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Capturar área da tela"
+              }
+            },
+            {
+              "id": "m75",
+              "nome": "Botão Reconstruir imagem",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 188,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|reconstructimage",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Reconstruir imagem",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Reconstruir imagem"
+              }
+            },
+            {
+              "id": "m76",
+              "nome": "Botão Colar imagem",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 230,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|clipboard",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Colar imagem",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Colar imagem"
+              }
+            },
+            {
+              "id": "m77",
+              "nome": "Botão Reconstruir página atual",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 272,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|reconstructpage",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "Reconstruir página atual",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão Reconstruir página atual"
+              }
+            },
+            {
+              "id": "m78",
+              "nome": "Botão OCR → PDF pesquisável",
+              "tipo": "botao",
+              "propriedades": {
+                "x": 2058,
+                "y": 314,
+                "largura": 366,
+                "altura": 36,
+                "z": 0,
+                "rotacao": 0,
+                "espelharH": false,
+                "espelharV": false,
+                "visivel": true,
+                "travado": false,
+                "estilo": {
+                  "fundo": "#eef3f6",
+                  "cor": "#182b36",
+                  "borda": "#ced8df",
+                  "larguraBorda": 1,
+                  "raio": 6,
+                  "tamanhoFonte": 14,
+                  "peso": 600,
+                  "sombra": "nenhuma",
+                  "opacidade": 1,
+                  "fonte": "sistema",
+                  "alinhamento": "",
+                  "entrelinha": 1.3,
+                  "desfoque": 0,
+                  "vidro": 0
+                },
+                "estados": {
+                  "hover": {
+                    "fundo": "#1d4ed8"
+                  },
+                  "active": {
+                    "fundo": "#1e40af"
+                  },
+                  "focus": {
+                    "contorno": "",
+                    "fundo": ""
+                  },
+                  "disabled": {
+                    "fundo": "",
+                    "cor": "",
+                    "opacidade": 0.5
+                  }
+                },
+                "transicao": {
+                  "duracao": 150,
+                  "easing": "ease-out"
+                },
+                "eventos": [
+                  {
+                    "tipo": "onClick",
+                    "dispara": "pdf|searchable",
+                    "acao": "",
+                    "alvo": ""
+                  }
+                ],
+                "acessibilidade": {
+                  "role": "button",
+                  "ariaLabel": ""
+                },
+                "rotulo": "OCR → PDF pesquisável",
+                "variante": "primario",
+                "desabilitado": false,
+                "tipo": "botao",
+                "nome": "Botão OCR → PDF pesquisável"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

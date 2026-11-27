@@ -1,0 +1,103 @@
+{
+  "formato": "hefestus.perfis-linguagens",
+  "versao": 1,
+  "estado": "diretriz-sem-selecao-automatica",
+  "arquitetura": "monolito-modular-com-adaptadores",
+  "medicao": null,
+  "politica": {
+    "preservarSemantica": true,
+    "exigirBenchmarkParaMigracaoDeDesempenho": true,
+    "instalarTodasToolchains": false,
+    "dependenciasSeletivas": true
+  },
+  "perfis": [
+    {
+      "id": "interface-web",
+      "atual": [
+        "html",
+        "css",
+        "javascript"
+      ],
+      "candidatas": [
+        "typescript"
+      ],
+      "estado": "JS atual; TS proposto",
+      "medicao": null
+    },
+    {
+      "id": "dominio-e-runtime",
+      "atual": [
+        "javascript"
+      ],
+      "candidatas": [
+        "typescript"
+      ],
+      "estado": "núcleo atual preservado",
+      "medicao": null
+    },
+    {
+      "id": "host-nativo",
+      "atual": [
+        "rust"
+      ],
+      "candidatas": [],
+      "estado": "fonte Tauri existente; não compilada nesta rodada",
+      "medicao": null
+    },
+    {
+      "id": "computacao-pesada",
+      "atual": [
+        "javascript"
+      ],
+      "candidatas": [
+        "javascript-worker",
+        "rust-wasm",
+        "cpp-biblioteca"
+      ],
+      "estado": "avaliar por benchmark e biblioteca; sem novo motor",
+      "medicao": null
+    },
+    {
+      "id": "servicos-opcionais",
+      "atual": [],
+      "candidatas": [
+        "typescript-node",
+        "go",
+        "csharp"
+      ],
+      "estado": "não incorporados",
+      "medicao": null
+    },
+    {
+      "id": "dados-ia-automacao",
+      "atual": [],
+      "candidatas": [
+        "python"
+      ],
+      "estado": "não embarcado",
+      "medicao": null
+    },
+    {
+      "id": "integracao-mobile",
+      "atual": [],
+      "candidatas": [
+        "kotlin",
+        "swift"
+      ],
+      "estado": "somente conforme API/destino e homologação",
+      "medicao": null
+    }
+  ],
+  "pesosHeuristicos": {
+    "correcao": 30,
+    "plataforma": 20,
+    "latenciaMedida": 20,
+    "memoriaETamanho": 10,
+    "desenvolvimento": 10,
+    "manutencaoEIntegracao": 10
+  },
+  "referencias": [
+    "https://v2.tauri.app/concept/process-model/",
+    "https://webassembly.org/docs/use-cases/"
+  ]
+}

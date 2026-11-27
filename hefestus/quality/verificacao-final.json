@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "produto": "2.1.0",
+  "baseline": "b130843db46aa5a22831fbf19eaff5189ac5f263",
+  "arquivosOriginais": 438,
+  "originaisModificados": [
+    "build.mjs",
+    "css/hefestus.css",
+    "docs/ia/mcp/FERRAMENTAS.md",
+    "js/app.js",
+    "js/app/hephaestus.js",
+    "js/nucleo/exportar.js",
+    "js/nucleo/nucleo.js",
+    "js/nucleo/semente.js",
+    "js/nucleo/visualScript.js",
+    "js/ui/abasHephaestus.js",
+    "js/ui/abertura.js",
+    "js/ui/importarHTML.js",
+    "js/ui/ribbon.js",
+    "js/ui/visualScript.js",
+    "package-lock.json",
+    "package.json",
+    "src-tauri/Cargo.lock",
+    "src-tauri/Cargo.toml",
+    "src-tauri/tauri.conf.json"
+  ],
+  "requisitos": 53,
+  "exemplo": "7 objetos, grafo válido, zero diagnósticos",
+  "limites": "ver docs/estado-reconstrucao.md"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hefestus — propriedade menu de um elemento",
+  "type": "object",
+  "properties": {
+    "versao": { "const": 1 },
+    "adaptativo": { "type": "boolean" },
+    "prioridade": { "type": "number", "minimum": 0, "maximum": 1000 },
+    "rotuloSidebar": { "type": "boolean" },
+    "sidebar": {
+      "oneOf": [
+        { "type": "boolean" },
+        { "type": "object", "properties": {
+          "modo": { "enum": ["auto", "open", "compact", "minimal"] },
+          "minimalAbaixo": { "type": "number", "minimum": 0 },
+          "compactoAbaixo": { "type": "number", "minimum": 0 },
+          "expandida": { "type": "number", "minimum": 0 },
+          "compacta": { "type": "number", "minimum": 0 }
+        }, "additionalProperties": false }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {Nucleo} from '../js/nucleo/nucleo.js';
+import {DocumentoAtivo} from '../js/aplicacao/documentoAtivo.js';
+import {ENGENHARIA} from '../js/nucleo/engenhariaDados.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read=rel=>fs.readFile(path.join(root,rel),'utf8');
+const pkg=JSON.parse(await read('package.json')),manifest=JSON.parse(await read('project.manifest.json'));
+assert.equal(pkg.version,manifest.versao);assert.equal(ENGENHARIA.produto,pkg.version);assert.equal(manifest.formatoProjeto,1);
+const tauri=JSON.parse(await read('src-tauri/tauri.conf.json'));assert.equal(tauri.version,pkg.version);
+const baseline=JSON.parse(await read('quality/baseline-github.json'));assert.equal(baseline.verificados,438);assert.equal(baseline.divergencias.length,0);
+const changed=[];for(const f of baseline.arquivos){const rel=f.path.replace(/^hefestus\//,'');const bytes=await fs.readFile(path.join(root,rel));const sha=createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');if(sha!==f.sha)changed.push(rel);}
+assert.ok(!changed.includes('BIBLIA_ARQUITETURA_GDD.md'),'A Bíblia normativa original foi alterada');
+const matrix=await read('docs/matriz-reconstrucao.md');assert.equal(ENGENHARIA.requisitos.length,53);for(const r of ENGENHARIA.requisitos)assert.ok(matrix.includes(r.id));
+for(const rel of ['BIBLIA.md','docs/decisoes/ADR-021-reconstrucao.md','docs/estado-reconstrucao.md','docs/manual-reconstrucao.md','docs/arquitetura-reconstrucao.md'])assert.ok((await read(rel)).length>100);
+const app=await read('hephaestus.html');assert.ok(app.includes('Bíblia / GDD'));assert.ok(app.includes('ui.somarCampos'));assert.ok(app.includes('2.1'));
+const n=new Nucleo(),d=new DocumentoAtivo(n);d.abrir(await read('exemplos/engenharia/calculadora.hefestus'));assert.equal(n.elementos().length,7);assert.deepEqual(d.diagnosticar().diagnosticos,[]);assert.ok(n.doc.elementos.__script.grafos.some(g=>g.id==='calculo-validado'));
+const html=await read('exemplos/engenharia/calculadora.html');assert.match(html,/value="2"/);assert.match(html,/value="3"/);assert.ok(html.includes('ui.somarCampos'));
+console.log(JSON.stringify({ok:true,produto:pkg.version,baseline:baseline.commit,arquivosOriginais:438,originaisModificados:changed,requisitos:53,exemplo:'7 objetos, grafo válido, zero diagnósticos',limites:'ver docs/estado-reconstrucao.md'},null,2));

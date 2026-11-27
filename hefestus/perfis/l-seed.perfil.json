@@ -1,0 +1,21 @@
+{
+  "formato": "hefestus.perfil",
+  "versao": 1,
+  "id": "l-seed",
+  "nome": "L-SEED · Cognição",
+  "descricao": "Primeiro perfil externo (fase S2 do #43, decisão do Ricardo em 20/11/2026). O motor continua sendo a Central do L-SEED em Python; o shell oferece áreas, temas e comandos. A Central serve a página em /shell, na mesma origem.",
+  "projeto": "prj-l-seed",
+  "areas": [
+    { "id": "conversa", "nome": "Conversa", "abas": ["leila", "aura", "clara"], "abaInicial": "leila" },
+    { "id": "memoria", "nome": "Memória", "abas": ["fila", "decisoes", "dados"], "abaInicial": "fila" },
+    { "id": "projetos", "nome": "Projetos", "abas": ["orquestracao", "catalogo", "dna", "progresso", "indices", "aprendizado", "continuidade", "smartqueue"], "abaInicial": "orquestracao" }
+  ],
+  "areaInicial": "conversa",
+  "paineis": { "esquerda": ["personas"], "direita": ["contexto"] },
+  "acessoRapido": ["lseed.buscar", "lseed.dados", "lseed.salvar", "lseed.abrir"],
+  "temaPadrao": "automatico",
+  "destinos": ["web", "desktop"],
+  "motor": { "tipo": "python", "entrada": "../l-seed/INDICE-VETORIAL-v1.5/central_lseed.py", "nota": "A Central serve hefestus/shell/l-seed.html em http://127.0.0.1:8765/shell; a página usa /api/estado, /api/conversar e /api/salvar (js/shell/motorLseed.js)." },
+  "mcp": { "comando": "python", "args": ["../l-seed/INDICE-VETORIAL-v1.5/mcp_lseed.py"] },
+  "estado": "implementado"
+}

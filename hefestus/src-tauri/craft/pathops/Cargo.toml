@@ -1,0 +1,18 @@
+# Incorporado do FigCraft (https://github.com/storytold/figcraft, commit d9c924c), licença MIT OU Apache-2.0.
+# Pode ser modificado à vontade; mantenha LICENSE-MIT, LICENSE-APACHE e NOTICE na pasta craft/.
+[package]
+name = "figcraft-pathops"
+version = "0.8.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT OR Apache-2.0"
+description = "Operações de caminho: união, subtração, interseção, exclusão e contorno de traço"
+publish = false
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+figcraft-geom = { path = "../geom" }
+figcraft-doc = { path = "../doc" }
+linesweeper = "0.4"

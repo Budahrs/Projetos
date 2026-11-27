@@ -1,0 +1,17 @@
+AXIOM STUDIO - pacote completo (r29 a r36)
+==========================================
+ATENÇÃO: este pacote foi gerado a partir da minha última cópia de trabalho. Se a sua pasta
+foi alterada depois (arquivos como live_connectors.py, public_dashboard.py, core-shell),
+NÃO copie por cima. Extraia numa pasta nova e compare, ou peça a junção.
+
+Arquivos:
+  Daedalus_Core_NOC_v8.html   interface completa (inclui r29..r36)
+  main.py, web_import.py      servidor (VNC, HeartPulse, PowerPoint nativo, Zabbix, URL)
+  requirements-vnc.txt        vncdotool, Pillow, python-pptx
+  Iniciar_Axiom_Studio.bat    acha o Python sozinho e corrige a .venv quebrada
+  Criar_Atalho_Axiom_Studio.* cria os atalhos na área de trabalho
+  *.ico, axiom-256.png        ícones
+  LEIA-ME_r29.txt             o que mudou em cada versão
+
+Uso: extraia numa pasta NOVA, rode Iniciar_Axiom_Studio.bat e depois Criar_Atalho_Axiom_Studio.bat.
+Não inclui web-studio.js (não foi alterado por mim).

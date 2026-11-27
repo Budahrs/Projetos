@@ -1,0 +1,488 @@
+✔ interpretador: criar botão com cor, texto e posição (11.711ms)
+✔ interpretador: acha elemento pelo nome e muda a cor (12.6763ms)
+✔ interpretador: tipo citado com vários elementos pede qual (4.3173ms)
+✔ interpretador: quando clicar em X, abre Y (7.7401ms)
+✔ ferramentas validam propriedades e cores (1.1022ms)
+✔ turno do agente (local) vira um evento só, conversa incluída (7.7225ms)
+✔ pedido 'desfaz' no chat navega no histórico sem criar turno (3.6405ms)
+✔ tema pelo agente muda só a interface; o canvas fica igual (4.748ms)
+✔ paleta pelo agente com cor protegida deixa pergunta pendente (7.0189ms)
+✔ interpretador: ícone de casa, círculo, girar e espelhar (6.4306ms)
+✔ ferramentas aceitam as novas propriedades e recusam valor fora da lista (1.1692ms)
+✔ formas: interpretador e ferramenta criam estrela e seta com texto (6.4097ms)
+✔ modelos: inserir um modelo é um evento só e usa containers (21.4725ms)
+✔ agente local: 'recriar o menu completo estilo office atual' insere o modelo Office completo (573.4743ms)
+✔ agente local: menu Arquivo estilo Office e pedido que continua não entendido (0.8249ms)
+✔ agente local: 'faixa híbrida recolhível' insere o modelo de faixa híbrida (0.5012ms)
+✔ agente local: 'faixa estilo powerpoint' insere o modelo faixaPowerPoint (0.2501ms)
+✔ agente local: 'faixa estilo word' insere faixaWord, mas 'menu completo estilo word' continua no Office completo (0.208ms)
+✔ agente: insere qualquer modelo de menu pelo nome (0.5056ms)
+✔ agente: insere a barra com teclas de acesso e perfis (0.223ms)
+✔ agente: recria a faixa do Axiom (0.3482ms)
+✔ agente: componentes e temas completos do formulário (1.2536ms)
+✔ agente: ferramenta construtor_tema aplica o tema (15.6531ms)
+✔ agente cria painéis divididos e respeita 'sem painel inferior' (0.5074ms)
+✔ grupo move pelo painel e pelo núcleo inteiro; desfazer restaura filhos (16.9866ms)
+✔ redimensionar grupo livre transforma os filhos e mantém proporções (5.2043ms)
+✔ arraste não move duas vezes e editar filho não desagrupa (7.0252ms)
+✔ pacote salvo reabre o documento e mantém documentação com ferramentas separadas (230.7026ms)
+✔ leitor recusa corrupção e truncamento antes de restaurar projeto (0.536ms)
+✔ HTML e componentes exportados incluem a pasta documentos (79.7546ms)
+✔ versões: faixas ^ ~ >= e próxima versão por tipo de mudança (2.9553ms)
+✔ JSON canônico e hash não dependem da ordem das chaves (20.504ms)
+✔ armazém: guarda compactado, deduplica pelo hash e resolve sem o programa (167.6436ms)
+✔ armazém: versão em uso nunca é removida; a cópia sai só quando ninguém mais a usa (11.5902ms)
+✔ armazém: exportar e importar leva tudo para outra máquina e confere o hash (9.655ms)
+✔ manifesto: aceita o formato do VetorIA, exige runtime e avisa quando infere (1.1538ms)
+✔ sincronizar: só baixa o que mudou, confere hash e nunca sobrescreve versão publicada (8.4133ms)
+✔ propagação é pull e opt-in: só o permitido, compatível e mais novo que o instalado (4.7369ms)
+✔ contraste WCAG: preto/branco 21:1 e cinza claro reprova (1.5629ms)
+✔ auditoria acha problemas e a correção automática resolve os corrigíveis num passo (21.0972ms)
+✔ explicar e documentar o contrato de sinais; agente responde auditoria e explicação (12.8517ms)
+✔ histórico: ação nova depois de desfazer guarda a linha antiga como variação e dá para voltar (7.5884ms)
+✔ estados foco e desabilitado viram CSS, e a auditoria sugere o anel de foco (4.0387ms)
+✔ agente: anel de foco e aparência de desabilitado por texto (10.0921ms)
+✔ artefatos: web component, React, Vue e tokens saem do projeto; comandos rápidos funcionam (17.3938ms)
+✔ agente: tema por texto, validador de escopo e rótulos curtos (10.9292ms)
+✔ variantes P/M/G, estilos e modo refinar com 3 opções (20.3454ms)
+✔ auditoria: regra de escopo acusa código dentro de textos (2.3311ms)
+✔ histórico em arquivo separado: patches compactos, variações e reabertura (7.8806ms)
+✔ artefatos Storybook e testes visuais; agente importa SVG gerado por ele (1.9125ms)
+✔ criar dentro de container e mover na ordem entre irmãos (5.8849ms)
+✔ auditoria: todos os itens têm conserto (evento sem destino, alvo pequeno, fora da tela, hover, nome) (13.5751ms)
+✔ blocos criam estrutura válida sem alterar a original (11.1419ms)
+✔ encaixes incompatíveis e remoção de último comando são atômicos (8.249ms)
+✔ mover comando entre grupos mantém identidade, vínculo e código manual (3.78ms)
+✔ comportamentos múltiplos são independentes e os desligados não entram no runtime (216.3344ms)
+✔ Ribbon, lateral, contextual e janela geram HTML válido e objetos nativos (583.9314ms)
+✔ ferramenta inexistente ou ação desconhecida não é salva (5.459ms)
+✔ todo efeito de botão devolve estilo completo e uma miniatura válida (3.5008ms)
+✔ aplicar efeito de botão muda o selecionado em um único passo desfazível (12.877ms)
+✔ a categoria Botões existe e seus modelos entram sem problemas no documento (36.2332ms)
+✔ inserir um modelo seleciona só as peças abertas, não a gaveta que começa fechada (9.1435ms)
+✔ o modelo Menu do Hefestus nasce do menu real: abas no padrão do PowerPoint, ícones, submenus e grupos novos (1452.0481ms)
+✔ complemento isola buscas, elementos e eventos na raiz da prévia (3.0026ms)
+✔ sair da prévia cancela timers, intervalos e quadros pendentes (1.4906ms)
+✔ complemento só de CSS também é instalado e removido (0.5313ms)
+✔ seleção recebe comportamento em um passo e desfazer restaura todos (10.653ms)
+✔ evento incompatível ou alvo inexistente não deixa lote parcial (2.5743ms)
+✔ regras desligadas persistem ao reabrir sem executar e o pacote leva interface e motor (9.7135ms)
+✔ grau 1: compara contratos (não código) e acha os equivalentes (69.8523ms)
+✔ grau 2: fixtures rodam nas duas, divergências aparecem e a cobertura é medida (6.8336ms)
+✔ ranking: critérios visíveis, sem dado não conta, empate não decide sozinho (0.8544ms)
+✔ grau 3: fusão é só proposta; decisão exige quem decidiu e nunca aplica (0.9428ms)
+✔ ponte de IA: tarefas proibidas, cache por hash, cascata, teto e código privado só local (4.1609ms)
+✔ grau 3: quando a base acerta tudo, a proposta é manter a base (não 'sem resposta') (0.3441ms)
+✔ construtor: container gerado pelo formulário, editado e removido (desfazível) (20.9893ms)
+✔ construtor: faixa de opções com abas, grupos e comandos; clique na aba mostra o corpo (25.6154ms)
+✔ construtor: menu do botão direito ligado ao container (onContext → abrir) e validação (34.5589ms)
+✔ agente cria menu de contexto, faixa e comandos pelo formulário (91.535ms)
+✔ faixa: grupo que recolhe vira botão com o ícone principal e aba condicional some sem a seleção (41.1021ms)
+✔ faixa que retrai: corpos começam fechados, abas abrem, sair do mouse fecha (20.8942ms)
+✔ lições dos exemplos: blocos, barra lateral, abas de documento, submenu e comando desabilitado (175.8301ms)
+✔ faixa que retrai tem pino: ação fixar sobre o corpo (31.4916ms)
+✔ estilos prontos da faixa e pacote de ícones de rede (31.0704ms)
+✔ ícones: conjunto colorido cobre todos os nomes e respeita cor semântica (4.0527ms)
+✔ ícones: elemento colorido sai no HTML exportado (2.2091ms)
+✔ componentes novos: cada modelo gera elementos marcados e sem erros (2478.3491ms)
+✔ componentes: progresso respeita o valor e paginação tem anterior/próxima (166.3314ms)
+✔ temas: aplicam em todos os tipos num passo e podem ser desfeitos (439.8709ms)
+✔ formatos de aba, variantes da lateral e efeitos mudam a aparência gerada (206.1883ms)
+✔ itens diferentes não se sobrescrevem (refs automáticas isoladas por item) (104.8531ms)
+✔ componentes extras: modal, calendário, slider, tabela, gráfico e menu radial (352.278ms)
+✔ agente: componentes extras e atalhos (1.6569ms)
+✔ estado ativo: abas, itens e dias marcam o ativo inicial e escolhem por mostrarSo (250.589ms)
+✔ pendências: ▾ da faixa, atalhos, gráficos de linha/rosca, tabela dinâmica, hexágono e rótulo longo (269.7987ms)
+✔ painéis divididos: gera regiões, divisores, marca data-hf-dock e valida (31.1786ms)
+✔ abas: formatos com máscara, borda mista e animações de mouse/clique (20.4363ms)
+✔ abas: curva suave, chanfro e largura ajustada ao texto (22.9262ms)
+✔ faixa: corpos e abas marcados para se ajustar à largura da tela (21.4201ms)
+✔ ícones automáticos pelo rótulo e estilo colorido nos menus (19.6641ms)
+✔ interruptores preservam parâmetros e modificam só a representação executada (11.1835ms)
+✔ reativar retorna aos valores configurados, inclusive efeitos avançados (0.4497ms)
+✔ desligar reações mantém eventos e código autoral para reativar (1.5332ms)
+✔ controlador é salvo no projeto e preservado no artefato (5.6706ms)
+✔ desligar as reações do grupo suspende suas peças sem apagar configurações (0.3764ms)
+✔ dist/hefestus.html: todos os scripts inline têm sintaxe válida (202.7689ms)
+✔ enquadra o conteúdo e centraliza mesmo fora da origem, sem mudar o desenho (1.8789ms)
+✔ limites e caixas inválidas não produzem zoom infinito (0.2351ms)
+✔ documentação registra somente requisitos declarados e inventaria eventos reais (5.6915ms)
+✔ salvar inclui documentação atual e mantém compatibilidade e decisões autorais (3.3168ms)
+✔ posicionamento troca lado, limita dimensões e respeita bordas e RTL (1.3987ms)
+✔ intenção do submenu mantém diagonal e recusa movimento oposto ou indefinido (0.3498ms)
+✔ medições próprias não provocam novo passe; fontes e alterações externas invalidam (1.5802ms)
+✔ toolbar: um ponto de Tab, setas ignoram botão desabilitado, Home/End, RTL e cleanup (1.0439ms)
+✔ expertise recomenda modelos existentes e separa os tipos de menu (0.7438ms)
+✔ agente planeja sem alterar documento e cria sidebar pelo pedido adaptativo (3.9429ms)
+✔ auditoria ensina contratos e correções são reversíveis pelo núcleo (9.9503ms)
+✔ exportação carrega teclado, posicionamento e intenção sem referências externas faltantes (543.2857ms)
+✔ ícone na forma preserva rótulo e eventos e é um único passo desfazível (13.003ms)
+✔ modelo grande atualiza memória uma vez e mantém escolhas de posição protegidas (638.6911ms)
+✔ menu compacto é inserível e mantém os oito atalhos de edição (15.2143ms)
+✔ Forja: criação, renomeação, exclusão, desfazer e reabertura preservam os IDs dos objetos (11.5878ms)
+✔ Forja: todos os componentes inseridos por modelo têm nó e fios de hierarquia (7.13ms)
+✔ Forja: composição do formulário gera e remove nós junto com seus componentes (7.4962ms)
+✔ Forja: sincronização preserva lógica, posição e conexões manuais sem duplicar nós (0.4381ms)
+✔ Forja runtime: clique no nó de objeto aciona porta de ocultar de outro objeto uma única vez (3.254ms)
+✔ Forja: exportação inclui runtime dos nós e preserva runtime de menus (4.3581ms)
+✔ guia usa identificadores reais e distingue evento visual de motor pendente (7.7163ms)
+✔ referências e requisitos autorais acompanham documentação e pacote ao salvar (8.7034ms)
+✔ Craft join: endpoints reversed, merged with Bézier handles and no input mutation (3.9642ms)
+✔ Craft join: a single open path closes, independent closed paths pass through (0.5998ms)
+✔ Craft split grid: exact bounds, gaps, invalid dimensions and ID/history contract (13.2592ms)
+✔ Uploaded icon catalogue: accessible SVG markup, aliases and safe unknown fallback (0.8132ms)
+✖ Runtime: press ignores secondary mouse button, scroll supplies coordinates, stop detaches (1.0944ms)
+✖ Runtime: state, sticky and concurrent scroll locks restore original styles on stop (0.4187ms)
+✖ Runtime: a different node releases a named scroll lock without releasing other locks (0.4097ms)
+✔ áreas: alternância preserva documento, histórico e abas individuais (7.7617ms)
+✔ Ribbon: sete abas no Designer e seis no Visual Script, sem abas extras (4.3363ms)
+✔ conversão vetorial conserva ID, eventos e referência no grafo (4.5554ms)
+✔ Craft: pontos médios preservam uma curva Bézier e não alteram o argumento (1.1729ms)
+✔ Craft: suavização move alças, mantém âncoras e extremos do caminho aberto (0.5355ms)
+✔ Craft: redundância colinear é removida sem apagar curvas ou voltar no caminho (0.4042ms)
+✔ SVG: caminhos e textos saem como vetores, com escape de conteúdo (3.6965ms)
+✖ Visual Script: Ao arrastar entrega deltas e remove ouvintes ao parar (0.7885ms)
+✔ conversão de botão conserva também o texto visível (6.2284ms)
+✔ fundo da página importada é transparente por padrão e pode ser preservado (3.5418ms)
+✔ entende a estrutura do exemplo sem executá-lo e preserva todo o código (1.3896ms)
+✔ HTML inválido como entrada, limites e dimensões não mudam o projeto (3.2555ms)
+✔ criar artefato é desfazível, reabre com código e pode ser reutilizado como modelo (19.3354ms)
+✔ Designer bloqueia scripts e interação; prévia e exportação usam sandbox sem acesso ao editor (15.6744ms)
+✔ documento estático não libera rede ou scripts; HTTPS externo é uma escolha explícita (0.5218ms)
+✔ script original do exemplo abre o menu e fecha por clique fora e Esc (1.2715ms)
+✔ carrossel diferencia transição interativa de avanço automático e preserva o novo script (0.8436ms)
+✔ composição com rádio cria artefato novo sem alterar o original e um único undo desfaz (78.096ms)
+✔ carrossel animado avança pelo temporizador, responde às setas e permite pausar (1.8551ms)
+✔ menu nunca excede a janela, inclusive com tamanho extremo e zoom (2.0656ms)
+✔ animação tem opção desligada e movimento reduzido anula todos os efeitos (0.3965ms)
+✔ categorias cobrem todos os comportamentos sem duplicar e modo estreito impede push (5.6037ms)
+✔ evento animar chega ao runtime com efeito e duração; respeita movimento reduzido (1.1865ms)
+✔ toda ferramenta listada tem efeitos declarados e indicações derivadas deles (696.7629ms)
+✖ fichas em docs/ia/mcp estão em dia com o servidor (874.1538ms)
+✔ mesmos passos pelo motor do editor, pela CLI e pelo MCP geram o mesmo projeto (2093.1779ms)
+✔ o mesmo erro sai igual pelo motor, pela CLI e pelo MCP, e nada é gravado (2910.6421ms)
+✔ MCP recusa caminhos fora da pasta de trabalho e extensões não permitidas (655.786ms)
+✔ ferramenta de leitura não regrava o projeto (724.8536ms)
+✔ contrato contém 66 comandos únicos organizados em 6 abas e 16 grupos (4.7091ms)
+✔ identificadores repetidos e destaque ambíguo são rejeitados (1.4776ms)
+✔ alteração visual propaga rótulo ao HTML e ao XAML (3.4684ms)
+✔ código manual é preservado e marcado para revisão (2.8158ms)
+✔ geração não altera o pacote original (3.6698ms)
+✔ rótulos são escapados nas duas saídas (3.3365ms)
+✔ pacote inválido não gera saídas (1.9919ms)
+✔ vínculos inexistentes são rejeitados e reuso é mensurável (1.8631ms)
+✔ identidade visual pode mudar sem perder a ferramenta vinculada (2.7338ms)
+✔ modelo real Hefestus preserva comandos, grupos e troca de abas (28.5122ms)
+✔ modelo salvo pelo usuário prevalece sobre o modelo padrão (8.2716ms)
+✔ faixa: largura real, prioridade, overflow agrupado e restauração sem mutar a definição (2.4708ms)
+✔ faixa: níveis forçados, grupos protegidos, largura inválida e limites sem loop (17.9007ms)
+✔ sidebar: limites exatos, overlay não comprime, preferência e volta direta entre modos (0.4475ms)
+✔ registro: IDs independentes do rótulo, estado contextual, observação e comando bloqueado (0.9823ms)
+✔ registro delega histórico ao núcleo: uma edição corresponde a um undo e redo (7.0345ms)
+✔ menu exportado inclui o mesmo motor e sidebar é modelo nativo editável (666.9591ms)
+✔ formato: migração não altera o original e recusa versões e valores inválidos (0.4541ms)
+✔ runtime: menu inválido não quebra o documento e emite diagnóstico (0.3021ms)
+✔ criar, mover, desfazer e refazer (8.5118ms)
+✔ tema em tudo pergunta sobre a cor que o usuário definiu (6.631ms)
+✔ na criação só tipo e posição ficam protegidos (2.3573ms)
+✔ serializar e restaurar mantém documento, memória e histórico (6.051ms)
+✔ HTML exportado contém os elementos e o script de sinais (5.1657ms)
+✔ seleção múltipla: alinhar, distribuir, girar e espelhar viram um evento cada (12.6974ms)
+✔ duplicar e remover vários num passo só (7.1327ms)
+✔ guias são desfazíveis e o HTML aplica rotação e elipse (15.4721ms)
+✔ container em coluna arruma os filhos e encaixa ao arrastar para dentro (13.3279ms)
+✔ agrupar em container e desagrupar (6.8271ms)
+✔ responsivo: restrição automática pela posição no desenho (0.3717ms)
+✔ responsivo: container em linha vira flexbox e filhos ficam no fluxo (4.146ms)
+✔ responsivo: ocultar e mostrar por largura usam container queries (8.7769ms)
+✔ comportamento pronto: menu suspenso liga gatilho e alvo num evento só (5.2834ms)
+✔ modelos funcionais: navegação responsiva tem gaveta ligada ao ☰ (10.057ms)
+✔ copiar e colar: o modelo da seleção volta como cópia, em um evento só, com filhos (9.2129ms)
+✔ ícones: Material entra na biblioteca e sai preenchido no HTML exportado (1.5688ms)
+✔ ícones importados: SVG limpo vira máscara; PNG e arquivos inválidos são tratados (2.09ms)
+✔ faixa híbrida: modelo tem abas, corpo recolhível e menu de contexto ligados por eventos (0.4832ms)
+✔ grupos de faixa: sete estruturas na categoria própria e a faixa Word as reaproveita (0.1462ms)
+✔ modelos: coleção de menus responsivos tem referências válidas (0.5399ms)
+✔ teclas de acesso, indisponível e perfis no marcação e no runtime (0.548ms)
+✔ faixa do Axiom gerada da estrutura real: abas, painéis, dropdowns ancorados e sinais (565.6657ms)
+✔ faixa do Axiom: menus condicionais por modo (perfis simples, avancado, codigo) (569.9074ms)
+✔ estilo avançado: gradientes, traços e efeitos viram CSS válido (0.659ms)
+✔ formas paramétricas geram caminho e renderizam no HTML exportado (4.7496ms)
+✔ seleção: inverter, conteúdo, container e peças do formulário (6.6604ms)
+✔ modelo Controlador de rádios: insere com ids fixos, guarda o complemento, exporta a lógica e desfaz (31.0709ms)
+✔ oficina altera rótulo visual e atualiza a prévia gerada (20.9335ms)
+✔ oficina salva modelo com comportamento e insere no designer (26.9556ms)
+✔ vincular ferramenta do banco muda o comando emitido (6.1223ms)
+✔ abrir a oficina leva à Forja em tela inteira sem diálogo (0.2324ms)
+✔ compactação mantém ações, estados e catálogo imutável (2.4319ms)
+✔ perfil ordena sem perder abas e suporta configuração inválida (0.2562ms)
+✔ auditoria não modifica arrays congelados (0.8985ms)
+✔ texto é corrigido com desfazer, preservando conteúdo editorial (17.4752ms)
+✔ grupos com submenus preservam acesso às galerias (0.2524ms)
+✔ autoformatação mantém ações e estados, destaca apenas um botão e preserva controles ricos (0.4543ms)
+✔ artefato livre formata controles e layout, preserva eventos e desfaz em um passo (10.2327ms)
+✔ formatação do construtor persiste na fonte e na regeneração, sem alterar sinais (34.9176ms)
+✔ nome e versão seguros; identidade estável sem usar o rótulo em comandos shell (1.9657ms)
+✔ ICO possui quatro tamanhos válidos e recusa dados truncados (7.008ms)
+✔ exporta somente o aplicativo; scripts compilam, sem o Designer ou projeto editável (57.804ms)
+✔ ZIP armazena nomes e bytes e recusa caminhos fora da pasta (22.5283ms)
+✔ ícones seguem o comando em modo automático e preservam a escolha explícita (1.2473ms)
+✔ pincel copia visual completo sem alterar texto, posição, tamanho ou ações; desfazer restaura (13.6419ms)
+✔ fotografia independe de alterações na origem e não compartilha listas entre destinos (4.864ms)
+✔ pincel ignora destinos travados, especiais ou removidos e limpa efeitos antigos (5.8194ms)
+✔ clique com pincel chega ao destino no canvas mesmo em modo formulário; vazio não cria elementos (0.5998ms)
+✔ pincel completo transfere vínculos com seus eventos, código e abertura; autorreferência aponta ao destino (5.7243ms)
+✔ opções isolam efeitos e código e preservam as categorias desmarcadas (3.3129ms)
+✔ falha de disco mantém recuperação, avisa e tenta novamente (4.4101ms)
+✔ reabertura recupera alterações locais em vez do disco antigo (1.7575ms)
+✔ sem pendências, carrega o disco; recuperação inválida não substitui projeto válido (1.6661ms)
+✔ serializa gravações e não descarta edição feita durante uma gravação (1.1296ms)
+✔ armazenamento cheio avisa e propaga o erro para reduzir o histórico (1.3626ms)
+✔ antes de fechar, mantém marcador até a confirmação do disco (1.0008ms)
+✔ falhas sucessivas limitam o intervalo a 30 segundos e preservam a cópia local (1.4173ms)
+✔ falha antes de carregar a tela exibe aviso quando o documento fica pronto (2.1566ms)
+✔ 1. pedido explícito: aplica sem perguntar e undo volta (5.5927ms)
+✔ 2. regressão no documento é detectada e corrigida sozinha (1.7359ms)
+✔ 2b. undo depois de correção automática desfaz o pedido inteiro em um passo (0.6291ms)
+✔ 2c. propriedade aninhada protegida é restaurada (0.5017ms)
+✔ 3. referência ambígua: pergunta qual, sem aplicar nada (1.3891ms)
+✔ 4. pedido amplo: aplica no resto e pergunta só sobre o protegido (0.9801ms)
+✔ 4b. pergunta ignorada não é repetida (1.0606ms)
+✔ 5. ajuste em decisão implícita: aplica sem perguntar e vira protegida (0.4481ms)
+✔ 5b. mudança fora do escopo em algo não protegido é permitida e registrada como implícita (0.5053ms)
+✔ 6. remoção explícita: aplica, avisa undo, e undo traz de volta (0.7194ms)
+✔ 6b. elemento protegido que some sem ter sido pedido é restaurado (0.5869ms)
+✔ 7. correção falha 2 vezes: nada é aplicado e o conflito vira pergunta (0.9324ms)
+✔ 8. memória por projeto: decisão no A não afeta o B (0.3962ms)
+✔ extra: ação irreversível sempre pede confirmação (0.3364ms)
+✔ extra: pedido contraditório pergunta qual leitura prevalece (0.4678ms)
+✔ classificador: botão, campo, selo, interruptor, cartão, menu e navegação (3.5658ms)
+✔ núcleo: reconhecer propõe; aceitar agrupa com tipo fixo num passo desfazível (15.5664ms)
+✔ contrato: props são a API, limites avisam e tipo só muda com migração explícita (7.673ms)
+✔ vínculos: referência versionada vira evento com sinal; auditoria mostra ⚡ quando quebra (68.1263ms)
+✔ primeiros passos: marca pelo que a pessoa faz e mede contra as metas (1.5262ms)
+✔ preferências quebradas não interrompem a abertura (2.3607ms)
+✔ HTML nativo reconhece objetos, texto, hierarquia e números (2.7987ms)
+✔ HTML nativo preserva entidades sem executar tags ou scripts (0.5812ms)
+✔ HTML acusa identidade duplicada e entrada sem elemento (0.797ms)
+✔ HTML não promete conversão de flex, unidades relativas ou classes (0.3892ms)
+✔ importação nativa é uma transação, com IDs sincronizados na Forja (9.8483ms)
+✔ importar, salvar e reabrir preserva identidades, fonte e hierarquia (12.7269ms)
+✔ parser inválido não muda documento, seleção ou histórico (0.3748ms)
+✔ revisão esperada obsoleta não executa mutação (2.0568ms)
+✔ comparação de três versões conserva mudança local não conflitante (13.455ms)
+✔ conflito local/fonte não sobrescreve e exige resolução declarada (10.6451ms)
+✔ resolução Local conserva valor autoral e atualiza a base de comparação (13.8581ms)
+✔ plano antigo de reimportação não altera revisão mais nova (10.4757ms)
+✔ remoção, inclusão ou troca de tipo não desaparece silenciosamente (7.1071ms)
+✔ porta inexistente tem diagnóstico e não gera runtime enganoso (0.6607ms)
+✔ nó ausente, tipo incompatível e ID duplicado são diagnosticados (0.4129ms)
+✔ runtime válido mantém fluxo e remove fios de nós desligados (0.3655ms)
+✔ formato futuro não substitui documento aberto (0.276ms)
+✔ índice canônico Bíblia e GDD contém os 53 requisitos (1.9145ms)
+✔ fallback preserva zero, false e texto vazio; corrige apenas dados inválidos (12.4076ms)
+✔ recuperação seletiva mantém aparência nova, restaura evento e permite Voltar/Refazer (4.1408ms)
+✔ recuperação parcial rejeita alvo órfão e permite recuperar o conjunto dependente (6.2014ms)
+✔ comparação inclui empilhamento, tela e dados internos sem truncar valores (1.0706ms)
+✔ carregar projeto danificado usa último estado válido e preserva o original (4.375ms)
+✔ ciclos, tipos desconhecidos e ações com alvo ausente são recuperados sem apagar o original (8.71ms)
+✔ salvamento truncado mantém cursor e documento coerentes após Voltar (15.9091ms)
+✔ grupo encapsula peças, código e comportamentos em artefato reutilizável (16.1822ms)
+✔ agrupar pai e filho mantém a composição interna (6.252ms)
+✔ nomes normalizados preservam siglas e marcas conhecidas (1.5325ms)
+✔ falha no comando reverte documento e histórico e preserva o estado que falhou (1.3399ms)
+✔ dados internos e propriedades numéricas aninhadas inválidas são recuperados (1.1788ms)
+✔ principal corrompido abre backup e impede sobrescrever o original silenciosamente (2.7327ms)
+✔ falha de armazenamento é visível e não apaga a última cópia íntegra (0.446ms)
+✔ nome e rótulo podem ser auditados e corrigidos em um passo desfazível (1.9582ms)
+✔ onze modelos de referência são nativos, válidos e têm alvos internos remapeados (398.7988ms)
+✔ ribbons têm três abas exclusivas e primeira aba aberta (0.5951ms)
+✔ paletas e galerias transportam seus parâmetros no runtime (149.4811ms)
+✔ instâncias do mesmo modelo não controlam elementos de outra instância (187.4664ms)
+✔ telemetria distingue retorno e falha de handler sem texto de documento (4.1509ms)
+✔ botão direito fixa e recolhe grupo no escopo da aba (0.636ms)
+✔ compactação prioriza grupo menos usado e respeita fixação (0.4472ms)
+✔ HTML gerado inclui catálogo System, overflow real e todos os comandos (4.4422ms)
+✔ importação de temas falha sem gravar um lote parcialmente válido (1.1838ms)
+✔ catálogo de temas embutido preserva nomes e impede fechamento de script (14.5658ms)
+✔ retângulo inclui container vazio e seleciona o pai uma única vez (1.9908ms)
+✔ Alt seleciona por interseção; padrão exige objeto inteiro (0.2252ms)
+✔ pais ocultos e bloqueados impedem seleção dos descendentes (0.2185ms)
+✔ ciclo de parentesco inválido não bloqueia a ferramenta (0.2101ms)
+✔ selecionar tudo e inverter ignoram objetos ocultos e bloqueados (1.368ms)
+✔ menuHefestus: modelo nativo válido, sinais e alvos internos (1080.6739ms)
+✔ janelaTesteHefestus: modelo nativo válido, sinais e alvos internos (60.8941ms)
+✔ menuAxiom: modelo nativo válido, sinais e alvos internos (623.4755ms)
+✔ Hefestus: uma aba por aba do menu real, com troca exclusiva; Axiom: código de perfil editável (0.8273ms)
+✔ condições: mesma gramática, a fonte de estado muda entre editor e artefato (3.5717ms)
+✔ abas: formato antigo (lista de tipos) continua valendo, excedentes vão para Mais (1.2753ms)
+✔ estado do editor vem da seleção do núcleo (8.0637ms)
+✔ orçamento de superfície nos menus e faixas feitos pelo formulário (0.8834ms)
+✔ grafo de modelos: semver, ciclo recusado, impacto, linhagem e encaixes (3.2969ms)
+✖ semente meta: o próprio editor como modelos e o manifesto do Hefestus (42.6814ms)
+✔ temas canônicos preservam contraste e superfícies sem branco puro (2.5662ms)
+✔ cores injetadas, branco em painel e contraste insuficiente são rejeitados (0.2366ms)
+✔ System respeita modo do SO, alto contraste e mudança de preferência (0.8609ms)
+✔ tema equivalente é reaproveitado e exportação tem contrato portátil (0.7159ms)
+✔ nomes iguais não provam equivalência e variantes são mantidas (1.2393ms)
+✔ unificação exige revisão e mantém aliases, comandos e fonte original (3.345ms)
+✔ reversão não sobrescreve alterações posteriores de layout (1.0232ms)
+✔ caminho: ler e escrever preservam a forma (arcos, relativos, quadráticas) (2.774ms)
+✔ booleanas: áreas corretas, arestas coincidentes e formas separadas (29.2262ms)
+✔ nós: inserir preserva a curva e alternar reto/suave (0.7305ms)
+✔ núcleo: booleana, converter em vetor e editar nós viram comandos desfazíveis (28.0502ms)
+✔ agente: combinar formas e converter em vetor por texto (24.7676ms)
+✔ importar SVG: path, círculo, grupo com transform e cores (4.5477ms)
+✔ máscara: recorta o alvo com o contorno da forma da frente e libera (7.7307ms)
+✔ booleana devolve curvas de Bézier (poucos nós) e mantém a geometria (4.8984ms)
+✔ preferências antigas não reabrem o formulário híbrido na prévia (1.8753ms)
+✔ Designer preserva modo híbrido e configuração válida (0.2456ms)
+✔ Web pausa híbrido e preferências inválidas recebem valores utilizáveis (0.2159ms)
+ℹ tests 340
+ℹ suites 0
+ℹ pass 334
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20773.7139
+
+✖ failing tests:
+
+test at testes\hephaestus-preview2.test.mjs:37:1
+✖ Runtime: press ignores secondary mouse button, scroll supplies coordinates, stop detaches (1.0944ms)
+  Error: Conexões inválidas no Visual Script: ID de fio duplicado: undefined
+      at scriptParaRuntime (file:///C:/workspace/programas-hephaestus/hefestus/js/nucleo/visualScript.js:231:35)
+      at script (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:35:30)
+      at file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:38:47
+      at environment (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:33:6)
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:37:102)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    codigo: 'SCRIPT_INVALIDO',
+    diagnosticos: [ { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'position', ligacao: undefined }, { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'position', ligacao: undefined } ]
+  }
+
+test at testes\hephaestus-preview2.test.mjs:41:1
+✖ Runtime: state, sticky and concurrent scroll locks restore original styles on stop (0.4187ms)
+  Error: Conexões inválidas no Visual Script: ID de fio duplicado: undefined
+      at scriptParaRuntime (file:///C:/workspace/programas-hephaestus/hefestus/js/nucleo/visualScript.js:231:35)
+      at script (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:35:30)
+      at file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:43:43
+      at environment (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:33:6)
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:41:95)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    codigo: 'SCRIPT_INVALIDO',
+    diagnosticos: [ { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'lock2', ligacao: undefined }, { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'sticky', ligacao: undefined }, { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'state', ligacao: undefined } ]
+  }
+
+test at testes\hephaestus-preview2.test.mjs:46:1
+✖ Runtime: a different node releases a named scroll lock without releasing other locks (0.4097ms)
+  Error: Conexões inválidas no Visual Script: ID de fio duplicado: undefined
+      at scriptParaRuntime (file:///C:/workspace/programas-hephaestus/hefestus/js/nucleo/visualScript.js:231:35)
+      at script (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:35:30)
+      at file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:48:33
+      at environment (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:33:6)
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus-preview2.test.mjs:46:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    codigo: 'SCRIPT_INVALIDO',
+    diagnosticos: [ { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'modal', ligacao: undefined }, { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'releaseMenu', ligacao: undefined }, { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'releaseModal', ligacao: undefined } ]
+  }
+
+test at testes\hephaestus.test.mjs:44:1
+✖ Visual Script: Ao arrastar entrega deltas e remove ouvintes ao parar (0.7885ms)
+  Error: Conexões inválidas no Visual Script: ID de fio duplicado: undefined
+      at scriptParaRuntime (file:///C:/workspace/programas-hephaestus/hefestus/js/nucleo/visualScript.js:231:35)
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/hephaestus.test.mjs:48:33)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    codigo: 'SCRIPT_INVALIDO',
+    diagnosticos: [ { nivel: 'erro', codigo: 'FIO_DUPLICADO', msg: 'ID de fio duplicado: undefined', grafo: 'g', no: 'log', ligacao: undefined } ]
+  }
+
+test at testes\mcp.test.mjs:65:1
+✖ fichas em docs/ia/mcp estão em dia com o servidor (874.1538ms)
+  AssertionError [ERR_ASSERTION]: Fichas desatualizadas: rode npm run mcp:fichas
+  C:\workspace\programas-hephaestus\hefestus\docs\ia\mcp\FERRAMENTAS.md
+
+
+  1 !== 0
+
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/mcp.test.mjs:67:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at testes\superficies.test.mjs:89:1
+✖ semente meta: o próprio editor como modelos e o manifesto do Hefestus (42.6814ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+  + [
+  +   'versão do programa inválida: "2.1.0-preview.1"',
+  +   'ferramenta prepararHTMLImportado: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta analisarHTMLImportado: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta recomendarMenu: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta auditarMenus: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta motorMenus: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta migrarMenu: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta CommandRegistry: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta auditar: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta contraste: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta gerarHTML: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta gerarArtefato: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta lerSVG: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta booleana: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta aplicarLayouts: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta gerarTamanhos: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta planoComportamento: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta diferenca: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta examinarDocumento: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta classificar: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta avaliarCondicao: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta candidatosEquivalencia: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta ranquear: versão inválida "2.1.0-preview.1"',
+  +   'ferramenta satisfaz: versão inválida "2.1.0-preview.1"'
+  + ]
+  - []
+
+      at TestContext.<anonymous> (file:///C:/workspace/programas-hephaestus/hefestus/testes/superficies.test.mjs:97:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'versão do programa inválida: "2.1.0-preview.1"', 'ferramenta prepararHTMLImportado: versão inválida "2.1.0-preview.1"', 'ferramenta analisarHTMLImportado: versão inválida "2.1.0-preview.1"', 'ferramenta recomendarMenu: versão inválida "2.1.0-preview.1"', 'ferramenta auditarMenus: versão inválida "2.1.0-preview.1"', 'ferramenta motorMenus: versão inválida "2.1.0-preview.1"', 'ferramenta migrarMenu: versão inválida "2.1.0-preview.1"', 'ferramenta CommandRegistry: versão inválida "2.1.0-preview.1"', 'ferramenta auditar: versão inválida "2.1.0-preview.1"', 'ferramenta contraste: versão inválida "2.1.0-preview.1"', 'ferramenta gerarHTML: versão inválida "2.1.0-preview.1"', 'ferramenta gerarArtefato: versão inválida "2.1.0-preview.1"', 'ferramenta lerSVG: versão inválida "2.1.0-preview.1"', 'ferramenta booleana: versão inválida "2.1.0-preview.1"', 'ferramenta aplicarLayouts: versão inválida "2.1.0-preview.1"', 'ferramenta gerarTamanhos: versão inválida "2.1.0-preview.1"', 'ferramenta planoComportamento: versão inválida "2.1.0-preview.1"', 'ferramenta diferenca: versão inválida "2.1.0-preview.1"', 'ferramenta examinarDocumento: versão inválida "2.1.0-preview.1"', 'ferramenta classificar: versão inválida "2.1.0-preview.1"', 'ferramenta avaliarCondicao: versão inválida "2.1.0-preview.1"', 'ferramenta candidatosEquivalencia: versão inválida "2.1.0-preview.1"', 'ferramenta ranquear: versão inválida "2.1.0-preview.1"', 'ferramenta satisfaz: versão inválida "2.1.0-preview.1"' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

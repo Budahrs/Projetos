@@ -1,0 +1,1277 @@
+[
+  {
+    "id": "open",
+    "nome": "Abrir PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "open"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "new",
+    "nome": "Novo PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "new"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "save",
+    "nome": "Salvar cópia",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "save"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "print",
+    "nome": "Imprimir",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "print"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "officein",
+    "nome": "Word / Excel / PowerPoint → PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "officein"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fromimages",
+    "nome": "Imagens → PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fromimages"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "html",
+    "nome": "HTML → PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "html"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "docx",
+    "nome": "PDF → Word",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "docx"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "xlsx",
+    "nome": "PDF → Excel",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "xlsx"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "pptx",
+    "nome": "PDF → PowerPoint",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "pptx"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "markdown",
+    "nome": "PDF → Markdown",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "markdown"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "pdfa",
+    "nome": "PDF/A",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "pdfa"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "pdfx",
+    "nome": "PDF/X CMYK (experimental)",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "pdfx"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "jpg",
+    "nome": "Páginas → JPG",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "jpg"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "png",
+    "nome": "Página → PNG",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "png"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "allpng",
+    "nome": "Todas → PNG",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "allpng"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "textout",
+    "nome": "Extrair texto / buscar",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "textout"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "metadata",
+    "nome": "Propriedades",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "metadata"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "close",
+    "nome": "Fechar documento",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "close"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "undo",
+    "nome": "Desfazer",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "undo"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "redo",
+    "nome": "Refazer",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "redo"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "objects",
+    "nome": "Editar texto original / objetos",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "objects"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "text",
+    "nome": "Adicionar texto",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "text"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "image",
+    "nome": "Inserir imagem",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "image"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "crop",
+    "nome": "Recortar página",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "crop"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "uncrop",
+    "nome": "Remover recorte",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "uncrop"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "cut-native",
+    "nome": "Recortar texto selecionado",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "cut-native"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "copy-native",
+    "nome": "Copiar texto selecionado",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "copy-native"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "paste-native",
+    "nome": "Colar no campo de texto",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "paste-native"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "quickcustom",
+    "nome": "Personalizar acesso rápido",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "quickcustom"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "themes",
+    "nome": "Temas",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "themes"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "center",
+    "nome": "Todas as ferramentas",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "center"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "prev",
+    "nome": "Página anterior",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "prev"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "next",
+    "nome": "Próxima página",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "next"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "zoomin",
+    "nome": "Ampliar",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "zoomin"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "zoomout",
+    "nome": "Reduzir zoom",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "zoomout"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fit",
+    "nome": "Ajustar à janela",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fit"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "ribbon",
+    "nome": "Recolher / expandir faixa",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "ribbon"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fullscreen",
+    "nome": "Tela cheia",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fullscreen"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "rotate",
+    "nome": "Girar 90°",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "rotate"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "left",
+    "nome": "Mover antes",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "left"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "right",
+    "nome": "Mover depois",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "right"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "duplicate",
+    "nome": "Duplicar página",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "duplicate"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "blank",
+    "nome": "Página em branco",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "blank"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "delete",
+    "nome": "Excluir página",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "delete"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "numbers",
+    "nome": "Numerar páginas",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "numbers"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "watermark",
+    "nome": "Marca d'água",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "watermark"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "merge",
+    "nome": "Juntar PDFs",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "merge"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "insertpdf",
+    "nome": "Inserir outro PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "insertpdf"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "extract",
+    "nome": "Extrair páginas",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "extract"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "mix",
+    "nome": "Intercalar PDFs",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "mix"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "split",
+    "nome": "Dividir por página",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "split"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "splitgroups",
+    "nome": "Dividir em grupos",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "splitgroups"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "splitsize",
+    "nome": "Dividir por tamanho",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "splitsize"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "splitbookmarks",
+    "nome": "Dividir por marcadores",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "splitbookmarks"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "splitranges",
+    "nome": "Intervalos personalizados",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "splitranges"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "comment",
+    "nome": "Comentário",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "comment"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "highlight",
+    "nome": "Realçar área",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "highlight"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "rectangle",
+    "nome": "Retângulo",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "rectangle"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "drawsignature",
+    "nome": "Assinatura desenhada",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "drawsignature"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "forms",
+    "nome": "Preencher formulário",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "forms"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fieldtext",
+    "nome": "Criar campo de texto",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fieldtext"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fieldcheck",
+    "nome": "Criar caixa de seleção",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fieldcheck"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fieldcombo",
+    "nome": "Criar lista",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fieldcombo"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "fieldradio",
+    "nome": "Criar escolha única",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "fieldradio"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "capture",
+    "nome": "Capturar área da tela",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "capture"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "scan",
+    "nome": "Digitalizar (scanner)",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "scan"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "clipboard",
+    "nome": "Colar imagem",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "clipboard"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "reconstructimage",
+    "nome": "Reconstruir imagem",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "reconstructimage"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "reconstructpage",
+    "nome": "Reconstruir página atual",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "reconstructpage"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "searchable",
+    "nome": "OCR → PDF pesquisável",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "searchable"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "ocr",
+    "nome": "OCR integrado",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "ocr"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "compare",
+    "nome": "Comparar PDFs",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "compare"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "compress",
+    "nome": "Compactar",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "compress"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "repair",
+    "nome": "Reparar arquivo",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "repair"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "extractimages",
+    "nome": "Extrair imagens",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "extractimages"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "summary",
+    "nome": "Resumir documento",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "summary"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "translate",
+    "nome": "Traduzir texto ou PDF",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "translate"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "batch",
+    "nome": "Lote / fluxos",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "batch"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "protect",
+    "nome": "Proteger com senha",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "protect"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "unlock",
+    "nome": "Remover senha da cópia",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "unlock"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "redact",
+    "nome": "Censurar área",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "redact"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "sign",
+    "nome": "Assinar com A1 / PFX",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "sign"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "verify",
+    "nome": "Verificar assinaturas",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "verify"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  },
+  {
+    "id": "help",
+    "nome": "Recursos e limitações",
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "pdf-studio",
+      "comando": "help"
+    },
+    "origem": {
+      "projeto": "Editor PDF do usuário",
+      "arquivo": "ProfessionalMenu.cs",
+      "licenca": "Projeto local; licenças de dependências separadas"
+    },
+    "estado": "implementado-no-host"
+  }
+]

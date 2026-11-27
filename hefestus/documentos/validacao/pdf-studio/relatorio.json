@@ -1,0 +1,17 @@
+{
+  "executadoEm": "2026-10-22T14:27:39.130Z",
+  "plataforma": "win32",
+  "verificacoes": [
+    "Saúde e protocolo JSON do motor distribuído",
+    "Criar, gravar e inspecionar PDF",
+    "Editar com parâmetros e extrair texto do PDF resultante",
+    "Juntar dois documentos",
+    "Extrair página por contrato",
+    "Aplicativo Tauri compilado, motor incluído como recurso e instalador NSIS gerado"
+  ],
+  "limites": [
+    "Instalador produzido; instalação em computador limpo não foi executada por este teste.",
+    "Este teste não valida OCR, scanner, Office, IA, assinaturas ou conformidade de PDF.",
+    "A lista de ligações pendentes permanece em LIGACOES.md."
+  ]
+}

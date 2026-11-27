@@ -1,0 +1,2680 @@
+{
+  "formato": "hefestus.menu",
+  "versao": 1,
+  "id": "pdf-studio-profissional",
+  "nome": "PDF Studio · faixa por tarefas",
+  "designer": {
+    "estilo": "faixa",
+    "prefixoSinal": "pdf",
+    "limiteVisivel": 3,
+    "abas": [
+      {
+        "id": "area-0",
+        "nome": "Arquivo e páginas",
+        "grupos": [
+          {
+            "id": "g0-0",
+            "nome": "Projeto",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "new",
+                "rotulo": "Novo PDF",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "Ctrl+N",
+                "descricao": "Novo PDF",
+                "ferramentaId": "new",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "print",
+                "rotulo": "Imprimir",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "Ctrl+P",
+                "descricao": "Imprimir",
+                "ferramentaId": "print",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "metadata",
+                "rotulo": "Propriedades",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Propriedades",
+                "ferramentaId": "metadata",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g0-1",
+            "nome": "Páginas",
+            "icone": "paginas",
+            "comandos": [
+              {
+                "id": "rotate",
+                "rotulo": "Girar 90°",
+                "icone": "paginas",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Girar 90°",
+                "ferramentaId": "rotate",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "left",
+                "rotulo": "Mover antes",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Mover antes",
+                "ferramentaId": "left",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "right",
+                "rotulo": "Mover depois",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Mover depois",
+                "ferramentaId": "right",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "duplicate",
+                "rotulo": "Duplicar página",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Duplicar página",
+                "ferramentaId": "duplicate",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "blank",
+                "rotulo": "Página em branco",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Página em branco",
+                "ferramentaId": "blank",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "delete",
+                "rotulo": "Excluir página",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Excluir página",
+                "ferramentaId": "delete",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "numbers",
+                "rotulo": "Numerar páginas",
+                "icone": "paginas",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Numerar páginas",
+                "ferramentaId": "numbers",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g0-2",
+            "nome": "Dividir e combinar",
+            "icone": "juntar",
+            "comandos": [
+              {
+                "id": "merge",
+                "rotulo": "Juntar PDFs",
+                "icone": "juntar",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Juntar PDFs",
+                "ferramentaId": "merge",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "extract",
+                "rotulo": "Extrair páginas",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Extrair páginas",
+                "ferramentaId": "extract",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "split",
+                "rotulo": "Dividir por página",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Dividir por página",
+                "ferramentaId": "split",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "splitgroups",
+                "rotulo": "Dividir em grupos",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Dividir em grupos",
+                "ferramentaId": "splitgroups",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "splitsize",
+                "rotulo": "Dividir por tamanho",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Dividir por tamanho",
+                "ferramentaId": "splitsize",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "splitbookmarks",
+                "rotulo": "Dividir por marcadores",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Dividir por marcadores",
+                "ferramentaId": "splitbookmarks",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "splitranges",
+                "rotulo": "Intervalos personalizados",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Intervalos personalizados",
+                "ferramentaId": "splitranges",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "mix",
+                "rotulo": "Intercalar PDFs",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Intercalar PDFs",
+                "ferramentaId": "mix",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "insertpdf",
+                "rotulo": "Inserir outro PDF",
+                "icone": "juntar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Inserir outro PDF",
+                "ferramentaId": "insertpdf",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-1",
+        "nome": "Editar e preencher",
+        "grupos": [
+          {
+            "id": "g1-0",
+            "nome": "Conteúdo",
+            "icone": "editar",
+            "comandos": [
+              {
+                "id": "objects",
+                "rotulo": "Editar texto original / objetos",
+                "icone": "editar",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Editar texto original / objetos",
+                "ferramentaId": "objects",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "text",
+                "rotulo": "Adicionar texto",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Adicionar texto",
+                "ferramentaId": "text",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "image",
+                "rotulo": "Inserir imagem",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Inserir imagem",
+                "ferramentaId": "image",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "highlight",
+                "rotulo": "Realçar área",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Realçar área",
+                "ferramentaId": "highlight",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "rectangle",
+                "rotulo": "Retângulo",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Retângulo",
+                "ferramentaId": "rectangle",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "comment",
+                "rotulo": "Comentário",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Comentário",
+                "ferramentaId": "comment",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "watermark",
+                "rotulo": "Marca d'água",
+                "icone": "editar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Marca d'água",
+                "ferramentaId": "watermark",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g1-1",
+            "nome": "Formulários",
+            "icone": "formulario",
+            "comandos": [
+              {
+                "id": "forms",
+                "rotulo": "Preencher formulário",
+                "icone": "formulario",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Preencher formulário",
+                "ferramentaId": "forms",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "fieldtext",
+                "rotulo": "Criar campo de texto",
+                "icone": "formulario",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Criar campo de texto",
+                "ferramentaId": "fieldtext",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "fieldcheck",
+                "rotulo": "Criar caixa de seleção",
+                "icone": "formulario",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Criar caixa de seleção",
+                "ferramentaId": "fieldcheck",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "fieldcombo",
+                "rotulo": "Criar lista",
+                "icone": "formulario",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Criar lista",
+                "ferramentaId": "fieldcombo",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "fieldradio",
+                "rotulo": "Criar escolha única",
+                "icone": "formulario",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Criar escolha única",
+                "ferramentaId": "fieldradio",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g1-2",
+            "nome": "Área da página",
+            "icone": "recortar",
+            "comandos": [
+              {
+                "id": "crop",
+                "rotulo": "Recortar página",
+                "icone": "recortar",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Recortar página",
+                "ferramentaId": "crop",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "uncrop",
+                "rotulo": "Remover recorte",
+                "icone": "recortar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Remover recorte",
+                "ferramentaId": "uncrop",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-2",
+        "nome": "Capturar e reconhecer",
+        "grupos": [
+          {
+            "id": "g2-0",
+            "nome": "Captura",
+            "icone": "captura",
+            "comandos": [
+              {
+                "id": "capture",
+                "rotulo": "Capturar área da tela",
+                "icone": "captura",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Capturar área da tela",
+                "ferramentaId": "capture",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "scan",
+                "rotulo": "Digitalizar (scanner)",
+                "icone": "captura",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Digitalizar (scanner)",
+                "ferramentaId": "scan",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "clipboard",
+                "rotulo": "Colar imagem",
+                "icone": "captura",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Colar imagem",
+                "ferramentaId": "clipboard",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "reconstructimage",
+                "rotulo": "Reconstruir imagem",
+                "icone": "captura",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Reconstruir imagem",
+                "ferramentaId": "reconstructimage",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g2-1",
+            "nome": "Reconhecimento",
+            "icone": "texto",
+            "comandos": [
+              {
+                "id": "reconstructpage",
+                "rotulo": "Reconstruir página atual",
+                "icone": "texto",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Reconstruir página atual",
+                "ferramentaId": "reconstructpage",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "searchable",
+                "rotulo": "OCR → PDF pesquisável",
+                "icone": "texto",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "OCR → PDF pesquisável",
+                "ferramentaId": "searchable",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "ocr",
+                "rotulo": "OCR integrado",
+                "icone": "texto",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "OCR integrado",
+                "ferramentaId": "ocr",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-3",
+        "nome": "Converter e exportar",
+        "grupos": [
+          {
+            "id": "g3-0",
+            "nome": "Entrada",
+            "icone": "abrir",
+            "comandos": [
+              {
+                "id": "officein",
+                "rotulo": "Word / Excel / PowerPoint → PDF",
+                "icone": "abrir",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Word / Excel / PowerPoint → PDF",
+                "ferramentaId": "officein",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "fromimages",
+                "rotulo": "Imagens → PDF",
+                "icone": "abrir",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Imagens → PDF",
+                "ferramentaId": "fromimages",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "html",
+                "rotulo": "HTML → PDF",
+                "icone": "abrir",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "HTML → PDF",
+                "ferramentaId": "html",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g3-1",
+            "nome": "Documentos",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "docx",
+                "rotulo": "PDF → Word",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "PDF → Word",
+                "ferramentaId": "docx",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "xlsx",
+                "rotulo": "PDF → Excel",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "PDF → Excel",
+                "ferramentaId": "xlsx",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "pptx",
+                "rotulo": "PDF → PowerPoint",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "PDF → PowerPoint",
+                "ferramentaId": "pptx",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "markdown",
+                "rotulo": "PDF → Markdown",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "PDF → Markdown",
+                "ferramentaId": "markdown",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "pdfa",
+                "rotulo": "PDF/A",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "PDF/A",
+                "ferramentaId": "pdfa",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "pdfx",
+                "rotulo": "PDF/X CMYK (experimental)",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "PDF/X CMYK (experimental)",
+                "ferramentaId": "pdfx",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g3-2",
+            "nome": "Imagens e texto",
+            "icone": "imagem",
+            "comandos": [
+              {
+                "id": "jpg",
+                "rotulo": "Páginas → JPG",
+                "icone": "imagem",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Páginas → JPG",
+                "ferramentaId": "jpg",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "png",
+                "rotulo": "Página → PNG",
+                "icone": "imagem",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Página → PNG",
+                "ferramentaId": "png",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "allpng",
+                "rotulo": "Todas → PNG",
+                "icone": "imagem",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Todas → PNG",
+                "ferramentaId": "allpng",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "extractimages",
+                "rotulo": "Extrair imagens",
+                "icone": "imagem",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Extrair imagens",
+                "ferramentaId": "extractimages",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "textout",
+                "rotulo": "Extrair texto / buscar",
+                "icone": "imagem",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Extrair texto / buscar",
+                "ferramentaId": "textout",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-4",
+        "nome": "Proteger e revisar",
+        "grupos": [
+          {
+            "id": "g4-0",
+            "nome": "Otimização",
+            "icone": "ajustes",
+            "comandos": [
+              {
+                "id": "compress",
+                "rotulo": "Compactar",
+                "icone": "ajustes",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Compactar",
+                "ferramentaId": "compress",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "repair",
+                "rotulo": "Reparar arquivo",
+                "icone": "ajustes",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Reparar arquivo",
+                "ferramentaId": "repair",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g4-1",
+            "nome": "Segurança",
+            "icone": "cadeado",
+            "comandos": [
+              {
+                "id": "protect",
+                "rotulo": "Proteger com senha",
+                "icone": "cadeado",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Proteger com senha",
+                "ferramentaId": "protect",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "unlock",
+                "rotulo": "Remover senha da cópia",
+                "icone": "cadeado",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Remover senha da cópia",
+                "ferramentaId": "unlock",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "redact",
+                "rotulo": "Censurar área",
+                "icone": "cadeado",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Censurar área",
+                "ferramentaId": "redact",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g4-2",
+            "nome": "Assinar e comparar",
+            "icone": "assinar",
+            "comandos": [
+              {
+                "id": "sign",
+                "rotulo": "Assinar com A1 / PFX",
+                "icone": "assinar",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Assinar com A1 / PFX",
+                "ferramentaId": "sign",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "verify",
+                "rotulo": "Verificar assinaturas",
+                "icone": "assinar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Verificar assinaturas",
+                "ferramentaId": "verify",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "drawsignature",
+                "rotulo": "Assinatura desenhada",
+                "icone": "assinar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Assinatura desenhada",
+                "ferramentaId": "drawsignature",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "compare",
+                "rotulo": "Comparar PDFs",
+                "icone": "assinar",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Comparar PDFs",
+                "ferramentaId": "compare",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-5",
+        "nome": "IA e automação",
+        "grupos": [
+          {
+            "id": "g5-0",
+            "nome": "Inteligência local",
+            "icone": "ideia",
+            "comandos": [
+              {
+                "id": "summary",
+                "rotulo": "Resumir documento",
+                "icone": "ideia",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Resumir documento",
+                "ferramentaId": "summary",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "translate",
+                "rotulo": "Traduzir texto ou PDF",
+                "icone": "ideia",
+                "destaque": false,
+                "atalho": "",
+                "descricao": "Traduzir texto ou PDF",
+                "ferramentaId": "translate",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "g5-1",
+            "nome": "Automação",
+            "icone": "fluxo",
+            "comandos": [
+              {
+                "id": "batch",
+                "rotulo": "Lote / fluxos",
+                "icone": "fluxo",
+                "destaque": true,
+                "atalho": "",
+                "descricao": "Lote / fluxos",
+                "ferramentaId": "batch",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "codigos": {
+    "web": {
+      "origem": "gerado",
+      "estado": "executável",
+      "texto": "<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width\"><title>PDF Studio · faixa por tarefas</title><style>body{margin:0;font:14px system-ui;background:#eef2f6;color:#182b36}button{min-height:36px;padding:8px 12px;border:1px solid #87989f;border-radius:4px;background:white;color:inherit;cursor:pointer}button:focus-visible{outline:3px solid #12665d;outline-offset:2px}.abas{display:flex;gap:4px;flex-wrap:wrap;padding:8px;background:#173d38;color:white}.abas button[aria-selected=true]{background:#d8f88c;color:#182b36}.painel{display:flex;flex-wrap:wrap;gap:12px;padding:12px;background:white}.painel[hidden]{display:none}.grupo{border-right:1px solid #87989f;padding:0 12px 0 0;max-width:400px}.acoes{display:flex;flex-wrap:wrap;gap:4px}.destaque{font-weight:700;background:#e3f2e9}h2{font-size:12px;color:#4b6068;margin:8px 0}#estado{padding:16px}</style><nav class=\"abas\" role=\"tablist\" aria-label=\"Áreas\"><button role=\"tab\" aria-selected=\"true\" data-tab=\"area-0\" aria-controls=\"area-0\">Arquivo e páginas</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-1\" aria-controls=\"area-1\">Editar e preencher</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-2\" aria-controls=\"area-2\">Capturar e reconhecer</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-3\" aria-controls=\"area-3\">Converter e exportar</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-4\" aria-controls=\"area-4\">Proteger e revisar</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-5\" aria-controls=\"area-5\">IA e automação</button></nav><section class=\"painel\" role=\"tabpanel\" id=\"area-0\" ><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"new\" title=\"Novo PDF\">Novo PDF</button><button class=\"\" data-command=\"print\" title=\"Imprimir\">Imprimir</button><button class=\"\" data-command=\"metadata\" title=\"Propriedades\">Propriedades</button></div><h2>Projeto</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"rotate\" title=\"Girar 90°\">Girar 90°</button><button class=\"\" data-command=\"left\" title=\"Mover antes\">Mover antes</button><button class=\"\" data-command=\"right\" title=\"Mover depois\">Mover depois</button><button class=\"\" data-command=\"duplicate\" title=\"Duplicar página\">Duplicar página</button><button class=\"\" data-command=\"blank\" title=\"Página em branco\">Página em branco</button><button class=\"\" data-command=\"delete\" title=\"Excluir página\">Excluir página</button><button class=\"\" data-command=\"numbers\" title=\"Numerar páginas\">Numerar páginas</button></div><h2>Páginas</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"merge\" title=\"Juntar PDFs\">Juntar PDFs</button><button class=\"\" data-command=\"extract\" title=\"Extrair páginas\">Extrair páginas</button><button class=\"\" data-command=\"split\" title=\"Dividir por página\">Dividir por página</button><button class=\"\" data-command=\"splitgroups\" title=\"Dividir em grupos\">Dividir em grupos</button><button class=\"\" data-command=\"splitsize\" title=\"Dividir por tamanho\">Dividir por tamanho</button><button class=\"\" data-command=\"splitbookmarks\" title=\"Dividir por marcadores\">Dividir por marcadores</button><button class=\"\" data-command=\"splitranges\" title=\"Intervalos personalizados\">Intervalos personalizados</button><button class=\"\" data-command=\"mix\" title=\"Intercalar PDFs\">Intercalar PDFs</button><button class=\"\" data-command=\"insertpdf\" title=\"Inserir outro PDF\">Inserir outro PDF</button></div><h2>Dividir e combinar</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-1\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"objects\" title=\"Editar texto original / objetos\">Editar texto original / objetos</button><button class=\"\" data-command=\"text\" title=\"Adicionar texto\">Adicionar texto</button><button class=\"\" data-command=\"image\" title=\"Inserir imagem\">Inserir imagem</button><button class=\"\" data-command=\"highlight\" title=\"Realçar área\">Realçar área</button><button class=\"\" data-command=\"rectangle\" title=\"Retângulo\">Retângulo</button><button class=\"\" data-command=\"comment\" title=\"Comentário\">Comentário</button><button class=\"\" data-command=\"watermark\" title=\"Marca d&#39;água\">Marca d&#39;água</button></div><h2>Conteúdo</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"forms\" title=\"Preencher formulário\">Preencher formulário</button><button class=\"\" data-command=\"fieldtext\" title=\"Criar campo de texto\">Criar campo de texto</button><button class=\"\" data-command=\"fieldcheck\" title=\"Criar caixa de seleção\">Criar caixa de seleção</button><button class=\"\" data-command=\"fieldcombo\" title=\"Criar lista\">Criar lista</button><button class=\"\" data-command=\"fieldradio\" title=\"Criar escolha única\">Criar escolha única</button></div><h2>Formulários</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"crop\" title=\"Recortar página\">Recortar página</button><button class=\"\" data-command=\"uncrop\" title=\"Remover recorte\">Remover recorte</button></div><h2>Área da página</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-2\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"capture\" title=\"Capturar área da tela\">Capturar área da tela</button><button class=\"\" data-command=\"scan\" title=\"Digitalizar (scanner)\">Digitalizar (scanner)</button><button class=\"\" data-command=\"clipboard\" title=\"Colar imagem\">Colar imagem</button><button class=\"\" data-command=\"reconstructimage\" title=\"Reconstruir imagem\">Reconstruir imagem</button></div><h2>Captura</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"reconstructpage\" title=\"Reconstruir página atual\">Reconstruir página atual</button><button class=\"\" data-command=\"searchable\" title=\"OCR → PDF pesquisável\">OCR → PDF pesquisável</button><button class=\"\" data-command=\"ocr\" title=\"OCR integrado\">OCR integrado</button></div><h2>Reconhecimento</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-3\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"officein\" title=\"Word / Excel / PowerPoint → PDF\">Word / Excel / PowerPoint → PDF</button><button class=\"\" data-command=\"fromimages\" title=\"Imagens → PDF\">Imagens → PDF</button><button class=\"\" data-command=\"html\" title=\"HTML → PDF\">HTML → PDF</button></div><h2>Entrada</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"docx\" title=\"PDF → Word\">PDF → Word</button><button class=\"\" data-command=\"xlsx\" title=\"PDF → Excel\">PDF → Excel</button><button class=\"\" data-command=\"pptx\" title=\"PDF → PowerPoint\">PDF → PowerPoint</button><button class=\"\" data-command=\"markdown\" title=\"PDF → Markdown\">PDF → Markdown</button><button class=\"\" data-command=\"pdfa\" title=\"PDF/A\">PDF/A</button><button class=\"\" data-command=\"pdfx\" title=\"PDF/X CMYK (experimental)\">PDF/X CMYK (experimental)</button></div><h2>Documentos</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"jpg\" title=\"Páginas → JPG\">Páginas → JPG</button><button class=\"\" data-command=\"png\" title=\"Página → PNG\">Página → PNG</button><button class=\"\" data-command=\"allpng\" title=\"Todas → PNG\">Todas → PNG</button><button class=\"\" data-command=\"extractimages\" title=\"Extrair imagens\">Extrair imagens</button><button class=\"\" data-command=\"textout\" title=\"Extrair texto / buscar\">Extrair texto / buscar</button></div><h2>Imagens e texto</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-4\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"compress\" title=\"Compactar\">Compactar</button><button class=\"\" data-command=\"repair\" title=\"Reparar arquivo\">Reparar arquivo</button></div><h2>Otimização</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"protect\" title=\"Proteger com senha\">Proteger com senha</button><button class=\"\" data-command=\"unlock\" title=\"Remover senha da cópia\">Remover senha da cópia</button><button class=\"\" data-command=\"redact\" title=\"Censurar área\">Censurar área</button></div><h2>Segurança</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"sign\" title=\"Assinar com A1 / PFX\">Assinar com A1 / PFX</button><button class=\"\" data-command=\"verify\" title=\"Verificar assinaturas\">Verificar assinaturas</button><button class=\"\" data-command=\"drawsignature\" title=\"Assinatura desenhada\">Assinatura desenhada</button><button class=\"\" data-command=\"compare\" title=\"Comparar PDFs\">Comparar PDFs</button></div><h2>Assinar e comparar</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-5\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"summary\" title=\"Resumir documento\">Resumir documento</button><button class=\"\" data-command=\"translate\" title=\"Traduzir texto ou PDF\">Traduzir texto ou PDF</button></div><h2>Inteligência local</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"batch\" title=\"Lote / fluxos\">Lote / fluxos</button></div><h2>Automação</h2></section></section><p id=\"estado\" role=\"status\">Prévia da interface. Conecte os comandos ao motor do programa.</p><script>document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]');if(t){document.querySelectorAll('[role=tab]').forEach(b=>b.setAttribute('aria-selected',String(b===t)));document.querySelectorAll('[role=tabpanel]').forEach(p=>p.hidden=p.id!==t.dataset.tab);}const c=e.target.closest('[data-command]');if(c){document.querySelector('#estado').textContent='Comando: '+c.dataset.command;document.dispatchEvent(new CustomEvent('hefestus:comando',{detail:{id:c.dataset.command}}));}});</script></html>"
+    },
+    "desktopWpf": {
+      "origem": "gerado",
+      "estado": "fragmento: conectar comandos ao host",
+      "texto": "<TabControl xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">\n <TabItem Header=\"Arquivo e páginas\"><WrapPanel><GroupBox Header=\"Projeto\" Margin=\"4\"><WrapPanel><Button Content=\"Novo PDF\" Tag=\"new\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Imprimir\" Tag=\"print\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Propriedades\" Tag=\"metadata\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Páginas\" Margin=\"4\"><WrapPanel><Button Content=\"Girar 90°\" Tag=\"rotate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Mover antes\" Tag=\"left\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Mover depois\" Tag=\"right\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Duplicar página\" Tag=\"duplicate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Página em branco\" Tag=\"blank\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Excluir página\" Tag=\"delete\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Numerar páginas\" Tag=\"numbers\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Dividir e combinar\" Margin=\"4\"><WrapPanel><Button Content=\"Juntar PDFs\" Tag=\"merge\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair páginas\" Tag=\"extract\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir por página\" Tag=\"split\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir em grupos\" Tag=\"splitgroups\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir por tamanho\" Tag=\"splitsize\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir por marcadores\" Tag=\"splitbookmarks\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Intervalos personalizados\" Tag=\"splitranges\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Intercalar PDFs\" Tag=\"mix\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Inserir outro PDF\" Tag=\"insertpdf\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Editar e preencher\"><WrapPanel><GroupBox Header=\"Conteúdo\" Margin=\"4\"><WrapPanel><Button Content=\"Editar texto original / objetos\" Tag=\"objects\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Adicionar texto\" Tag=\"text\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Inserir imagem\" Tag=\"image\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Realçar área\" Tag=\"highlight\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Retângulo\" Tag=\"rectangle\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Comentário\" Tag=\"comment\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Marca d&#39;água\" Tag=\"watermark\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Formulários\" Margin=\"4\"><WrapPanel><Button Content=\"Preencher formulário\" Tag=\"forms\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar campo de texto\" Tag=\"fieldtext\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar caixa de seleção\" Tag=\"fieldcheck\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar lista\" Tag=\"fieldcombo\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar escolha única\" Tag=\"fieldradio\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Área da página\" Margin=\"4\"><WrapPanel><Button Content=\"Recortar página\" Tag=\"crop\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Remover recorte\" Tag=\"uncrop\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Capturar e reconhecer\"><WrapPanel><GroupBox Header=\"Captura\" Margin=\"4\"><WrapPanel><Button Content=\"Capturar área da tela\" Tag=\"capture\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Digitalizar (scanner)\" Tag=\"scan\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Colar imagem\" Tag=\"clipboard\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Reconstruir imagem\" Tag=\"reconstructimage\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Reconhecimento\" Margin=\"4\"><WrapPanel><Button Content=\"Reconstruir página atual\" Tag=\"reconstructpage\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"OCR → PDF pesquisável\" Tag=\"searchable\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"OCR integrado\" Tag=\"ocr\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Converter e exportar\"><WrapPanel><GroupBox Header=\"Entrada\" Margin=\"4\"><WrapPanel><Button Content=\"Word / Excel / PowerPoint → PDF\" Tag=\"officein\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Imagens → PDF\" Tag=\"fromimages\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"HTML → PDF\" Tag=\"html\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Documentos\" Margin=\"4\"><WrapPanel><Button Content=\"PDF → Word\" Tag=\"docx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → Excel\" Tag=\"xlsx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → PowerPoint\" Tag=\"pptx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → Markdown\" Tag=\"markdown\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF/A\" Tag=\"pdfa\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF/X CMYK (experimental)\" Tag=\"pdfx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Imagens e texto\" Margin=\"4\"><WrapPanel><Button Content=\"Páginas → JPG\" Tag=\"jpg\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Página → PNG\" Tag=\"png\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Todas → PNG\" Tag=\"allpng\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair imagens\" Tag=\"extractimages\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair texto / buscar\" Tag=\"textout\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Proteger e revisar\"><WrapPanel><GroupBox Header=\"Otimização\" Margin=\"4\"><WrapPanel><Button Content=\"Compactar\" Tag=\"compress\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Reparar arquivo\" Tag=\"repair\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Segurança\" Margin=\"4\"><WrapPanel><Button Content=\"Proteger com senha\" Tag=\"protect\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Remover senha da cópia\" Tag=\"unlock\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Censurar área\" Tag=\"redact\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Assinar e comparar\" Margin=\"4\"><WrapPanel><Button Content=\"Assinar com A1 / PFX\" Tag=\"sign\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Verificar assinaturas\" Tag=\"verify\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Assinatura desenhada\" Tag=\"drawsignature\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Comparar PDFs\" Tag=\"compare\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"IA e automação\"><WrapPanel><GroupBox Header=\"Inteligência local\" Margin=\"4\"><WrapPanel><Button Content=\"Resumir documento\" Tag=\"summary\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Traduzir texto ou PDF\" Tag=\"translate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Automação\" Margin=\"4\"><WrapPanel><Button Content=\"Lote / fluxos\" Tag=\"batch\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n</TabControl>"
+    },
+    "mobile": {
+      "origem": "não disponível",
+      "estado": "adaptador ainda não implementado"
+    }
+  },
+  "metadados": {
+    "origem": "PDF Studio + oficina Hefestus",
+    "referencias": [
+      "Office: grupos de faixa",
+      "Axiom: comandos por sinal",
+      "Anima: tarefas e etapas",
+      "Hefestus: componentes e biblioteca"
+    ],
+    "licenca": "Projeto local do usuário",
+    "metricasOrigem": [
+      {
+        "arquivo": "rs2.txt",
+        "linhas": [
+          925,
+          931
+        ]
+      },
+      {
+        "arquivo": "rs4.txt",
+        "linhas": [
+          508,
+          566
+        ]
+      }
+    ]
+  },
+  "metricas": {
+    "abas": 6,
+    "grupos": 16,
+    "comandos": 66,
+    "limiteVisivel": 3,
+    "maximoPorGrupo": 9,
+    "comandosEmMais": 23,
+    "alvoMinimo": 32
+  },
+  "bancoFerramentas": [
+    {
+      "id": "new",
+      "nome": "Novo PDF",
+      "descricao": "Novo PDF",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "new"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "print",
+      "nome": "Imprimir",
+      "descricao": "Imprimir",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "print"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "metadata",
+      "nome": "Propriedades",
+      "descricao": "Propriedades",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "metadata"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "rotate",
+      "nome": "Girar 90°",
+      "descricao": "Girar 90°",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "rotate"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "left",
+      "nome": "Mover antes",
+      "descricao": "Mover antes",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "left"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "right",
+      "nome": "Mover depois",
+      "descricao": "Mover depois",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "right"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "duplicate",
+      "nome": "Duplicar página",
+      "descricao": "Duplicar página",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "duplicate"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "blank",
+      "nome": "Página em branco",
+      "descricao": "Página em branco",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "blank"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "delete",
+      "nome": "Excluir página",
+      "descricao": "Excluir página",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "delete"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "numbers",
+      "nome": "Numerar páginas",
+      "descricao": "Numerar páginas",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "numbers"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "merge",
+      "nome": "Juntar PDFs",
+      "descricao": "Juntar PDFs",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "merge"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "extract",
+      "nome": "Extrair páginas",
+      "descricao": "Extrair páginas",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "extract"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "split",
+      "nome": "Dividir por página",
+      "descricao": "Dividir por página",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "split"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "splitgroups",
+      "nome": "Dividir em grupos",
+      "descricao": "Dividir em grupos",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitgroups"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "splitsize",
+      "nome": "Dividir por tamanho",
+      "descricao": "Dividir por tamanho",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitsize"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "splitbookmarks",
+      "nome": "Dividir por marcadores",
+      "descricao": "Dividir por marcadores",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitbookmarks"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "splitranges",
+      "nome": "Intervalos personalizados",
+      "descricao": "Intervalos personalizados",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitranges"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "mix",
+      "nome": "Intercalar PDFs",
+      "descricao": "Intercalar PDFs",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "mix"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "insertpdf",
+      "nome": "Inserir outro PDF",
+      "descricao": "Inserir outro PDF",
+      "categoria": "Arquivo e páginas",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "insertpdf"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "objects",
+      "nome": "Editar texto original / objetos",
+      "descricao": "Editar texto original / objetos",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "objects"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "text",
+      "nome": "Adicionar texto",
+      "descricao": "Adicionar texto",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "text"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "image",
+      "nome": "Inserir imagem",
+      "descricao": "Inserir imagem",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "image"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "highlight",
+      "nome": "Realçar área",
+      "descricao": "Realçar área",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "highlight"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "rectangle",
+      "nome": "Retângulo",
+      "descricao": "Retângulo",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "rectangle"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "comment",
+      "nome": "Comentário",
+      "descricao": "Comentário",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "comment"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "watermark",
+      "nome": "Marca d'água",
+      "descricao": "Marca d'água",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "watermark"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "forms",
+      "nome": "Preencher formulário",
+      "descricao": "Preencher formulário",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "forms"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "fieldtext",
+      "nome": "Criar campo de texto",
+      "descricao": "Criar campo de texto",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldtext"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "fieldcheck",
+      "nome": "Criar caixa de seleção",
+      "descricao": "Criar caixa de seleção",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldcheck"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "fieldcombo",
+      "nome": "Criar lista",
+      "descricao": "Criar lista",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldcombo"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "fieldradio",
+      "nome": "Criar escolha única",
+      "descricao": "Criar escolha única",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldradio"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "crop",
+      "nome": "Recortar página",
+      "descricao": "Recortar página",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "crop"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "uncrop",
+      "nome": "Remover recorte",
+      "descricao": "Remover recorte",
+      "categoria": "Editar e preencher",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "uncrop"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "capture",
+      "nome": "Capturar área da tela",
+      "descricao": "Capturar área da tela",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "capture"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "scan",
+      "nome": "Digitalizar (scanner)",
+      "descricao": "Digitalizar (scanner)",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "scan"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "clipboard",
+      "nome": "Colar imagem",
+      "descricao": "Colar imagem",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "clipboard"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "reconstructimage",
+      "nome": "Reconstruir imagem",
+      "descricao": "Reconstruir imagem",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "reconstructimage"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "reconstructpage",
+      "nome": "Reconstruir página atual",
+      "descricao": "Reconstruir página atual",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "reconstructpage"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "searchable",
+      "nome": "OCR → PDF pesquisável",
+      "descricao": "OCR → PDF pesquisável",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "searchable"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "ocr",
+      "nome": "OCR integrado",
+      "descricao": "OCR integrado",
+      "categoria": "Capturar e reconhecer",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "ocr"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "officein",
+      "nome": "Word / Excel / PowerPoint → PDF",
+      "descricao": "Word / Excel / PowerPoint → PDF",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "officein"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "fromimages",
+      "nome": "Imagens → PDF",
+      "descricao": "Imagens → PDF",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fromimages"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "html",
+      "nome": "HTML → PDF",
+      "descricao": "HTML → PDF",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "html"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "docx",
+      "nome": "PDF → Word",
+      "descricao": "PDF → Word",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "docx"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "xlsx",
+      "nome": "PDF → Excel",
+      "descricao": "PDF → Excel",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "xlsx"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "pptx",
+      "nome": "PDF → PowerPoint",
+      "descricao": "PDF → PowerPoint",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pptx"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "markdown",
+      "nome": "PDF → Markdown",
+      "descricao": "PDF → Markdown",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "markdown"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "pdfa",
+      "nome": "PDF/A",
+      "descricao": "PDF/A",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pdfa"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "pdfx",
+      "nome": "PDF/X CMYK (experimental)",
+      "descricao": "PDF/X CMYK (experimental)",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pdfx"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "jpg",
+      "nome": "Páginas → JPG",
+      "descricao": "Páginas → JPG",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "jpg"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "png",
+      "nome": "Página → PNG",
+      "descricao": "Página → PNG",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "png"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "allpng",
+      "nome": "Todas → PNG",
+      "descricao": "Todas → PNG",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "allpng"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "extractimages",
+      "nome": "Extrair imagens",
+      "descricao": "Extrair imagens",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "extractimages"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "textout",
+      "nome": "Extrair texto / buscar",
+      "descricao": "Extrair texto / buscar",
+      "categoria": "Converter e exportar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "textout"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "compress",
+      "nome": "Compactar",
+      "descricao": "Compactar",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "compress"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "repair",
+      "nome": "Reparar arquivo",
+      "descricao": "Reparar arquivo",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "repair"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "protect",
+      "nome": "Proteger com senha",
+      "descricao": "Proteger com senha",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "protect"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "unlock",
+      "nome": "Remover senha da cópia",
+      "descricao": "Remover senha da cópia",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "unlock"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "redact",
+      "nome": "Censurar área",
+      "descricao": "Censurar área",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "redact"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "sign",
+      "nome": "Assinar com A1 / PFX",
+      "descricao": "Assinar com A1 / PFX",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "sign"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "verify",
+      "nome": "Verificar assinaturas",
+      "descricao": "Verificar assinaturas",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "verify"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "drawsignature",
+      "nome": "Assinatura desenhada",
+      "descricao": "Assinatura desenhada",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "drawsignature"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "compare",
+      "nome": "Comparar PDFs",
+      "descricao": "Comparar PDFs",
+      "categoria": "Proteger e revisar",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "compare"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "summary",
+      "nome": "Resumir documento",
+      "descricao": "Resumir documento",
+      "categoria": "IA e automação",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "summary"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "translate",
+      "nome": "Traduzir texto ou PDF",
+      "descricao": "Traduzir texto ou PDF",
+      "categoria": "IA e automação",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "translate"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    },
+    {
+      "id": "batch",
+      "nome": "Lote / fluxos",
+      "descricao": "Lote / fluxos",
+      "categoria": "IA e automação",
+      "entrada": {
+        "tipo": "sessao-pdf-e-dialogo",
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "sessao-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "batch"
+      },
+      "origem": {
+        "projeto": "PDF Studio",
+        "arquivo": "src/PdfTool.App",
+        "licenca": "Projeto local do usuário; dependências em THIRD-PARTY-NOTICES.md"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "A prévia HTML emite o sinal. A execução PDF exige o host WPF e seus motores."
+    }
+  ],
+  "catalogoTemplates": [
+    {
+      "id": "acao-primaria",
+      "tipo": "botao",
+      "destaque": true
+    },
+    {
+      "id": "acao-secundaria",
+      "tipo": "botao",
+      "destaque": false
+    },
+    {
+      "id": "menu-mais",
+      "tipo": "menu"
+    },
+    {
+      "id": "grupo-faixa",
+      "tipo": "grupo"
+    },
+    {
+      "id": "aba-tarefa",
+      "tipo": "aba"
+    }
+  ]
+}

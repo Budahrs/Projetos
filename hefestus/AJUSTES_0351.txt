@@ -1,0 +1,11 @@
+Hefestus 0.35.1 — ajustes da faixa e do enquadramento
+
+Aplicado na versão central em Documents\Codex\Projetos\Hefestus\aplicacao.
+
+Os grupos da faixa ocupam sua largura natural, alinhados ao início. Foi removido o crescimento que espalhava os comandos pela janela.
+
+Enquadrar conteúdo amplia e centraliza os elementos visíveis. Ajustar tela mantém a alternativa de ver toda a prancheta. Na primeira abertura desta atualização, o conteúdo é enquadrado automaticamente no Designer tradicional. Depois, o zoom escolhido é preservado. As dimensões e posições dos elementos não são alteradas.
+
+186 testes automatizados passaram. A aparência final ainda requer conferência no navegador do usuário: a sessão de navegação recusou o protocolo de arquivo local.
+
+Backup: Documents\Codex\Projetos\Hefestus\versoes\antes_enquadramento_0351.

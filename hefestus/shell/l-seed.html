@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L-SEED · Cognição</title>
+<style>
+  :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+  body { margin: 0; background: var(--area, Canvas); color: var(--texto, CanvasText); display: grid; grid-template-rows: auto auto auto 1fr auto; height: 100vh; }
+  header, nav, footer { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; padding: .5rem .75rem; background: var(--chrome, Canvas); border-bottom: 1px solid var(--linha, GrayText); }
+  footer { border-top: 1px solid var(--linha, GrayText); border-bottom: 0; }
+  h1 { font-size: 1rem; margin: 0 auto 0 0; }
+  button, select, textarea { font: inherit; color: inherit; background: var(--superficie, Field); border: 1px solid var(--linha-forte, GrayText); border-radius: 6px; padding: .35rem .7rem; }
+  button[aria-selected="true"], button[aria-pressed="true"] { background: var(--acento, Highlight); color: var(--sobre-acento, HighlightText); }
+  button:disabled { opacity: .5; }
+  :focus-visible { outline: 2px solid var(--acento, Highlight); outline-offset: 2px; }
+  main { overflow: hidden; display: flex; flex-direction: column; padding: .75rem; gap: .5rem; }
+  #falas { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: .5rem; }
+  #falas li { white-space: pre-wrap; padding: .5rem .75rem; border-radius: 8px; max-width: 80ch; background: var(--superficie, Field); }
+  #falas li.user { align-self: flex-end; background: var(--acento-suave, Field); }
+  #form { display: flex; gap: .5rem; }
+  #mensagem { flex: 1; min-height: 3rem; }
+  #aviso[data-erro="true"] { color: var(--erro, red); }
+  #conversa { display: flex; flex-direction: column; flex: 1; min-height: 0; gap: .5rem; }
+  #conversa[hidden], #painel[hidden], #consulta[hidden], #painel-texto[hidden] { display: none; }
+  .barra { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+  input { font: inherit; color: inherit; background: var(--superficie, Field); border: 1px solid var(--linha-forte, GrayText); border-radius: 6px; padding: .35rem .5rem; }
+  #painel { display: flex; flex-direction: column; flex: 1; min-height: 0; gap: .5rem; }
+  #painel-texto { flex: 1; overflow: auto; margin: 0; white-space: pre-wrap; padding: .75rem; border-radius: 8px; background: var(--superficie, Field); font: .9rem/1.45 ui-monospace, monospace; }
+  #evidencias { overflow: auto; flex: 1; }
+  #evidencias[hidden] { display: none; }
+  #evidencias table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  #evidencias th, #evidencias td { text-align: left; padding: .55rem .65rem; border-bottom: 1px solid var(--borda, GrayText); white-space: nowrap; }
+  #evidencias th { position: sticky; top: 0; background: var(--superficie, Field); }
+  #itens { max-height: 9rem; overflow-y: auto; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="titulo">L-SEED · Cognição</h1>
+  <label>Modelo <select id="modelo"></select></label>
+  <label title="Somente modelo local e resumos BRS3 revisados, se configurado"><input type="checkbox" id="memoria-brs3"> Memória BRS3 local</label>
+  <label>Tema <select id="tema"></select></label>
+</header>
+<nav id="areas" role="tablist" aria-label="Áreas"></nav>
+<nav id="abas" role="tablist" aria-label="Abas da área"></nav>
+<main>
+  <section id="conversa" aria-label="Conversa">
+    <div class="barra"><label>Do cofre <select id="salvas"><option value="">Conversas salvas no cofre…</option></select></label><span id="abrir-cofre"></span></div>
+    <ol id="falas" aria-live="polite"></ol>
+    <form id="form">
+      <textarea id="mensagem" aria-label="Mensagem" placeholder="Escreva para a persona da aba"></textarea>
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+  </section>
+  <section id="painel" hidden>
+    <div class="barra"><button id="atualizar-painel" type="button">Atualizar painel</button></div>
+    <form id="consulta" class="barra" hidden><label><span id="consulta-rotulo"></span> <input id="consulta-q" type="search"></label><button type="submit">Consultar</button></form>
+    <div id="itens" class="barra"></div>
+    <p id="painel-aviso" role="status"></p>
+    <pre id="painel-texto" hidden></pre>
+    <div id="evidencias" hidden></div>
+  </section>
+</main>
+<footer>
+  <div id="acesso" role="toolbar" aria-label="Comandos"></div>
+  <span id="aviso" role="status"></span>
+  <input id="arquivo" type="file" accept="application/json,.json" hidden>
+</footer>
+<script type="module" src="../js/shell/paginaLseed.js"></script>
+</body>
+</html>

@@ -1,0 +1,1419 @@
+{
+  "protocolo": "2025-06-18",
+  "ferramentas": [
+    {
+      "name": "hefestus_manual",
+      "description": "Lê o manual de como montar programas no Hefestus (AGENTS.md): fluxo, peças, convenções e checagem final. Leia antes de começar um programa.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_listar_projetos",
+      "description": "Lista os projetos .hefestus da pasta de trabalho.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_modelos",
+      "description": "Lista os modelos prontos da biblioteca (menus, faixas, barras, abas, diálogos…). Use o id em hefestus_inserir_modelo: montar com peças prontas é melhor que montar elemento por elemento.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_novo_projeto",
+      "description": "Cria um projeto .hefestus vazio, com nome e tamanho da tela.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "nome": {
+            "type": "string"
+          },
+          "largura": {
+            "type": "number",
+            "description": "px (padrão 1280)"
+          },
+          "altura": {
+            "type": "number",
+            "description": "px (padrão 800)"
+          },
+          "fundo": {
+            "type": "string",
+            "description": "#rrggbb"
+          },
+          "substituir": {
+            "type": "boolean",
+            "description": "sobrescrever se já existir"
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_resumo",
+      "description": "Mostra a tela e todos os elementos do projeto (id, tipo, posição, tamanho, textos, cores, eventos). Use os ids para alterar, ligar eventos e organizar.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_lote",
+      "description": "Executa vários passos de uma vez no projeto: lista de { ferramenta, args }, onde ferramenta é o nome sem o prefixo hefestus_ (ex.: \"criar_elemento\"). Tudo ou nada: se um passo falhar, nada é gravado. Prefira lote para montar um esqueleto inteiro.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "passos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ferramenta": {
+                  "type": "string"
+                },
+                "args": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "ferramenta"
+              ]
+            }
+          }
+        },
+        "required": [
+          "arquivo",
+          "passos"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_exportar_html",
+      "description": "Gera o HTML final do projeto (abre em qualquer navegador, com comportamentos e responsivo).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "saida": {
+            "type": "string",
+            "description": "arquivo .html (padrão: mesmo nome do projeto)"
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_exportar_programa",
+      "description": "Exporta o projeto como PROGRAMA com janela própria e instalador (projeto Tauri) em programas/<nome> dentro do Hefestus. Todos os comandos saem ligados (veja hefestus_ligacoes). Leva junto o projeto (para reabrir no Hefestus) e programa.json (descrição em linguagem de máquina). O usuário gera o instalador com npm install e npm run instalador nessa pasta.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "nome": {
+            "type": "string",
+            "description": "nome do programa (padrão: nome do projeto)"
+          },
+          "versao": {
+            "type": "string",
+            "description": "x.y.z (padrão 1.0.0)"
+          },
+          "largura": {
+            "type": "number",
+            "description": "largura da janela"
+          },
+          "altura": {
+            "type": "number",
+            "description": "altura da janela"
+          },
+          "ligacoes": {
+            "type": "string",
+            "description": "arquivo de ligações dentro de ligacoes/ do Hefestus (ex.: \"pdf-studio.json\"): vale sobre ligacoes/<nome>.json, que é usado sozinho quando existe"
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_ligacoes",
+      "description": "Mostra como cada comando do programa será ligado ao exportar (o Hefestus liga todos por padrão): pelo arquivo ligacoes/<programa>.json, por um motor externo, pelo motor de PDF embutido ou por ações da janela. Lista os pendentes, que precisam de um motor novo.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "nome": {
+            "type": "string",
+            "description": "nome do programa (padrão: nome do projeto); escolhe ligacoes/<nome>.json"
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_verificar_projeto",
+      "description": "Diagnostica estrutura e grafo pelo mesmo caso de uso do Designer. Retorna revisaoArquivo SHA-256 sem regravar o projeto.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Projeto .hefestus existente, dentro da pasta de trabalho."
+          }
+        },
+        "required": [
+          "arquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_importar_html_nativo",
+      "description": "Importa HTML inline como objetos nativos editáveis no projeto existente. Preserva fonte e gera IDs sincronizados com o grafo. Uma transação desfazível; exige revisaoArquivo atual. Não substitui a importação isolada legada.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Projeto .hefestus existente, dentro da pasta de trabalho."
+          },
+          "html": {
+            "type": "string",
+            "description": "Fonte HTML inline; até 2 MB UTF-8. Não executa scripts nem busca recursos."
+          },
+          "revisaoArquivo": {
+            "type": "string",
+            "description": "SHA-256 retornado por hefestus_verificar_projeto. Protege contra edição de arquivo antigo."
+          },
+          "nome": {
+            "type": "string"
+          },
+          "largura": {
+            "type": "number"
+          },
+          "altura": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "arquivo",
+          "html",
+          "revisaoArquivo"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_preparar_reimportacao_html",
+      "description": "Compara fonte HTML nova com base e edições locais. Só lê; retorna alterações/conflitos e token de sessão válido por 10 minutos. Adições/remoções exigem IDs HTML explícitos; remoções viram conflitos e não podem romper vínculos. Tipos existentes são preservados. Aplicar é outra chamada.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Projeto .hefestus existente, dentro da pasta de trabalho."
+          },
+          "raiz": {
+            "type": "string",
+            "description": "ID da raiz retornada pela importação nativa."
+          },
+          "html": {
+            "type": "string",
+            "description": "Fonte HTML inline; até 2 MB UTF-8. Não executa scripts nem busca recursos."
+          }
+        },
+        "required": [
+          "arquivo",
+          "raiz",
+          "html"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_aplicar_reimportacao_html",
+      "description": "Aplica uma comparação preparada nesta sessão, com resoluções local/fonte por chave de conflito. Rejeita token inválido ou arquivo alterado. Recalcula o plano no núcleo e grava uma transação desfazível.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Projeto .hefestus existente, dentro da pasta de trabalho."
+          },
+          "token": {
+            "type": "string",
+            "description": "Token de hefestus_preparar_reimportacao_html, vinculado ao arquivo e à revisão."
+          },
+          "resolucoes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "enum": [
+                "local",
+                "fonte"
+              ]
+            },
+            "description": "Mapa chave de conflito para local ou fonte."
+          }
+        },
+        "required": [
+          "arquivo",
+          "token"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_criar_elemento",
+      "description": "Cria um elemento na tela. tipo: botao, texto, caixa, container, forma, elipse, linha, icone, campo, toggle, menu, modal, toast. x/y são o canto superior esquerdo em px. propriedades opcionais usam os mesmos caminhos de alterar_elemento. Devolve o id criado. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "botao",
+              "texto",
+              "caixa",
+              "container",
+              "forma",
+              "elipse",
+              "linha",
+              "icone",
+              "campo",
+              "toggle",
+              "menu",
+              "modal",
+              "toast"
+            ]
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "largura": {
+            "type": "number"
+          },
+          "altura": {
+            "type": "number"
+          },
+          "propriedades": {
+            "type": "object",
+            "description": "ex.: {\"rotulo\": \"Enviar\", \"estilo.fundo\": \"#16a34a\"}"
+          }
+        },
+        "required": [
+          "arquivo",
+          "tipo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_alterar_elemento",
+      "description": "Muda propriedades de um elemento existente. Caminhos: x, y, largura, altura, nome, visivel, travado, estilo.fundo, estilo.cor (cor do texto), estilo.borda, estilo.larguraBorda, estilo.raio, estilo.tamanhoFonte, estilo.peso (300|400|600|700), estilo.sombra (nenhuma|pequena|media|grande), estilo.opacidade (0-1), estilo.fonte (sistema|segoe|arial|verdana|tahoma|trebuchet|calibri|inter|roboto|opensans|montserrat|poppins|plex|serifa|times|cambria|garamond|lora|merriweather|playfair|mono|consolas|courier|jetbrains|firacode|arredondada|quicksand|varela|oswald|bebas|impact|cinzel|caveat|pacifico|segoeprint), estilo.alinhamento (esquerda|centro|direita), estilo.entrelinha, estilo.desfoque (px), estilo.vidro (px, vidro fosco), rotacao (graus), espelharH, espelharV, estados.hover.fundo, estados.active.fundo, transicao.duracao, acessibilidade.ariaLabel, e os do tipo (botao: rotulo, desabilitado; texto: texto; campo: placeholder; toggle: ligado; menu: itens; modal: titulo, mensagem, overlay, fechaAoClicarFora, iniciaAberto; toast: mensagem, autoFechar, iniciaAberto; icone: simbolo, traco; container: layout.modo (livre|linha|coluna), layout.espaco, layout.margem, layout.alinhar (inicio|centro|fim|esticar), layout.abracar; forma: forma (retangulo, retArredondado, cantoCortado, cantosCortados, cantoArredondado, elipse, triangulo, trianguloRetangulo, losango, paralelogramo, trapezio, pentagono, hexagono, octogono, cruz, anel, moldura, coracao, lua, raio, nuvem, setaDireita, setaEsquerda, setaCima, setaBaixo, setaDupla, setaPentagono, chevron, estrela4, estrela5, estrela6, explosao, faixa, selo, balao, balaoArredondado, balaoOval, processo, decisao, terminal, dados, documento, banco, conector, poligono, estrela, arco, vetor), texto). Responsivo: restricoes.h (auto|esquerda|direita|ambos|centro|escala), restricoes.v (auto|topo|base|ambos|centro|escala), responsivo.ocultarAbaixo e responsivo.mostrarAbaixo (0|480|768|1024), dimensao.largura (fixa|preencher|abracar) e dimensao.altura (fixa|preencher) dentro de containers, layout.justificar (inicio|centro|fim|entre), layout.quebrar, layout.empilharAbaixo. Abrir/fechar: abertura.iniciaFechado, abertura.animacao (nenhuma|aparecer|deslizar|crescer|lateral), abertura.fecharFora, abertura.fecharEsc, abertura.fecharAoEscolher, abertura.fundoEscuro, abertura.ancorar (abre colado ao gatilho); estilo avançado (valem para caixa, container, forma, elipse, botão): estilo.preenchimentos = lista [{tipo: solido|linear|radial|conico|imagem, cor, angulo, paradas:[{pos 0-100, cor, alfa 0-1}], opacidade}] (o primeiro fica por cima), estilo.tracos = [{cor, largura, posicao: dentro|centro|fora, estilo: solido|tracejado|pontilhado, ponta, juncao}], estilo.efeitos = [{tipo: sombra|sombraInterna|desfoque|vidro, x, y, blur, espalhar, cor (aceita rgba)}], estilo.cantos = [topo-esq, topo-dir, base-dir, base-esq], estilo.mistura (normal|multiply|screen|overlay...); forma paramétrica: forma=poligono|estrela|arco com lados, razao, canto, giro, inicio, fim, espessura; estados.ativo.fundo e estados.ativo.cor. Linha usa estilo.fundo como cor e altura como espessura. Cores em #rrggbb. Para a tela inteira use id \"__canvas\" com largura, altura ou fundo. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "propriedades": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "propriedades"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_remover_elemento",
+      "description": "Remove um elemento. O usuário pode desfazer com Ctrl+Z. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_ligar_evento",
+      "description": "Faz um elemento emitir um sinal quando algo acontece e, opcionalmente, executar uma ação visual em outro elemento. evento: onClick, onContext (botão direito), onHover, onFocus, onChange, onSelect, onOpen, onClose (conforme o tipo). acao: animar, aplicarEstilo, aplicarForma, abrir, fechar, alternar, destacar, mostrarSo, fixar ou vazio. Não existe lógica de negócio: o sinal só avisa quem usa a interface. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "evento": {
+            "type": "string"
+          },
+          "sinal": {
+            "type": "string",
+            "description": "nome em snake_case, ex. login_enviado"
+          },
+          "acao": {
+            "type": "string"
+          },
+          "alvo": {
+            "type": "string",
+            "description": "id do elemento afetado pela ação"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "evento",
+          "sinal"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_aplicar_paleta",
+      "description": "Recolore TODOS os elementos do canvas com uma paleta. Use só quando o usuário pedir para recolorir os elementos/o design; \"tema\" sozinho é da interface (use tema_interface). paleta: claro, escuro, forja. Cores que o usuário definiu antes viram uma pergunta para ele. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "paleta": {
+            "type": "string",
+            "enum": [
+              "claro",
+              "escuro",
+              "forja"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "paleta"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_ligar_comportamento",
+      "description": "Liga um comportamento pronto entre um gatilho e um alvo, num passo só. comportamento: menuClique (Menu suspenso: Clique abre e fecha; fecha ao clicar fora, com Esc ou ao escolher um item; setas navegam); menuHover (Menu ao passar o mouse: Abre ao passar o mouse, espera um instante para você chegar nele e fecha ao sair); dica (Dica (tooltip): Aparece ao passar o mouse e some ao sair); gaveta (Gaveta lateral: Clique abre pela lateral com fundo escurecido; fecha ao clicar fora ou com Esc); acordeao (Acordeão: Clique mostra e esconde o conteúdo logo abaixo); modal (Abrir janela (modal): Clique abre a janela com fundo escurecido); abas (Abas: Gatilho: o container das abas. Alvo: o container dos painéis. Cada aba mostra o seu painel, em ordem). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "comportamento": {
+            "type": "string",
+            "enum": [
+              "menuClique",
+              "menuHover",
+              "dica",
+              "gaveta",
+              "acordeao",
+              "modal",
+              "abas"
+            ]
+          },
+          "gatilho": {
+            "type": "string"
+          },
+          "alvo": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "comportamento",
+          "gatilho",
+          "alvo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_inserir_modelo",
+      "description": "Insere um modelo pronto da biblioteca (já montado com containers inteligentes). modelo: menuContextoCompacto (Menu do mouse — compacto com busca), menuHefestus (Menu do Hefestus — faixa editável), janelaTesteHefestus (Janela de teste — minimizar e maximizar), menuAxiom (Menu do Axiom Studio — completo), ref-ribbon-1 (Ribbon — Separado com contorno), ref-ribbon-2 (Ribbon — Separado plano), ref-ribbon-3 (Ribbon — Conectado), ref-ribbon-4 (Ribbon — Conectado arredondado), ref-ribbon-5 (Ribbon — Abas coloridas), ref-ribbon-6 (Ribbon — Abas coloridas arredondadas), ref-contexto-claro (Menu contextual e galerias — Claro), ref-contexto-escuro (Menu contextual e galerias — Escuro), ref-lateral-expansivel (Barra lateral com painéis exclusivos), ref-controles-flutuantes (Controles flutuantes — modos e opções), ref-galeria-formas (Galeria de formas — categorias Office), navResponsiva (Navegação responsiva), menuSubmenus (Menu horizontal com submenus), megaMenu (Mega menu), menuLateralRecolhivel (Menu lateral recolhível), menuAcordeao (Menu lateral acordeão), menuTelaCheia (Menu em tela cheia), fxVidro (Caixa de vidro fosco (Glassmorphism)), fxNeon (Caixa neon (brilho)), fxOled (Caixa Dark OLED), fxTilt (Caixa 3D inclinada), fxParallax (Caixa em camadas (parallax)), fxFlutuante (Caixa flutuante (sombras em camadas)), fxBento (Bento grid), fxCarrossel (Faixa de cards (carrossel)), fxExpansivel (Cartão que expande em tela cheia), menuRadial (Menu radial), menuDrillDown (Menu drill-down (mobile)), menuBlocos (Menu em blocos coloridos), botoesRelevo (Botões em relevo e 3D), botoesNeumorficos (Botões neumórficos), botoesNeon (Botões neon e brilho), botoesVidro (Botões de vidro), botoesAcao (Botões de ação (primário, secundário, perigo)), botoesPilula (Botões pílula com degradê), botoesPulso (Botões com pulso), barraAbasInferior (Barra de abas inferior), barraComBusca (Barra com busca), menuPorPerfil (Barra com teclas de acesso e perfis), faixaAxiom (Faixa do Axiom Studio), botaoMenu (Botão com menu suspenso), abasPaineis (Abas com painéis), barraMenus (Barra de menus), menuSuspenso (Menu suspenso), menuContexto (Menu de contexto), faixa (Faixa de opções), officeCompleto (Office completo), faixaHibrida (Faixa de opções híbrida), faixaPowerPoint (Faixa estilo PowerPoint), faixaWord (Faixa estilo Word), grupoGrandePequenos (Grupo: botão grande + pequenos), grupoPilha3 (Grupo: três comandos empilhados), grupoGrandesLado (Grupo: comandos grandes lado a lado), grupoFonte (Grupo: combos + linha de ícones), grupoGradeIcones (Grupo: grade de ícones (2 linhas)), grupoGaleria (Grupo: galeria com rolagem), grupoGrandeGrade (Grupo: botão grande + grade 2×2), faixaHibridaRecolhida (Faixa híbrida (começa recolhida)), menuArquivoOffice (Menu Arquivo (Office)), barraFerramentas (Barra de ferramentas), barraFlutuante (Barra flutuante), trilho (Trilho lateral), barraApp (Barra superior), abas (Barra de abas), barraStatus (Barra de status), painelProps (Painel de propriedades), dialogo (Caixa de diálogo), notificacoes (Lista de notificações), pdfStudioTarefas (PDF Studio · menu e ferramentas), sidebarAdaptativa (Navegação lateral adaptativa), radioControlador (Controlador de rádios), pdf-studio-profissional (PDF Studio · faixa por tarefas). x e y opcionais (canto superior esquerdo). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "modelo": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "arquivo",
+          "modelo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_agrupar_em_container",
+      "description": "Põe elementos dentro de um novo container inteligente. modo: livre (mantém posições, move junto), linha ou coluna (arruma sozinho com espaço e margem). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "modo": {
+            "type": "string",
+            "enum": [
+              "livre",
+              "linha",
+              "coluna"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "ids"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_criar_variantes",
+      "description": "Cria variantes de um componente lado a lado num container: tipo=\"tamanhos\" (P/M/G) ou tipo=\"estilos\" (primário, secundário, contorno, fantasma, perigo). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "tamanhos",
+              "estilos"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "tipo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_refinar_elemento",
+      "description": "Gera 3 opções de acabamento (1 suave, 2 contraste, 3 minimalista) do elemento, lado a lado, para o usuário escolher. Depois, manter_opcao fica com a escolhida. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_manter_opcao",
+      "description": "Fica com a opção N (1-3) gerada por refinar_elemento: aplica no elemento original e descarta as outras. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "numero": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "arquivo",
+          "numero"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_listar",
+      "description": "Lista o que já foi criado pelo FORMULÁRIO (modo híbrido): containers, menus/boxes do botão direito e faixas de opções, com ids e campos. Use antes de editar. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          }
+        },
+        "required": [
+          "arquivo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_tema",
+      "description": "Aplica um TEMA COMPLETO a todos os itens do formulário (faixa, menus, blocos, laterais, abas, componentes, containers): axiom, hefestus, hospitalar, vidro, neon, industrial, minimalista, fluent, retro. Num passo desfazível. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "tema": {
+            "type": "string",
+            "enum": [
+              "axiom",
+              "hefestus",
+              "hospitalar",
+              "vidro",
+              "neon",
+              "industrial",
+              "minimalista",
+              "fluent",
+              "retro"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "tema"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_criar",
+      "description": "PREFERIDO para criar menus e caixas: cria pelo formulário (tipo=paineis: painéis divididos com divisores arrastáveis; dados regioes esq|dir|baixo, tamEsq, tamDir, tamBaixo, largura, altura, titulos{esq,dir,baixo,centro}) (editável depois pelo usuário na aba do modo híbrido). tipo=caixa (container: nome, x, y, largura, altura, fundo, borda, raio, modo livre|linha|coluna, filhos[{tipo texto|botao|icone, texto|rotulo, sinal}]), tipo=menu (menu/box do botão direito: nome, itens[\"Copiar\", \"-\", {rotulo, icone, atalho, sinal}]) ou tipo=ribbon (faixa de opções: nome, abas[\"Início\", \"Inserir\"], busca, estilo office|claroHefestus|escuro|vidro|ciber|mac), tipo=blocos (grade de blocos home/touch/mega menu: colunas, variante icone|cartao, itens[{titulo, subtitulo, icone, status}]), tipo=lateral (barra lateral retrátil: marca, itens[{rotulo, icone}]) ou tipo=abasDoc (abas de documento estilo navegador: abas[\"Mapa\", \"Andar 1\"], fechavel). tipo=componente (modelo breadcrumb|paginacao|chips|badges|progresso|stepper|toast|status|toolbar|modal|calendario|slider|tabela|grafico|radial; modal: variante info|confirmacao|alerta|erro|sucesso, titulo, mensagem, itens[botões]; calendario: mes, ano, valor; grafico: tipoGrafico barras|linha|rosca, titulo, mensagem, legenda, serie 1,2,3, valor (rosca); radial: formaMenu circulo|hexagono; tabela: colunas[3], itens[{rotulo, valor, detalhe, cor}]; valor, total, estiloBarra classica|moderna|neon|minimalista, vertical, efeito nenhum|sombra|brilho|neon|vidro|gradiente|borda, itens[{rotulo, icone, valor, cor, detalhe}]). Todo item aceita efeito/acento; blocos/lateral/abasDoc têm formato/variante. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "caixa",
+              "menu",
+              "ribbon",
+              "blocos",
+              "lateral",
+              "abasDoc",
+              "componente",
+              "paineis"
+            ]
+          },
+          "dados": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "arquivo",
+          "tipo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_editar",
+      "description": "Muda um campo de um item criado pelo formulário, por caminho: caixa (nome, x, y, largura, altura, estilo.fundo, estilo.borda, estilo.raio, layout.modo, comportamento.sinal, comportamento.acao, comportamento.alvo, comportamento.menuContexto = id do menu que abre no botão direito, comportamento.hoverFundo), menu (nome, fundo, cor, hoverFundo, largura), ribbon (nome, banda, largura, abaAtiva). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "caminho": {
+            "type": "string"
+          },
+          "valor": {}
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "caminho",
+          "valor"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_adicionar",
+      "description": "Acrescenta ao formulário: onde=filho (em caixa; dados: tipo, texto|rotulo, sinal), item ou separador (em menu; dados: rotulo, icone, atalho, sinal), aba (em ribbon; dados: nome), grupo (ribbon; dados: nome, aba), comando (ribbon; dados: rotulo, icone, sinal, aba, grupo), bloco (em blocos; dados: titulo, subtitulo, icone, status), item (também em lateral; dados: rotulo, icone), aba (também em abasDoc; dados: nome), subitem (em menu; dados: item, rotulo, atalho). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "onde": {
+            "type": "string",
+            "enum": [
+              "filho",
+              "item",
+              "separador",
+              "aba",
+              "grupo",
+              "comando",
+              "bloco",
+              "subitem"
+            ]
+          },
+          "dados": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "onde"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_construtor_remover",
+      "description": "Remove um item criado pelo formulário (e todos os elementos gerados por ele). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_importar_svg",
+      "description": "Desenha um ícone/ilustração: recebe o código SVG (path, rect, circle, ellipse, polygon, line; fill/stroke/transform; sem gradientes, texto ou filtros) e cria formas vetoriais editáveis agrupadas. Escreva o SVG com viewBox, ex.: 24x24. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "svg": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "arquivo",
+          "svg"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_combinar_formas",
+      "description": "Operação booleana entre 2 ou mais formas/caixas/elipses: unir, subtrair (a mais ao fundo menos as de cima), intersectar ou excluir (tudo menos a sobreposição). Gera um vetor editável e remove os originais. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "operacao": {
+            "type": "string",
+            "enum": [
+              "unir",
+              "subtrair",
+              "intersectar",
+              "excluir"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "ids",
+          "operacao"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_converter_em_vetor",
+      "description": "Transforma formas, caixas ou elipses em vetor livre (caminho editável por nós). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "arquivo",
+          "ids"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_criar_tema",
+      "description": "Cria e aplica um tema completo nos ELEMENTOS a partir de uma descrição: modo (escuro/claro), cor de destaque (azul, ciano, verde…), saturação (pastel, vibrante, neutro) e cantos (suaves, retos, pílula). Ex.: \"escuro com azul ciano e cantos suaves\". (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "descricao": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "descricao"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_preparar_aplicativo_windows",
+      "description": "Abre a exportação do aplicativo Windows para configurar nome, versão e ícone. Gera material de compilação, não um EXE já compilado. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          }
+        },
+        "required": [
+          "arquivo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_importar_html",
+      "description": "Recria uma página ou trecho HTML como artefato isolado, com código editável na Forja. Preserva CSS/JS embutidos sem executá-los no Designer; não converte cada tag em um objeto nativo. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "html": {
+            "type": "string"
+          },
+          "css": {
+            "type": "string"
+          },
+          "js": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "largura": {
+            "type": "number"
+          },
+          "altura": {
+            "type": "number"
+          },
+          "online": {
+            "type": "boolean"
+          },
+          "combinarComSelecao": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "arquivo",
+          "html"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_planejar_menu",
+      "description": "Recomenda o tipo e as regras de menu por objetivo. Leia antes de criar menus adaptativos; não altera o documento. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "descricao": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "descricao"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_auditar_interface",
+      "description": "Audita a interface: contraste WCAG, nome acessível, estado hover, transições longas, alvos pequenos, eventos apontando para elementos inexistentes, nomes repetidos. Com corrigir=true aplica as correções automáticas (num passo desfazível). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "corrigir": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "arquivo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_explicar_elemento",
+      "description": "Explica em palavras o que um elemento é, como aparece, como reage e que sinais emite. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_exportar_artefato",
+      "description": "Exporta a interface como artefato derivado e baixa o arquivo: react (.jsx), vue (.vue), webcomponent (.js) ou tema (tokens de tema em CSS). (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "react",
+              "vue",
+              "webcomponent",
+              "tema",
+              "storybook",
+              "testes"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "tipo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_gerar_documentacao",
+      "description": "Gera a documentação Markdown do contrato de sinais, regras, elementos e auditoria, e baixa o arquivo. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          }
+        },
+        "required": [
+          "arquivo"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_colocar_no_container",
+      "description": "Coloca um elemento dentro de um container existente (ou tira, com container vazio). Em linha/coluna ele se arruma sozinho. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "container": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "id"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_organizar",
+      "description": "Alinha à tela, muda a camada ou duplica um elemento. acao: alinhar_esquerda, centralizar_horizontal, alinhar_direita, alinhar_topo, centralizar_vertical, alinhar_base, frente, tras, duplicar, girar_90, espelhar_horizontal, espelhar_vertical. (Edita e grava o projeto indicado em \"arquivo\".)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "description": "Caminho do projeto .hefestus, relativo à pasta de trabalho (ex.: \"painel-noc.hefestus\")."
+          },
+          "id": {
+            "type": "string"
+          },
+          "acao": {
+            "type": "string",
+            "enum": [
+              "alinhar_esquerda",
+              "centralizar_horizontal",
+              "alinhar_direita",
+              "alinhar_topo",
+              "centralizar_vertical",
+              "alinhar_base",
+              "frente",
+              "tras",
+              "duplicar",
+              "girar_90",
+              "espelhar_horizontal",
+              "espelhar_vertical"
+            ]
+          }
+        },
+        "required": [
+          "arquivo",
+          "id",
+          "acao"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_contexto",
+      "description": "Lê o snapshot exportado do editor (hefestus-contexto.json), com data e hash. Não representa o estado vivo.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "hefestus_propor_layout",
+      "description": "Grava uma proposta de layout revisável em propostas/, para importar manualmente no editor.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "layout": {
+            "type": "object"
+          },
+          "justificativa": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "layout",
+          "justificativa"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

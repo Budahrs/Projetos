@@ -1,0 +1,1516 @@
+{
+  "formato": "hefestus.menu",
+  "versao": 1,
+  "id": "antares-gestor-local",
+  "nome": "Antares · pedidos e evidências",
+  "designer": {
+    "estilo": "faixa",
+    "prefixoSinal": "antares",
+    "limiteVisivel": 3,
+    "abas": [
+      {
+        "id": "area-0",
+        "nome": "Pedidos",
+        "grupos": [
+          {
+            "id": "grupo-0-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pedido-especificar",
+                "rotulo": "Gerar especificação rastreável",
+                "descricao": "Gerar especificação rastreável",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pedido.especificar",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-contexto-buscar",
+                "rotulo": "Buscar originais e artefatos com BM25 local",
+                "descricao": "Buscar originais e artefatos com BM25 local",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "contexto.buscar",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-1",
+        "nome": "Fila e ferramentas",
+        "grupos": [
+          {
+            "id": "grupo-1-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pdf-health",
+                "rotulo": "Verificar motor PDF",
+                "descricao": "Verificar motor PDF",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pdf.health",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-pdf-inspect",
+                "rotulo": "Inspecionar documento",
+                "descricao": "Inspecionar documento",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.inspect",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-pdf-text",
+                "rotulo": "Extrair texto",
+                "descricao": "Extrair texto",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.text",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-3",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pdf-create",
+                "rotulo": "Criar PDF",
+                "descricao": "Criar PDF",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pdf.create",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-pdf-edit",
+                "rotulo": "Editar páginas/texto",
+                "descricao": "Editar páginas/texto",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.edit",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-pdf-merge",
+                "rotulo": "Juntar PDFs",
+                "descricao": "Juntar PDFs",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.merge",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-6",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pdf-extract",
+                "rotulo": "Extrair páginas",
+                "descricao": "Extrair páginas",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pdf.extract",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-pdf-from-images",
+                "rotulo": "Imagens para PDF",
+                "descricao": "Imagens para PDF",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.from-images",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-pdf-office-in",
+                "rotulo": "Office para PDF",
+                "descricao": "Office para PDF",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.office-in",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-9",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pdf-office-out",
+                "rotulo": "PDF para Office",
+                "descricao": "PDF para Office",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pdf.office-out",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-pdf-pdfa",
+                "rotulo": "Exportar PDF/A visual",
+                "descricao": "Exportar PDF/A visual",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.pdfa",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-pdf-compress",
+                "rotulo": "Compactar por rasterização",
+                "descricao": "Compactar por rasterização",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.compress",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-12",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-pdf-verify",
+                "rotulo": "Verificar assinatura",
+                "descricao": "Verificar assinatura",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "pdf.verify",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-pdf-repair",
+                "rotulo": "Reparar PDF",
+                "descricao": "Reparar PDF",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.repair",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-pdf-ocr",
+                "rotulo": "OCR pesquisável",
+                "descricao": "OCR pesquisável",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "pdf.ocr",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-15",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-ia-local",
+                "rotulo": "Consultar modelo local",
+                "descricao": "Consultar modelo local",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "ia.local",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-ia-gateway",
+                "rotulo": "Gateway local-first; provedor externo configurável",
+                "descricao": "Gateway local-first; provedor externo configurável",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "ia.gateway",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-workflow-executar",
+                "rotulo": "Executar fluxo de ferramentas com limite de profundidade",
+                "descricao": "Executar fluxo de ferramentas com limite de profundidade",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "workflow.executar",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-18",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-voz-sintetizar",
+                "rotulo": "Narrar texto em WAV com voz instalada",
+                "descricao": "Narrar texto em WAV com voz instalada",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "voz.sintetizar",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-imagens-mesclar",
+                "rotulo": "Mesclar imagens por sobreposição local",
+                "descricao": "Mesclar imagens por sobreposição local",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "imagens.mesclar",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-estilo-registrar",
+                "rotulo": "Registrar referências e paleta de estilo",
+                "descricao": "Registrar referências e paleta de estilo",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "estilo.registrar",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-21",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-conector-local",
+                "rotulo": "Chamar serviço local configurado",
+                "descricao": "Chamar serviço local configurado",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "conector.local",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-2",
+        "nome": "Projetos e biblioteca",
+        "grupos": [
+          {
+            "id": "grupo-2-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-projetos-indexar",
+                "rotulo": "Atualizar catálogo de projetos",
+                "descricao": "Atualizar catálogo de projetos",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "projetos.indexar",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-banco-sincronizar",
+                "rotulo": "Indexar artefatos e contratos",
+                "descricao": "Indexar artefatos e contratos",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "banco.sincronizar",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-hefestus-gerar-menu",
+                "rotulo": "Gerar menu, componente, HTML e XAML",
+                "descricao": "Gerar menu, componente, HTML e XAML",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "hefestus.gerar-menu",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-2-3",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-projeto-criar",
+                "rotulo": "Criar aplicação com ferramentas do catálogo",
+                "descricao": "Criar aplicação com ferramentas do catálogo",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "projeto.criar",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-revisao-codigo",
+                "rotulo": "Revisar sintaxe e metadados locais",
+                "descricao": "Revisar sintaxe e metadados locais",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "revisao.codigo",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-3",
+        "nome": "Gestores e skills",
+        "grupos": [
+          {
+            "id": "grupo-3-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-skills-descobrir",
+                "rotulo": "Descobrir metadados de skills locais e catálogos configurados",
+                "descricao": "Descobrir metadados de skills locais e catálogos configurados",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "skills.descobrir",
+                "templateId": "acao-primaria"
+              },
+              {
+                "id": "cmd-repo-verificar",
+                "rotulo": "Verificar skills assinadas de um checkout",
+                "descricao": "Verificar skills assinadas de um checkout",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "repo.verificar",
+                "templateId": "acao-secundaria"
+              },
+              {
+                "id": "cmd-repo-atualizar",
+                "rotulo": "Atualizar checkout Git sem push e verificar pacotes",
+                "descricao": "Atualizar checkout Git sem push e verificar pacotes",
+                "icone": "documento",
+                "destaque": false,
+                "atalho": "",
+                "ferramentaId": "repo.atualizar",
+                "templateId": "acao-secundaria"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-3",
+            "nome": "Mais ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-repo-exportar",
+                "rotulo": "Exportar skills verificadas do checkout para uma IA",
+                "descricao": "Exportar skills verificadas do checkout para uma IA",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "repo.exportar",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-4",
+        "nome": "Métricas",
+        "grupos": [
+          {
+            "id": "grupo-4-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-ui-4",
+                "rotulo": "Abrir Métricas",
+                "descricao": "Abrir Métricas",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "ui.4",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-5",
+        "nome": "Aprendizado",
+        "grupos": [
+          {
+            "id": "grupo-5-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-ui-5",
+                "rotulo": "Abrir Aprendizado",
+                "descricao": "Abrir Aprendizado",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "ui.5",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-6",
+        "nome": "Requisitos",
+        "grupos": [
+          {
+            "id": "grupo-6-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-ui-6",
+                "rotulo": "Abrir Requisitos",
+                "descricao": "Abrir Requisitos",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "ui.6",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "area-7",
+        "nome": "Configuração",
+        "grupos": [
+          {
+            "id": "grupo-7-0",
+            "nome": "Ações",
+            "icone": "documento",
+            "comandos": [
+              {
+                "id": "cmd-ui-7",
+                "rotulo": "Abrir Configuração",
+                "descricao": "Abrir Configuração",
+                "icone": "documento",
+                "destaque": true,
+                "atalho": "",
+                "ferramentaId": "ui.7",
+                "templateId": "acao-primaria"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "bancoFerramentas": [
+    {
+      "id": "pedido.especificar",
+      "nome": "Gerar especificação rastreável",
+      "categoria": "Pedidos",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pedido.especificar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "contexto.buscar",
+      "nome": "Buscar originais e artefatos com BM25 local",
+      "categoria": "Pedidos",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "contexto.buscar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.health",
+      "nome": "Verificar motor PDF",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.health"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.inspect",
+      "nome": "Inspecionar documento",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.inspect"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.text",
+      "nome": "Extrair texto",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.text"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.create",
+      "nome": "Criar PDF",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.create"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.edit",
+      "nome": "Editar páginas/texto",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.edit"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.merge",
+      "nome": "Juntar PDFs",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.merge"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.extract",
+      "nome": "Extrair páginas",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.extract"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.from-images",
+      "nome": "Imagens para PDF",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.from-images"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.office-in",
+      "nome": "Office para PDF",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.office-in"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.office-out",
+      "nome": "PDF para Office",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.office-out"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.pdfa",
+      "nome": "Exportar PDF/A visual",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.pdfa"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.compress",
+      "nome": "Compactar por rasterização",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.compress"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.verify",
+      "nome": "Verificar assinatura",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.verify"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.repair",
+      "nome": "Reparar PDF",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.repair"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "pdf.ocr",
+      "nome": "OCR pesquisável",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "pdf.ocr"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ia.local",
+      "nome": "Consultar modelo local",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ia.local"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ia.gateway",
+      "nome": "Gateway local-first; provedor externo configurável",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ia.gateway"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "workflow.executar",
+      "nome": "Executar fluxo de ferramentas com limite de profundidade",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "workflow.executar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "voz.sintetizar",
+      "nome": "Narrar texto em WAV com voz instalada",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "voz.sintetizar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "imagens.mesclar",
+      "nome": "Mesclar imagens por sobreposição local",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "imagens.mesclar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "estilo.registrar",
+      "nome": "Registrar referências e paleta de estilo",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "estilo.registrar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "conector.local",
+      "nome": "Chamar serviço local configurado",
+      "categoria": "Fila e ferramentas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "conector.local"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "projetos.indexar",
+      "nome": "Atualizar catálogo de projetos",
+      "categoria": "Projetos e biblioteca",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "projetos.indexar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "banco.sincronizar",
+      "nome": "Indexar artefatos e contratos",
+      "categoria": "Projetos e biblioteca",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "banco.sincronizar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "hefestus.gerar-menu",
+      "nome": "Gerar menu, componente, HTML e XAML",
+      "categoria": "Projetos e biblioteca",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "hefestus.gerar-menu"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "projeto.criar",
+      "nome": "Criar aplicação com ferramentas do catálogo",
+      "categoria": "Projetos e biblioteca",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "projeto.criar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "revisao.codigo",
+      "nome": "Revisar sintaxe e metadados locais",
+      "categoria": "Projetos e biblioteca",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "revisao.codigo"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "skills.descobrir",
+      "nome": "Descobrir metadados de skills locais e catálogos configurados",
+      "categoria": "Gestores e skills",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "skills.descobrir"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "repo.verificar",
+      "nome": "Verificar skills assinadas de um checkout",
+      "categoria": "Gestores e skills",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "repo.verificar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "repo.atualizar",
+      "nome": "Atualizar checkout Git sem push e verificar pacotes",
+      "categoria": "Gestores e skills",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "repo.atualizar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "repo.exportar",
+      "nome": "Exportar skills verificadas do checkout para uma IA",
+      "categoria": "Gestores e skills",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "repo.exportar"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/tools.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ui.4",
+      "nome": "Abrir Métricas",
+      "categoria": "Métricas",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ui.4"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/gui.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ui.5",
+      "nome": "Abrir Aprendizado",
+      "categoria": "Aprendizado",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ui.5"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/gui.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ui.6",
+      "nome": "Abrir Requisitos",
+      "categoria": "Requisitos",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ui.6"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/gui.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    },
+    {
+      "id": "ui.7",
+      "nome": "Abrir Configuração",
+      "categoria": "Configuração",
+      "entrada": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "saida": {
+        "tipo": "resultado-json-ou-arquivo"
+      },
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "Antares",
+        "comando": "ui.7"
+      },
+      "origem": {
+        "projeto": "Antares",
+        "arquivo": "antares/gui.py",
+        "licenca": "Projeto local; dependências têm licenças próprias"
+      },
+      "estado": "implementado-no-host",
+      "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+    }
+  ],
+  "catalogoTemplates": [
+    {
+      "id": "acao-primaria",
+      "tipo": "botao",
+      "destaque": true
+    },
+    {
+      "id": "acao-secundaria",
+      "tipo": "botao",
+      "destaque": false
+    }
+  ],
+  "codigos": {
+    "web": {
+      "origem": "gerado",
+      "estado": "executável",
+      "texto": "<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width\"><title>Antares · pedidos e evidências</title><style>body{margin:0;font:14px system-ui;background:#eef2f6;color:#182b36}button{min-height:36px;padding:8px 12px;border:1px solid #87989f;border-radius:4px;background:white;color:inherit;cursor:pointer}button:focus-visible{outline:3px solid #12665d;outline-offset:2px}.abas{display:flex;gap:4px;flex-wrap:wrap;padding:8px;background:#173d38;color:white}.abas button[aria-selected=true]{background:#d8f88c;color:#182b36}.painel{display:flex;flex-wrap:wrap;gap:12px;padding:12px;background:white}.painel[hidden]{display:none}.grupo{border-right:1px solid #87989f;padding:0 12px 0 0;max-width:400px}.acoes{display:flex;flex-wrap:wrap;gap:4px}.destaque{font-weight:700;background:#e3f2e9}h2{font-size:12px;color:#4b6068;margin:8px 0}#estado{padding:16px}</style><nav class=\"abas\" role=\"tablist\" aria-label=\"Áreas\"><button role=\"tab\" aria-selected=\"true\" data-tab=\"area-0\" aria-controls=\"area-0\">Pedidos</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-1\" aria-controls=\"area-1\">Fila e ferramentas</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-2\" aria-controls=\"area-2\">Projetos e biblioteca</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-3\" aria-controls=\"area-3\">Gestores e skills</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-4\" aria-controls=\"area-4\">Métricas</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-5\" aria-controls=\"area-5\">Aprendizado</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-6\" aria-controls=\"area-6\">Requisitos</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"area-7\" aria-controls=\"area-7\">Configuração</button></nav><section class=\"painel\" role=\"tabpanel\" id=\"area-0\" ><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pedido.especificar\" title=\"Gerar especificação rastreável\">Gerar especificação rastreável</button><button class=\"\" data-command=\"contexto.buscar\" title=\"Buscar originais e artefatos com BM25 local\">Buscar originais e artefatos com BM25 local</button></div><h2>Ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-1\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdf.health\" title=\"Verificar motor PDF\">Verificar motor PDF</button><button class=\"\" data-command=\"pdf.inspect\" title=\"Inspecionar documento\">Inspecionar documento</button><button class=\"\" data-command=\"pdf.text\" title=\"Extrair texto\">Extrair texto</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdf.create\" title=\"Criar PDF\">Criar PDF</button><button class=\"\" data-command=\"pdf.edit\" title=\"Editar páginas/texto\">Editar páginas/texto</button><button class=\"\" data-command=\"pdf.merge\" title=\"Juntar PDFs\">Juntar PDFs</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdf.extract\" title=\"Extrair páginas\">Extrair páginas</button><button class=\"\" data-command=\"pdf.from-images\" title=\"Imagens para PDF\">Imagens para PDF</button><button class=\"\" data-command=\"pdf.office-in\" title=\"Office para PDF\">Office para PDF</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdf.office-out\" title=\"PDF para Office\">PDF para Office</button><button class=\"\" data-command=\"pdf.pdfa\" title=\"Exportar PDF/A visual\">Exportar PDF/A visual</button><button class=\"\" data-command=\"pdf.compress\" title=\"Compactar por rasterização\">Compactar por rasterização</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdf.verify\" title=\"Verificar assinatura\">Verificar assinatura</button><button class=\"\" data-command=\"pdf.repair\" title=\"Reparar PDF\">Reparar PDF</button><button class=\"\" data-command=\"pdf.ocr\" title=\"OCR pesquisável\">OCR pesquisável</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ia.local\" title=\"Consultar modelo local\">Consultar modelo local</button><button class=\"\" data-command=\"ia.gateway\" title=\"Gateway local-first; provedor externo configurável\">Gateway local-first; provedor externo configurável</button><button class=\"\" data-command=\"workflow.executar\" title=\"Executar fluxo de ferramentas com limite de profundidade\">Executar fluxo de ferramentas com limite de profundidade</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"voz.sintetizar\" title=\"Narrar texto em WAV com voz instalada\">Narrar texto em WAV com voz instalada</button><button class=\"\" data-command=\"imagens.mesclar\" title=\"Mesclar imagens por sobreposição local\">Mesclar imagens por sobreposição local</button><button class=\"\" data-command=\"estilo.registrar\" title=\"Registrar referências e paleta de estilo\">Registrar referências e paleta de estilo</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"conector.local\" title=\"Chamar serviço local configurado\">Chamar serviço local configurado</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-2\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"projetos.indexar\" title=\"Atualizar catálogo de projetos\">Atualizar catálogo de projetos</button><button class=\"\" data-command=\"banco.sincronizar\" title=\"Indexar artefatos e contratos\">Indexar artefatos e contratos</button><button class=\"\" data-command=\"hefestus.gerar-menu\" title=\"Gerar menu, componente, HTML e XAML\">Gerar menu, componente, HTML e XAML</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"projeto.criar\" title=\"Criar aplicação com ferramentas do catálogo\">Criar aplicação com ferramentas do catálogo</button><button class=\"\" data-command=\"revisao.codigo\" title=\"Revisar sintaxe e metadados locais\">Revisar sintaxe e metadados locais</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-3\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"skills.descobrir\" title=\"Descobrir metadados de skills locais e catálogos configurados\">Descobrir metadados de skills locais e catálogos configurados</button><button class=\"\" data-command=\"repo.verificar\" title=\"Verificar skills assinadas de um checkout\">Verificar skills assinadas de um checkout</button><button class=\"\" data-command=\"repo.atualizar\" title=\"Atualizar checkout Git sem push e verificar pacotes\">Atualizar checkout Git sem push e verificar pacotes</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"repo.exportar\" title=\"Exportar skills verificadas do checkout para uma IA\">Exportar skills verificadas do checkout para uma IA</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-4\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ui.4\" title=\"Abrir Métricas\">Abrir Métricas</button></div><h2>Ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-5\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ui.5\" title=\"Abrir Aprendizado\">Abrir Aprendizado</button></div><h2>Ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-6\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ui.6\" title=\"Abrir Requisitos\">Abrir Requisitos</button></div><h2>Ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"area-7\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ui.7\" title=\"Abrir Configuração\">Abrir Configuração</button></div><h2>Ações</h2></section></section><p id=\"estado\" role=\"status\">Prévia da interface. Conecte os comandos ao motor do programa.</p><script>document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]');if(t){document.querySelectorAll('[role=tab]').forEach(b=>b.setAttribute('aria-selected',String(b===t)));document.querySelectorAll('[role=tabpanel]').forEach(p=>p.hidden=p.id!==t.dataset.tab);}const c=e.target.closest('[data-command]');if(c){document.querySelector('#estado').textContent='Comando: '+c.dataset.command;document.dispatchEvent(new CustomEvent('hefestus:comando',{detail:{id:c.dataset.command}}));}});</script></html>"
+    },
+    "desktopWpf": {
+      "origem": "gerado",
+      "estado": "fragmento: conectar comandos ao host",
+      "texto": "<TabControl xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">\n <TabItem Header=\"Pedidos\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Gerar especificação rastreável\" Tag=\"pedido.especificar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Buscar originais e artefatos com BM25 local\" Tag=\"contexto.buscar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Fila e ferramentas\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Verificar motor PDF\" Tag=\"pdf.health\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Inspecionar documento\" Tag=\"pdf.inspect\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair texto\" Tag=\"pdf.text\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Criar PDF\" Tag=\"pdf.create\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Editar páginas/texto\" Tag=\"pdf.edit\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Juntar PDFs\" Tag=\"pdf.merge\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Extrair páginas\" Tag=\"pdf.extract\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Imagens para PDF\" Tag=\"pdf.from-images\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Office para PDF\" Tag=\"pdf.office-in\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"PDF para Office\" Tag=\"pdf.office-out\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Exportar PDF/A visual\" Tag=\"pdf.pdfa\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Compactar por rasterização\" Tag=\"pdf.compress\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Verificar assinatura\" Tag=\"pdf.verify\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Reparar PDF\" Tag=\"pdf.repair\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"OCR pesquisável\" Tag=\"pdf.ocr\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Consultar modelo local\" Tag=\"ia.local\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Gateway local-first; provedor externo configurável\" Tag=\"ia.gateway\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Executar fluxo de ferramentas com limite de profundidade\" Tag=\"workflow.executar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Narrar texto em WAV com voz instalada\" Tag=\"voz.sintetizar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Mesclar imagens por sobreposição local\" Tag=\"imagens.mesclar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Registrar referências e paleta de estilo\" Tag=\"estilo.registrar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Chamar serviço local configurado\" Tag=\"conector.local\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Projetos e biblioteca\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Atualizar catálogo de projetos\" Tag=\"projetos.indexar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Indexar artefatos e contratos\" Tag=\"banco.sincronizar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Gerar menu, componente, HTML e XAML\" Tag=\"hefestus.gerar-menu\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Criar aplicação com ferramentas do catálogo\" Tag=\"projeto.criar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Revisar sintaxe e metadados locais\" Tag=\"revisao.codigo\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Gestores e skills\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Descobrir metadados de skills locais e catálogos configurados\" Tag=\"skills.descobrir\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Verificar skills assinadas de um checkout\" Tag=\"repo.verificar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Atualizar checkout Git sem push e verificar pacotes\" Tag=\"repo.atualizar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Exportar skills verificadas do checkout para uma IA\" Tag=\"repo.exportar\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Métricas\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Abrir Métricas\" Tag=\"ui.4\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Aprendizado\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Abrir Aprendizado\" Tag=\"ui.5\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Requisitos\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Abrir Requisitos\" Tag=\"ui.6\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Configuração\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Abrir Configuração\" Tag=\"ui.7\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n</TabControl>"
+    },
+    "mobile": {
+      "origem": "não disponível",
+      "estado": "adaptador ainda não implementado"
+    }
+  },
+  "metricas": {
+    "abas": 8,
+    "grupos": 17,
+    "comandos": 37,
+    "limiteVisivel": 3,
+    "maximoPorGrupo": 3,
+    "comandosEmMais": 0,
+    "alvoMinimo": 32,
+    "vinculosValidos": 37,
+    "reusoTemplatesPercentual": 100
+  }
+}
