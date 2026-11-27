@@ -55,7 +55,11 @@ Preencha o modelo. O CI roda o build e todos os testes. Um mantenedor revisa, po
 
 ## Contribuir peças para o banco de ferramentas
 
-O banco (`hefestus/banco/`) é o acervo reutilizável do Hefestus: cada programa feito com ele pode deixar peças para os próximos. O envio de peças por formulário está planejado. Até lá, abra um PR com a peça, o contrato (JSON Schema de entrada) e testes. **Nunca envie projetos com dados reais de clientes, senhas ou código que você não pode licenciar.**
+O banco é o acervo reutilizável do Hefestus: cada programa feito com ele pode deixar peças para os próximos.
+Exporte só a peça (com `npm run banco:peca -- exportar …`), confira com `validar` e abra um PR com o arquivo em
+`hefestus/banco-comunidade/`. O passo a passo e o que o validador recusa estão em
+[`hefestus/banco-comunidade/README.md`](hefestus/banco-comunidade/README.md).
+**Nunca envie** projetos inteiros, dados de clientes, senhas ou código que você não pode licenciar.
 
 ---
 

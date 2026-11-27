@@ -15,8 +15,8 @@ jobs:
       run:
         working-directory: hefestus
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -24,3 +24,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test
+      - name: Validar peças do banco da comunidade
+        run: |
+          shopt -s nullglob
+          pecas=(banco-comunidade/*.peca.json)
+          if [ ${#pecas[@]} -eq 0 ]; then echo "Nenhuma peça em banco-comunidade/."; exit 0; fi
+          node ferramentas/banco-peca.mjs validar "${pecas[@]}"

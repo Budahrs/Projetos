@@ -74,6 +74,13 @@ export function deBase64(b64) {
   return out;
 }
 
+/** Todos os textos dentro de um valor JSON (para achar referências a outras entradas). */
+function* textosDe(v) {
+  if (typeof v === "string") yield v;
+  else if (Array.isArray(v)) for (const x of v) yield* textosDe(x);
+  else if (v && typeof v === "object") for (const x of Object.values(v)) yield* textosDe(x);
+}
+
 /** "ferramenta/vetoria/vectorize@1.2.0" */
 export const chaveDe = ({ tipo, programa, id, versao }) => `${tipo}/${programa}/${id}@${versao}`;
 
@@ -286,6 +293,39 @@ export class Armazem {
     const config = {};
     for (const k of ["assinaturas", "decisoes", "fixtures"]) { const v = await this.meio.lerConfig(k); if (v !== undefined) config[k] = v; }
     return { formato: "hefestus-armazem", versao: 1, exportadoEm: new Date().toISOString(), indice: [...this.indice.values()], blobs, config };
+  }
+
+  /**
+   * Pacote só com algumas peças (para contribuir com o banco da comunidade), no mesmo formato de `exportar`,
+   * então `importar` o aceita sem mudança. Leva junto as dependências: qualquer texto dentro do conteúdo
+   * que seja a chave de outra entrada (ex.: implementacao.fontes). `usadoPor` sai vazio: os nomes dos
+   * projetos de quem exportou não vão junto. `contribuicao` (autor, licença, descrição) fica no pacote.
+   */
+  async exportarPecas(chaves, { dependencias = true, contribuicao = null } = {}) {
+    await this.abrir();
+    const lista = [].concat(chaves ?? []);
+    if (!lista.length) throw new Error("diga qual peça exportar (tipo/programa/id@versão)");
+    const escolhidas = new Map();
+    const fila = lista.map(c => { const e = this.indice.get(c) ?? this.localizar(c); if (!e) throw new Error(`não está no armazém: ${c}`); return e; });
+    while (fila.length) {
+      const e = fila.shift();
+      if (escolhidas.has(e.chave)) continue;
+      escolhidas.set(e.chave, e);
+      if (!dependencias || e.formato !== "json") continue;
+      for (const texto of textosDe(JSON.parse(await this.ler(e.chave))))
+        if (texto !== e.chave && this.indice.has(texto) && !escolhidas.has(texto)) fila.push(this.indice.get(texto));
+    }
+    const blobs = {};
+    for (const e of escolhidas.values()) {
+      if (blobs[e.hash]) continue;
+      const b = await this.meio.lerBlob(e.hash);
+      if (!b) throw new Error(`${e.chave}: a cópia sumiu do armazém (hash ${e.hash})`);
+      blobs[e.hash] = { compactacao: b.compactacao, tamanhoOriginal: b.tamanhoOriginal, base64: paraBase64(b.bytes) };
+    }
+    const pacote = { formato: "hefestus-armazem", versao: 1, exportadoEm: new Date().toISOString(),
+      indice: [...escolhidas.values()].map(e => ({ ...e, usadoPor: [] })), blobs, config: {} };
+    if (contribuicao) pacote.contribuicao = { pecas: lista, ...contribuicao };
+    return pacote;
   }
 
   /** Junta um pacote exportado. Confere o hash de cada cópia; conflitos de versão não sobrescrevem nada. */

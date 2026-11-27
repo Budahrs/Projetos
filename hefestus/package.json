@@ -14,6 +14,7 @@
     "cli": "node ferramentas/hefestus-cli.mjs",
     "test:blocos": "node ferramentas/verificar-blocos.cjs",
     "banco:atualizar": "node ferramentas/gerar-banco-ferramentas.mjs",
+    "banco:peca": "node ferramentas/banco-peca.mjs",
     "arquitetura:inventariar": "node ferramentas/inventariar-projetos.mjs",
     "android:preparar": "node ferramentas/preparar-android.mjs",
     "android:dev": "tauri android dev",
