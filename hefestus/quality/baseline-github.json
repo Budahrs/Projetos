@@ -1,0 +1,2638 @@
+{
+  "repository": "rsampietro-code/programas",
+  "commit": "b130843db46aa5a22831fbf19eaff5189ac5f263",
+  "data": "2026-10-28",
+  "arquivos": [
+    {
+      "path": "hefestus/.gitignore",
+      "sha": "d3239b2b6111b93d63bbb46ad6fbb5d5778d136f",
+      "size": 505,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/AGENTS.md",
+      "sha": "3080e2c3f73c91db5d8ea7b58f2376974aa6b3ff",
+      "size": 12595,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/AJUSTES_0351.txt",
+      "sha": "5b1e6e1d91ebe66eb51373c357056ec5b52d49df",
+      "size": 852,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Abrir_Hephaestus.bat",
+      "sha": "5a09d6e433655bfb60d7d2075d00130140785259",
+      "size": 52,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/BIBLIA_ARQUITETURA_GDD.md",
+      "sha": "8e61c0c1a5de943950ecaf871a9fcaff78d202a1",
+      "size": 117925,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/CLAUDE.md",
+      "sha": "1b816b7d3c4b47e1dc815f94d6d95b0bed73c3fc",
+      "size": 117,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/CORRECOES.md",
+      "sha": "4bca695eb244f065af60ef4018dd419fc6a4d498",
+      "size": 3229,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Consolidar_Hefestus.bat",
+      "sha": "325e3456d205014a2bbe42e828f898fc957ad533",
+      "size": 121,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Consolidar_Hefestus.ps1",
+      "sha": "f7fcef836809a4aef863d8a803bbcb167fb32978",
+      "size": 6963,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Criar_Atalho_Axiom_Studio.bat",
+      "sha": "b0635fd6e83937be1196954878e4bd020505d8a3",
+      "size": 245,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Criar_Atalho_Axiom_Studio.ps1",
+      "sha": "16e4725749dcf0b22b7841922553b2577d2935ca",
+      "size": 1628,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Daedalus_Core_NOC_v8.html",
+      "sha": "e15f798b2e75d2c23f73380071acfd1accaafbe2",
+      "size": 1570065,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/EVOLUCAO_047.md",
+      "sha": "933de7cc012c1608889fb480ad593f08c98076cf",
+      "size": 6711,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/Iniciar_Axiom_Studio.bat",
+      "sha": "af65c3f9449f7d920432ee18585e8f9b613018e5",
+      "size": 3965,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-035.md",
+      "sha": "bca0db2f96ddc7c20b341e082e45436bdb0c291e",
+      "size": 4588,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-036.md",
+      "sha": "169d7bf0662a7a81ed28893b96df457de1b0e094",
+      "size": 1577,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-037.md",
+      "sha": "db921a8b0fb18541637530fd7d1b50804991f004",
+      "size": 7150,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-038.md",
+      "sha": "d79a14f36ec0692ecdda228a83df922dc6f81d24",
+      "size": 2824,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-039.md",
+      "sha": "3f74885fe78f2b1adc2415e43e63a34bf7c70f67",
+      "size": 4153,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-040.md",
+      "sha": "636fa21edf3f7adeb627fc76ee94245fb7a31a44",
+      "size": 2625,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-041.md",
+      "sha": "63c9608eed4d43be826246d04aadb37f2446b187",
+      "size": 1462,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-042.md",
+      "sha": "0814cbc326f034b68060fa5023472f05c89324f9",
+      "size": 2896,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-043.md",
+      "sha": "8af1df0226721e99aa55687333bc353430a9c0ab",
+      "size": 3834,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-044.md",
+      "sha": "3da0c535391a89f54fc5b489d98b0d0cc8211b73",
+      "size": 3392,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-045.md",
+      "sha": "f06b0f55d4cf397ad5e623e52905f31b698ebab7",
+      "size": 3883,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-046-CONSOLIDADO.md",
+      "sha": "17ab14d19f9972cbe1fe63639529b27dd8030b83",
+      "size": 2657,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-047-ALPHA4.md",
+      "sha": "125c5fad77c7bbf80e21f1a5bc4a44dc6411f005",
+      "size": 3008,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-JANELA.md",
+      "sha": "42bf5dfa7e1f30845a5fe64805b09455a198e0d2",
+      "size": 2281,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME-MENUS-034.md",
+      "sha": "2dbbbc86ec91edfc41a465bbec15df9a06866eb5",
+      "size": 3475,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME_INSTALAR.txt",
+      "sha": "c35164b98805de5e230e211cdd1ce8b8d0944aee",
+      "size": 973,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/LEIA-ME_r29.txt",
+      "sha": "a122111ab94ab3e241a2f746f1b706e9e7bf18e6",
+      "size": 2353,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/MELHORIAS_037.md",
+      "sha": "ea58d136fb7b3e9cb34484bfbe3d7c0debb3a9ce",
+      "size": 3655,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/MELHORIAS_038.md",
+      "sha": "3fa4022e257ec485c1f1bb9469e58305754f53a7",
+      "size": 2426,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/MELHORIAS_039.md",
+      "sha": "6eff9174202fb7ed914b6c591297e0a8a6076d93",
+      "size": 4038,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/MELHORIAS_040.md",
+      "sha": "597c999573f8eb103ec13a7559bb0ba1a96943a4",
+      "size": 4400,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/MENUS_ADAPTATIVOS.md",
+      "sha": "cca9a7a2cc10a423479f6db17bef0df8ff1c75e5",
+      "size": 7133,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/PUBLICACAO.md",
+      "sha": "6cd18b944e150bb7a1438670a0fd3e57c261a114",
+      "size": 392,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/README.md",
+      "sha": "f61ca64454b9ad3cf491b9de8f8606d51dec56b1",
+      "size": 6606,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/REGRAS_E_EXPERTISE_MENUS.md",
+      "sha": "6dcbdada886c1e6235fa840f2c0e8510dfcbb050",
+      "size": 5542,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/THIRD-PARTY-NOTICES.md",
+      "sha": "0d47b965aeb7d5dab9c30159d557e09c179ed632",
+      "size": 998,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/axiom-256.png",
+      "sha": "9cd4ff9095ae40a95a2696c26a02e7fb01937fbe",
+      "size": 81818,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/axiom.ico",
+      "sha": "36c0b92ce06fe6e549e8ab62e367cd48c6fbc3a6",
+      "size": 116306,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/banco/ferramentas.hefestus.json",
+      "sha": "c1ba79c1ad3f5585ea5f50048304f0684bc84407",
+      "size": 9108425,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/build.mjs",
+      "sha": "ef57bc9b450e9be39c1eabfe9e6e9882877fb7c0",
+      "size": 5027,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/css/hefestus.css",
+      "sha": "e3c4a7be80b58026ccd893eff812744ca42412fe",
+      "size": 216285,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/AGENTS_MODELO.md",
+      "sha": "7f0b59497ea78196bcae165f0e3dc2ff5f934dd4",
+      "size": 3222,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/MANUAL_FABRICA.md",
+      "sha": "2e102f80e5edce725bd0798bba86f6f957ae0294",
+      "size": 27371,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/PERFIS_TECNOLOGICOS.md",
+      "sha": "86118d1fab7c1c8f3d7054434cbad841b0bd5e5a",
+      "size": 20401,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/mcp/FERRAMENTAS.md",
+      "sha": "f6b1496b179a23e75e03000043bc93f1b235dda1",
+      "size": 42987,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/mcp/ferramentas.json",
+      "sha": "675e7e11f5a8ad8c56053ed921f3e608da9e2632",
+      "size": 49392,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/politica-decisoes.json",
+      "sha": "5606e911e38fe29acc5e743ec6dd053864195b71",
+      "size": 9334,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/docs/ia/score-inicial.json",
+      "sha": "a467bc17d568f7d654bf086347877484a29ff242",
+      "size": 24026,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/HEPHAESTUS_2_GUIA_DE_IMPLEMENTACAO.md",
+      "sha": "482f6f1e4c474958b22565e7a75a7f525b1ca64e",
+      "size": 2678,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/INTEGRACAO_CRAFT.md",
+      "sha": "8a5efb9cf7769b38c3d4ac1940f618951bd9e32f",
+      "size": 2341,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/VALIDACAO_NAVEGADOR.md",
+      "sha": "4f71c64e07b2b62722373aac55cbdd675503f95e",
+      "size": 1792,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/arquitetura/inventario-projetos.json",
+      "sha": "d33058ac9e60d2ab8937e547fb03afa1b78f1046",
+      "size": 104842,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/arquitetura/padrao-hefestus.md",
+      "sha": "a92a129ae8da7ae3047132d1ec0e391ec3bff03a",
+      "size": 3638,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/arquitetura/resumo.json",
+      "sha": "68fd6e17a9f71907fa0bedf86ea55f1d5282b96b",
+      "size": 2217,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/01.jpg",
+      "sha": "c3bea3a0f5956601dcc96d2f509fa4aa31cb4b5c",
+      "size": 60813,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/02.jpg",
+      "sha": "eb48810a2bde79e3752f9a4fa8e22962f28f8cb3",
+      "size": 55600,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/03.webp",
+      "sha": "4b9fab53e3add88c5a5e64c17694bb493f1b435c",
+      "size": 21328,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/04.png",
+      "sha": "c664b7d11f66d5c76226b545ae6467e654fb2aad",
+      "size": 228217,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/05.png",
+      "sha": "84d861f8ab2b91f8c1d3360b5463206a04c84f08",
+      "size": 42697,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/06.jpeg",
+      "sha": "83cba4828917a75811de09b5ba19ff518a65e6fa",
+      "size": 3673,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/07.webp",
+      "sha": "fe966b605ea65292fff1ee27f7efa3e6654c4987",
+      "size": 59738,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/08.png",
+      "sha": "76bba6c6253e7a49868097b37144f8dba4442453",
+      "size": 193455,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/09.jpeg",
+      "sha": "ae17dbe33c69fe1272dc21970bcfe5d143078075",
+      "size": 25825,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/10.webp",
+      "sha": "988d300faf8f02169ce63c551b5b1719bf15b2eb",
+      "size": 39974,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/referencias-oficina/guia-visual.md",
+      "sha": "25222cdad6502053e91eb8dfa9a6799115a2d06d",
+      "size": 3106,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/hefestus-oficina-blocos.png",
+      "sha": "19c8f957c7bdedeb5f1a6ced1e095c1c79b1c505",
+      "size": 125564,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/contrato-teste.json",
+      "sha": "a19d9b7045d4fb621a608dca58b7682afee843c1",
+      "size": 148,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/editado.pdf",
+      "sha": "a402219e5a70e289943b7d8582baa75eae49f891",
+      "size": 52279,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/extraido.pdf",
+      "sha": "21a3b857e70cef1ecc7d32c015d62d9f1a250b53",
+      "size": 50840,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/juntado.pdf",
+      "sha": "9ba1b089c4b304f98324c1ea4c9d7774296425f5",
+      "size": 77390,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/novo.pdf",
+      "sha": "d6cb5fd18cbca7c69b9743784b8b42e8c30f2a8b",
+      "size": 28577,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/documentos/validacao/pdf-studio/relatorio.json",
+      "sha": "5c2994889eda94bbbb758cd01d3d78f4ca31ac29",
+      "size": 680,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/efeitosMcp.mjs",
+      "sha": "cf8f4a6bec455f85aa024b2678b26f83c962cc71",
+      "size": 4566,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/exportar-temas.mjs",
+      "sha": "fbec031849166a15256799930f1ec47d5881983f",
+      "size": 417,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/exportarPrograma.mjs",
+      "sha": "26565c20107aad8daad5e285156b4ec1de4a92aa",
+      "size": 16001,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/extrair-componentes.mjs",
+      "sha": "61482b3eeda89db21981661af2bd7144e7a38a2b",
+      "size": 1287,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/fichas-mcp.mjs",
+      "sha": "67f9987bfa5a12230644a8853ee20dd2b98db2b8",
+      "size": 5904,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/gerar-banco-ferramentas.mjs",
+      "sha": "25b0ed0a5dd8b8893b5b3aece297df50ffc22bc0",
+      "size": 4311,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/gerar-icones-md.py",
+      "sha": "33664cd22edbcdb0b343aee4eb44c4b67260ea7a",
+      "size": 6964,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/gerar-menu.mjs",
+      "sha": "01d1e799d3655903d3a5e1c2e20f112c9ff9269c",
+      "size": 1164,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/gerar-tela.mjs",
+      "sha": "c029c7e1072aaccc7dd4c717346b0a9d18b8d7fb",
+      "size": 868,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/gerar-voz-abertura.mjs",
+      "sha": "b21f94b89ba2499ea3deaf40f77aabbe57faf4c2",
+      "size": 4252,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/hefestus-cli.mjs",
+      "sha": "c0756b18a2fa2f4d31787bd69b3baa5c159a7709",
+      "size": 10303,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/hefestus-mcp.mjs",
+      "sha": "13acd1245e037b265945cc2117e14112335d392d",
+      "size": 17174,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/inventariar-projetos.mjs",
+      "sha": "46207ff391f50920df1b534c8c332188d8e953fd",
+      "size": 2548,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/ligacoes-auto.mjs",
+      "sha": "3bed402843bcda50e67282ceb0468e646f6e9153",
+      "size": 10895,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/materializar-projeto.mjs",
+      "sha": "9d4fe7f7896377c848d2004d9edf9d89a1d1368d",
+      "size": 1321,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/motor-projetos.mjs",
+      "sha": "6f5c9fdc1b65d6f26a84ed7c1bbae7232ea2448f",
+      "size": 4640,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/preparar-android.mjs",
+      "sha": "a598b5787a67ad5a9bba28f55eedfe7130dcbac7",
+      "size": 4515,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/programa-ligacoes.js",
+      "sha": "d7df6b51d18195adbabd0f17fd84ab71fba89a37",
+      "size": 42444,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/programa-motor.rs",
+      "sha": "4aa0bcabd34abd55169e69f16d545839a2a72984",
+      "size": 11835,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/programa-pdf.mjs",
+      "sha": "fa8fd802e945302a3cde6e8cb52bcd254b30982b",
+      "size": 43517,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/restaurar-fontes-banco.mjs",
+      "sha": "b224f6a96fc32a0ca02513db07770c1de12b6b2f",
+      "size": 1435,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/empacotar-pdf.mjs",
+      "sha": "0f4346cb26a647d0c5a915ac83c343dbf1a77c08",
+      "size": 1220,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/LICENSE-pdf-lib.md",
+      "sha": "7a237e68e37abe7ac934c4e89f49e1a94f161f33",
+      "size": 1070,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/LICENSE-pdfjs.txt",
+      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "size": 10174,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/LICENSE-wasm.txt",
+      "sha": "b677c00becb723b4562e5ce0f16d5849d1e603e7",
+      "size": 19362,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/dados-pdf.pack",
+      "sha": "54da3f1ba818e459af65a882c0afad09561b168f",
+      "size": 3473633,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/pdf-lib.esm.min.js",
+      "sha": "6f1fce7901fcab4c6e8d08518d313bb97bcf908c",
+      "size": 523373,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/pdf.min.js",
+      "sha": "16352967e5499ab28ca5c5caf433509822d2d357",
+      "size": 512483,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/vendor/pdf/pdf.worker.min.js",
+      "sha": "c83df7da98164a3da9f1055a3e758a87df208c65",
+      "size": 1312452,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/verificar-blocos.cjs",
+      "sha": "aff095b339d123d1f4da5dd5651bc03ce0be2618",
+      "size": 3092,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/verificar-janelas.cjs",
+      "sha": "5aab800f26c264fc58cc736ac6eacba846bc26d5",
+      "size": 7140,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ferramentas/verificar-pdf-studio.mjs",
+      "sha": "674219753550835e6fb82b2158d3d01d78e73dee",
+      "size": 3128,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/heartpulse.ico",
+      "sha": "3e8c00f3fc1fcc44b35d3afc3058293e09ad4281",
+      "size": 122346,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/hefestus.ico",
+      "sha": "661295fcd930336d60a5b7a07b55ceb9b02d0b48",
+      "size": 29597,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/index.html",
+      "sha": "f807d17030f62dd62df90ab1a479ec3afee0457d",
+      "size": 1001,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/agente/agente.js",
+      "sha": "f84b6c451135c5fe91b4597c27e30148fc0fe0f5",
+      "size": 11051,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/agente/ferramentas.js",
+      "sha": "e20a11f75290ad047d5f77ff564a431241cff40b",
+      "size": 35626,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/agente/local.js",
+      "sha": "24d3bc36f9e1ca344f60a0e4aa40e38510514792",
+      "size": 41516,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app.js",
+      "sha": "2e14eed53e5200a120200d2b5cd9b744ffe5be74",
+      "size": 51240,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/aparencia.js",
+      "sha": "4dcdfb5a1a0a970b321505abbd24205c718e9275",
+      "size": 3268,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/areasHephaestus.js",
+      "sha": "c108fa2008ab6472da739d7204418ca625ee3157",
+      "size": 1301,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/armazem.js",
+      "sha": "457f6d86e17500046721634a9d2aaae511be0dc7",
+      "size": 5304,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/biblioteca.js",
+      "sha": "ba443d958a0d4a12c4ce2908635268a591721e9a",
+      "size": 10633,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/hephaestus.js",
+      "sha": "06a6bd2cc2fae0c7e4eb55edd8cddffa21f2df9c",
+      "size": 11402,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/app/workspace.js",
+      "sha": "f7272422af0614c79f90fb8de7061f8e38812b2d",
+      "size": 739,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/adaptadoresTemas.js",
+      "sha": "e8ba796349cf53491b22362449a374823754db6f",
+      "size": 3213,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/armazem.js",
+      "sha": "d827c342de7eefbde3a96a006df37d6d7748f394",
+      "size": 15244,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/arquivoProjeto.js",
+      "sha": "b5065b3710c025177629e761bc95f34b96bec026",
+      "size": 2476,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/artefatos.js",
+      "sha": "5d281b260aade8a09de39f358f6bc90761923c22",
+      "size": 10544,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/auditoria.js",
+      "sha": "b2bc567f4abd32715c88866a6953fa3e15ef5fe9",
+      "size": 18435,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/autoformatar.js",
+      "sha": "faae94440c5d4dcea7bc5f4857179cc06256943a",
+      "size": 1917,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/axiomFaixa.js",
+      "sha": "3629ab6b7805936f103d5ffb9138692fbf09c3b6",
+      "size": 10207,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/axiomSpec.js",
+      "sha": "c24fd4bd3a96aab824fba57e03aec38dff3fb027",
+      "size": 27140,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/bancoFerramentasDados.js",
+      "sha": "531c468e9e149ef379437585a43ce0c16d66ff39",
+      "size": 9137742,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/bancoFerramentasInicial.js",
+      "sha": "b8c7e8473f24c216235937aef4536f7a2257df86",
+      "size": 777,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/blocosMenu.js",
+      "sha": "6b269f0b40e75d3ac99eca1445e0248220886be6",
+      "size": 3609,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/catalogo.js",
+      "sha": "40d3ab159831c43696b3f4de03188880c37e7b37",
+      "size": 20173,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/classificador.js",
+      "sha": "6bc07801f529e53f24629832b71f0fb78ccc3676",
+      "size": 7337,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/codigoGrupo.js",
+      "sha": "8973a295d8ee5f80ae86ed14e0b22fe5a023a0dc",
+      "size": 1462,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/comandos.js",
+      "sha": "13638410074035f67538c28e97e07ad3483e7d71",
+      "size": 1429,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/compilador.js",
+      "sha": "d9092159eadd0ea75c0b1916877570b7d86fb75c",
+      "size": 10619,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/complemento.js",
+      "sha": "0d64d2e996614459a31f7c8676ca96217229e211",
+      "size": 3807,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/componentes.js",
+      "sha": "dece22eb538d516e6c6bf05ab30036f758a03d97",
+      "size": 34087,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/comportamentos.js",
+      "sha": "3fed947f259841dc9e662626fe9a1b28d1624140",
+      "size": 5478,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/comportamentosLote.js",
+      "sha": "0d442c6c05c83f2a7d5a2a2571fc5838858ac0bc",
+      "size": 1372,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/consolidacao.js",
+      "sha": "a2c71cd62276f51e75eb6f29551e334e72c3aaa6",
+      "size": 11938,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/construtor.js",
+      "sha": "99562e3779e541bb3b17e12d70205527f6a8590d",
+      "size": 44195,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/contrato.js",
+      "sha": "118573c0eb2bc483ffc134780610feee82fbd8b4",
+      "size": 5261,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/controlador.js",
+      "sha": "74cd27346e5c575057e0c84819991d4ef5067d98",
+      "size": 1779,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/craft/caminhos.js",
+      "sha": "49c041fb24792d48f4e7d9f05cd205251cb04cb1",
+      "size": 4400,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/curadoriaFerramentas.js",
+      "sha": "772fcc81479dbe0c91a30e771bdd4090c019d0fd",
+      "size": 4616,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/dadosProjetos.js",
+      "sha": "e1e25824fa4247b5847522d0da3ae0b6936e5e3f",
+      "size": 3257,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/designerHephaestus.js",
+      "sha": "c78f248a489280b1feec24a0abc5aa733483c284",
+      "size": 3291,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/diferenca.js",
+      "sha": "44bf3c7501038160ead6e0c5f6fcf0cec47da081",
+      "size": 1797,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/documentacaoProjeto.js",
+      "sha": "9e24bcb5aa92a9d38532f7528eb8e39bc7da4043",
+      "size": 3469,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/efeitosBotao.js",
+      "sha": "daddcfd9efef2f77d86b07a467b8fe20db82e681",
+      "size": 7844,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/enquadramento.js",
+      "sha": "9e5856011afb4c23d23950845e7e15e5734e5ba7",
+      "size": 725,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/especificacaoSoftware.js",
+      "sha": "b9da048aaefdb173d3271779f2286ae1d899807f",
+      "size": 5049,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/estiloAvancado.js",
+      "sha": "933b9994ff16fe1ab4bfdeccbd9b11561a315914",
+      "size": 15407,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/expertiseMenus.js",
+      "sha": "ca121d66ea72c2e648782bd0c80f856ba04695f8",
+      "size": 7094,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/exportar.js",
+      "sha": "f614f97ddd7332275429c9e54c654e3213517a63",
+      "size": 22826,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/fontes.js",
+      "sha": "0bcc706a45cd58bb62704b72cd45e686a6cb001f",
+      "size": 5009,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/forjaObjetos.js",
+      "sha": "7e195b23501e34da71ff83be6af7f3296f4d6de7",
+      "size": 1432,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/formas.js",
+      "sha": "48a153db368a5236b676fca54cc91f99eef97a35",
+      "size": 7951,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/formatoMenus.js",
+      "sha": "fe29cace82f785bcb4eff82d11bfdef0abe50bc3",
+      "size": 1891,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/geradorWindows.js",
+      "sha": "b86220aa641e9d6f029b58d010cd4e143238be08",
+      "size": 7247,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/grafoModelos.js",
+      "sha": "e4e5ac5bbc4b6c6d92fe4c2b901640d1591222ae",
+      "size": 9120,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/guiaConstrucao.js",
+      "sha": "afb5a539564ea86424fc2f2755e03abdfe0d8ac2",
+      "size": 3958,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/hefestusMenuSpec.js",
+      "sha": "15524531d9586ff73822d5631c9e8b9679014b81",
+      "size": 49800,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/historicoArquivo.js",
+      "sha": "754953b13b7f2d9dd968962f26943423c487c27b",
+      "size": 5065,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/iconesAuto.js",
+      "sha": "71ac2f45158e7decddda225cc5a93c60831c02dd",
+      "size": 8270,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/importarHTML.js",
+      "sha": "62f23cecfcb42f3f4a4245d74906c47bb5900477",
+      "size": 4103,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/layout.js",
+      "sha": "9d14229ac96ed3c96e339a3813486d10bcb5193c",
+      "size": 6518,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/menuComportamentos.js",
+      "sha": "ca6b5766d080a8e5c8d95ad572c79c856b94a6db",
+      "size": 12643,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/menuEngine.js",
+      "sha": "1c840a0e8612f83a81f96354e42dae767a40cb23",
+      "size": 10034,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/menuPdfPadrao.js",
+      "sha": "65b34605f907a5d0d62197e5289c00a6c50459f9",
+      "size": 99373,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/metricasRibbon.js",
+      "sha": "dd02de4d9088ad670e36edd792cfcf0adfdd3b5d",
+      "size": 1488,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/modelos.js",
+      "sha": "80522f9551c62c0e177f422977d85d7fe73f2b69",
+      "size": 96986,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/modelosSistemas.js",
+      "sha": "d302e15f4efdabe0e27d946577fe87ae240febbc",
+      "size": 12831,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/motorMenus.js",
+      "sha": "1a20a42bebaf2e9eb1929899342873f9b315b556",
+      "size": 25952,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/nativo.js",
+      "sha": "342a008e92fac1f94a7042c5ddda734e31ca90bd",
+      "size": 1962,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/nucleo.js",
+      "sha": "eaaf0f6c3c5c8064a2fa61baf7596bf9199d7cf4",
+      "size": 99141,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/pacoteProjeto.js",
+      "sha": "a11384836efb1809b5409f09fdc9664cf10268ab",
+      "size": 1403,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/pacoteWindows.js",
+      "sha": "e397f0d3dacd09c30dada1c2f00756c68f600601",
+      "size": 11083,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/paineis.js",
+      "sha": "f4a64c5063d17b2d6d146e75cd83289b0772209b",
+      "size": 4129,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/pdfStudioMenu.js",
+      "sha": "8c8a2583c9ea6e4e521bf9a786d8f256de68dbbe",
+      "size": 6591,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/pedidosEcossistema.js",
+      "sha": "3ee983a6da3422783bcacb3d2eac5260e8fe0549",
+      "size": 38861,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/pincelFormatacao.js",
+      "sha": "e3a636ee6054664d6e51e3fcd313b180b853634b",
+      "size": 1841,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/ponteIA.js",
+      "sha": "00ce823000a70e9a345282f5bb426d0012c35344",
+      "size": 10009,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/primeirosPassos.js",
+      "sha": "d346c3bbbceefe4e92d7b704ec5f678374b5b1da",
+      "size": 3416,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/projetosFuturos.js",
+      "sha": "00d5537dcc7b532e1534134fc2add78ac5f52d4d",
+      "size": 13903,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/prontos.js",
+      "sha": "15ac6caf3757b14e4878ca2c1a74161127ae4503",
+      "size": 5968,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/protecao.js",
+      "sha": "2b3626f47b0d784a666a772ba00333775dbfa6bf",
+      "size": 20549,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/radio.js",
+      "sha": "e0fbf1e30b6daa45022a5a7f1cbb71d52ceba781",
+      "size": 67259,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/recuperacao.js",
+      "sha": "97606e3b42215a87bb17e2378ba02bf3140eb6b9",
+      "size": 8497,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/referenciasMenus.js",
+      "sha": "9d6b2e41b5462b8d7ed7936fc2f4cff5087d42be",
+      "size": 11493,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/runtime.js",
+      "sha": "20ce3d6fd29c2f4fee89c21c2ae3ec0b5bc60dbf",
+      "size": 33819,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/selecao.js",
+      "sha": "f8735432cb23e464d2200cd315322083d41f1a86",
+      "size": 1178,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/semente.js",
+      "sha": "2b935bfc5524506042b2aea42a3bf1d6a91a335c",
+      "size": 6624,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/sincronizar.js",
+      "sha": "9a202b7b1da8a825bd06c5881ee58965dc62932f",
+      "size": 12040,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/superficies.js",
+      "sha": "c6fdf3186c8dbb21b0aec16edc670c81493d8e77",
+      "size": 10640,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/svgImport.js",
+      "sha": "3711a33b1693b847fa94b4d1154640f559292ed5",
+      "size": 5404,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/temaGerado.js",
+      "sha": "bc3a9ae13fd9a7ea225ea0802c17c6fa57be5a23",
+      "size": 4377,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/temas.js",
+      "sha": "f83173a98535b42a177564d660a8f216e486dd4a",
+      "size": 9116,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/temasCompartilhados.js",
+      "sha": "c30762d56db82ed849462f5f1c8642036ceda7ce",
+      "size": 2641,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/variantes.js",
+      "sha": "a0c2edcc0bafec56a021060c267615593582af24",
+      "size": 6001,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/versoes.js",
+      "sha": "92b8b28ec6ec80311b59f2d189266825f0054196",
+      "size": 2759,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/vetor.js",
+      "sha": "bb4cd2734b0f38a5ac60161fbbe8c187ae48c286",
+      "size": 25654,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/vetorElemento.js",
+      "sha": "ca6305ac78a40e0d2f9156dd3bccf094ab6ca7d0",
+      "size": 3507,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/vinculos.js",
+      "sha": "d767124b81998fae044dbc716b6c523c2af4e5c6",
+      "size": 4092,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/visualScript.js",
+      "sha": "6be3a6e1b629e250dd24dc7ec81a657ed954264a",
+      "size": 55941,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/nucleo/zip.js",
+      "sha": "3839283921c16c8afdb2862a41a26df49ef8734f",
+      "size": 3567,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/abasHephaestus.js",
+      "sha": "b4efe265283a3431a83caa40c779ec324bdba8ce",
+      "size": 17090,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/abertura.js",
+      "sha": "661bd04ee418a71fd1671fb622a9c4c14fee0c8c",
+      "size": 8325,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/agente.js",
+      "sha": "eb5b18be0a33d44fedee65bbf9af7769211b405e",
+      "size": 5970,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/aparencia.js",
+      "sha": "5965e090827ab04707607e346495278ae945ea37",
+      "size": 13296,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/armazem.js",
+      "sha": "700710588fd37bcbe79880f4c58bdb63a0fb60a1",
+      "size": 27274,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/barra.js",
+      "sha": "da1746b38910d45c733712b2587f6c7e386818cc",
+      "size": 15763,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/blocklyMenus.js",
+      "sha": "16d97cbb394cf5f78a586d56d72e986d8fedfafa",
+      "size": 10460,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/blocosFerramentas.js",
+      "sha": "6c9c9b2cf550cf0a8bc20172524b551e54debc54",
+      "size": 2038,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/blocosMenu.js",
+      "sha": "5285d15c781df89f17ee7582a3274ebbf527e1d6",
+      "size": 10583,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/blocosProjeto.js",
+      "sha": "3a707977e2e3be15604a3ed40a4b26f884840912",
+      "size": 6048,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/caneta.js",
+      "sha": "e0aede28f5d90af22822d40bcfed847b12409341",
+      "size": 10401,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/canvas.js",
+      "sha": "04ff2c33ae690ff9947f6397563a210fb20d89c6",
+      "size": 47044,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/celular.js",
+      "sha": "780b436f34b95923e9255b205da93203ca6f8347",
+      "size": 11542,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/componentesHephaestus.js",
+      "sha": "729836e3c98c49d93a6f551f052c08f3f0df4890",
+      "size": 1345,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/conexoesEditor.js",
+      "sha": "d8fd4ffe31eef07561c608285380896f37d3a177",
+      "size": 4232,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/configuracaoFlutuante.js",
+      "sha": "9e41cf243755a511a8c8e4c2db6d27c6143381ea",
+      "size": 3164,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/construtor.js",
+      "sha": "4e1e51ad60f2fa5e12282091a739609e5cd0c95c",
+      "size": 46192,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/controlador.js",
+      "sha": "16d15fd48d2483160ba370d8584b1c8fdd2ff8fb",
+      "size": 10267,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/dom.js",
+      "sha": "d1a729055aa22732b2893a0e15966f5ec865bd12",
+      "size": 6404,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/exportarWindows.js",
+      "sha": "4dc97f5a9037229a494e937dca88ca5dbe5e51b6",
+      "size": 4867,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/faixa.js",
+      "sha": "e1bf4ca62ce02903923f3b9817d05b4bc5b9223b",
+      "size": 19424,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/ferramentasHephaestus.js",
+      "sha": "316efd0be201d84451a47319efa5d178a78ba986",
+      "size": 3028,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/forja.js",
+      "sha": "c844d38a8236d5ece2a97cb5de0cb4f83da88173",
+      "size": 17378,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/icones-extra.js",
+      "sha": "a095381ace06ce8fc8d780fc653756377c4790be",
+      "size": 9486,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/icones-md.js",
+      "sha": "360803a06b56e9023f364a350e1ec1980844ce59",
+      "size": 99666,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/icones.js",
+      "sha": "da170d95d2c116afb970049ca651cefe92c47537",
+      "size": 22643,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/iconesHephaestus.js",
+      "sha": "9a01a015ba36609d69bc3409e32d7bf63a63edb8",
+      "size": 1348,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/iconesHephaestusCatalogo.js",
+      "sha": "7d752421081f50664fef40832cffa06c19ac5237",
+      "size": 41643,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/iconesWindows.js",
+      "sha": "aa03aa99a8be5136c30dcc2ca226a13087fc98af",
+      "size": 237582,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/importarHTML.js",
+      "sha": "6f086a5e5acf20d68cd58dabedf6fc9b0cf4fc24",
+      "size": 5412,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/janelaTeste.js",
+      "sha": "323c6132b819510b250227b266afbd496d4e0b09",
+      "size": 2621,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/laterais.js",
+      "sha": "fdb84426912b1fb17d135b9e66f75414b0d24547",
+      "size": 57995,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/menuCanvas.js",
+      "sha": "3fbb9e8e42a644d9efcb1d5c57d7c31ad80eb31c",
+      "size": 3424,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/menuContextual.js",
+      "sha": "9f26634da9de1a7d58fca668fc1607843e78cf33",
+      "size": 7305,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/menuEstrutura.js",
+      "sha": "10f1cd8226271901c542c277ffd818878dba9c9d",
+      "size": 4837,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/movimentoMenus.js",
+      "sha": "51b62a6ba3ac0b29166a9fc7aa5c69d638260a2b",
+      "size": 775,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/oficinaMenus.js",
+      "sha": "6750a9a3f38f3eb5581579b79a1f062ccbbe17d5",
+      "size": 10440,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/oficinaProjetos.js",
+      "sha": "b0b8afd3e6071ed66c045ef2a650e82f83bb653a",
+      "size": 7997,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/opcoesTemas.js",
+      "sha": "9feb1b484cdd019902410f3342b3607177204ac4",
+      "size": 4188,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/orquestrador.js",
+      "sha": "ec84773248297a8b0ba37c26ad62c4e4d8606657",
+      "size": 4151,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/painelDados.js",
+      "sha": "a98e9ebd71899dd089226eff9bfb3f5b7590c271",
+      "size": 4858,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/painelPendencias.js",
+      "sha": "b8f03447727f1a9e0ca1f79b507dfa58d44753f7",
+      "size": 3400,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/primeirosPassos.js",
+      "sha": "bb3acfc2cec953178086c5ac7ef668d3ea993ce0",
+      "size": 3004,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/ribbon.js",
+      "sha": "ddb5dc263b56a609405ba54e326e172b9be08aa2",
+      "size": 103091,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/sons.js",
+      "sha": "f93864d53f0eb30a885eb9baa36c8544550aa0fd",
+      "size": 2760,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/temas.js",
+      "sha": "32b2b392734f310fff4a052c5ff5ae1bce7c3230",
+      "size": 22376,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/visualScript.js",
+      "sha": "e452906f9f4b684b36a96878cdf1da5f7c22e35b",
+      "size": 293486,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/js/ui/vozAbertura.js",
+      "sha": "8d73cda6eca84c3c05b9ef2d85925c5c46b98d2e",
+      "size": 49688,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/licencas/Blockly-Apache-2.0.txt",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/licencas/MaterialDesignIcons-LICENSE.txt",
+      "sha": "382f8a138afaaefe9ca2cfa80d33317f7814d997",
+      "size": 992,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/ligacoes/pdf-studio.json",
+      "sha": "90c636042d1db1688f5a2f303faba58a175020c4",
+      "size": 9178,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/main.py",
+      "sha": "efa592ed84909f30f54ea1e837ddcd68f655d91a",
+      "size": 62016,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/menu.schema.json",
+      "sha": "b82490f6334cc94b5a57793b9be54819a28b519c",
+      "size": 864,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-antares/banco-ferramentas.json",
+      "sha": "50eb443a2b5df196eda941dff1b4a1696075bd46",
+      "size": 24081,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-antares/componente.hefestus.json",
+      "sha": "dec1722f8af6b8e14f8b04f62f832c199c72fcd2",
+      "size": 296797,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-antares/pacote.hefestus.json",
+      "sha": "bf06ccbb405d301c7be460fe65ce9879b7b10c0a",
+      "size": 60728,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/ferramentas.json",
+      "sha": "152142961d9bda92556fbca9fdaf77e8f1cdeebb",
+      "size": 6747,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/banco-ferramentas.json",
+      "sha": "59c4ba4a4275b4f2be8f0b5ce48876094a06beab",
+      "size": 32830,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/componente.hefestus.json",
+      "sha": "33b55b3a7a41b65f19b8d7d44e58b131ddc3c4cc",
+      "size": 558633,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/menu-layout.json",
+      "sha": "823758835660afd88f264f362950ee9168deb69b",
+      "size": 29415,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/menu.html",
+      "sha": "d77a6015482465e910549f38c2aa4d8acdab1fc8",
+      "size": 14328,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/menu.xaml",
+      "sha": "26ab449f846c2e2cc0a902d6c7a3cf995ed781c7",
+      "size": 11471,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-classico-v05/pacote.hefestus.json",
+      "sha": "1b88c2dc54ae4bc2d63ac5eba4df6aec796e42fb",
+      "size": 100404,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-pdf-studio.hefestus.json",
+      "sha": "010fd5b1f991e3d4433992dc98224993060c090c",
+      "size": 171751,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu-profissional.hefestus.json",
+      "sha": "5e685e73e2c731cf483ee0ec8a9be3f51211296b",
+      "size": 99318,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/modelos-pdf-studio/menu.schema.json",
+      "sha": "e6f7b5843e541597322522b08a629ea3066ab8a7",
+      "size": 1549,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/package-lock.json",
+      "sha": "a4078cb49e3ee0c8cff3f53440ab168eda108829",
+      "size": 25804,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/package.json",
+      "sha": "d8435a844f47989947fdae26193a4e873699589b",
+      "size": 1002,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/recursos/icones-hephaestus/icons.js",
+      "sha": "ab7f7c3680782e9d0f661c1d382765ca7fd54973",
+      "size": 41693,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/recursos/icones-hephaestus/index.html",
+      "sha": "cd6debab5ddea98491d46996012a2e2a4b95c908",
+      "size": 20836,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/requirements-vnc.txt",
+      "sha": "cbb3588a8d4e8da78c5e18007425d1b517cacf8d",
+      "size": 47,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/.gitignore",
+      "sha": "56284fafb38ec472fdd98767131674781e149a46",
+      "size": 22,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/Cargo.lock",
+      "sha": "7bbd0df411c1e0e35ae2b59f9f11468bff5141ac",
+      "size": 123285,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/Cargo.toml",
+      "sha": "9af46d09bd5cc2072a427eabe9a2e9b30aa785ee",
+      "size": 948,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/build.rs",
+      "sha": "d860e1e6a7cac333c3cc0bc9cb67faf286b07d69",
+      "size": 39,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/capabilities/default.json",
+      "sha": "c7ce2b31499da07cf5b7f4dd9b05f117aea7b1c4",
+      "size": 255,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/LICENSE-APACHE",
+      "sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "size": 10174,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/LICENSE-MIT",
+      "sha": "0a90804b023cb36803aedb28f295c197586ddd43",
+      "size": 1100,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/NOTICE",
+      "sha": "a0baaa27961fd540dfe7a4e313c6002a579cc5dc",
+      "size": 2566,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/Cargo.toml",
+      "sha": "227a6b3dad978b1ed9a182ed247a3fca2d3c645f",
+      "size": 671,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/blend.rs",
+      "sha": "734759ee1a7d995fadc808bb42fdb268720f70f4",
+      "size": 3907,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/gradient_tests.rs",
+      "sha": "8cd964649d5d1a6459808f1c4f2376b2e106a249",
+      "size": 1764,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/hsx.rs",
+      "sha": "a19a5fd59cf58181c3063fc3dea5995b56a63073",
+      "size": 2684,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/icc.rs",
+      "sha": "613c38fb669a0c774b01f36cf36b64cd3b0daec3",
+      "size": 4812,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/lib.rs",
+      "sha": "8e9f98d92f694375656059cf79e91cca7bdd0e5e",
+      "size": 24227,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/named.rs",
+      "sha": "882472cc323cf93982dedb2f9b16a2dfba2b6aac",
+      "size": 6922,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/pattern_tests.rs",
+      "sha": "7dcaec18d7cc166673afbd9c111821a3fac5ebd2",
+      "size": 1981,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/profile.rs",
+      "sha": "c810e372c62c6ccc57e75862bb38f6e3afd624df",
+      "size": 9282,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/profile_tests.rs",
+      "sha": "13876f04aac3952e9de560ff45286e1e1838a4b4",
+      "size": 7868,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/color/src/tests.rs",
+      "sha": "4cf875bbf17b982a5c80adde23f4dee8f295ca56",
+      "size": 4813,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/Cargo.toml",
+      "sha": "4a3dd70b092d1c04151b8a90ce07270c39fa6447",
+      "size": 745,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/blur_tests.rs",
+      "sha": "c3719989a24b746dd6d141955b32e4cdbc0a2254",
+      "size": 2641,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/boolean_hit_tests.rs",
+      "sha": "b826f2020ed2f4f9663c913bf319dcbb3e974084",
+      "size": 3093,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/client_id_tests.rs",
+      "sha": "520895fb75f515dc5aafea9825fafbc06f89f8c3",
+      "size": 5275,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/colors.rs",
+      "sha": "d480f4ea937fafc75d5cf255ddcf67e22167b020",
+      "size": 5066,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/colors_tests.rs",
+      "sha": "3a97a5d06c82747f100f047e0f132b63c0b283a7",
+      "size": 5668,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/comments.rs",
+      "sha": "53edc9c90ce3bf5da169fcd73727829982a5c8ce",
+      "size": 8425,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/diff_tests.rs",
+      "sha": "ed0b5eb60af9b650881f695c8bb71165799d31c4",
+      "size": 1431,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/effects_tests.rs",
+      "sha": "3aa25ed14da8d6360ad47dc97c3005dc1f7d3773",
+      "size": 4003,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/geometry.rs",
+      "sha": "2a7b42a6446c53be60a4cd45421637b6ad9fd854",
+      "size": 17368,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/handoff.rs",
+      "sha": "9700b56ca2f199933be48adb1f8ac26f62067b39",
+      "size": 3178,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/handoff_tests.rs",
+      "sha": "7fc2689823cd3365b26f5f8c6f7968341454e8b1",
+      "size": 1981,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/ids.rs",
+      "sha": "024946bb43e35dc1c3b8b2c0cc8eab775071a967",
+      "size": 6832,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/ids_tests.rs",
+      "sha": "4f48988663eb845b0bc9b6f64e240b0fed2eb51b",
+      "size": 4709,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/lib.rs",
+      "sha": "d131b2f083ed28502abd64504d226ab738237543",
+      "size": 47794,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/library.rs",
+      "sha": "35994bb00ce7c607521f219d91dcabbcafb6babf",
+      "size": 11909,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/node.rs",
+      "sha": "00f7d5599bfef05c3fafbb20296c4c44c5aae688",
+      "size": 29879,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/print_tests.rs",
+      "sha": "9aeea08fc4f00b61cee57abc07773076b70a053f",
+      "size": 2566,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/props.rs",
+      "sha": "4f6491c1c07733eed0ce53bfcfbe1b58f5db2c33",
+      "size": 51526,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto.rs",
+      "sha": "a844774c5db17cb5d98b3447da88d05cdd120ed6",
+      "size": 36406,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto_expr.rs",
+      "sha": "f4404dc7e56297f0e2de561df516a7a87bb8b6ab",
+      "size": 11961,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto_expr_mode_tests.rs",
+      "sha": "ea2757c7b79235078de1791fa5aa0dec91b4ef18",
+      "size": 6795,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto_expr_parse.rs",
+      "sha": "5214a2d60d3c45675e27727b07ee0c9d85bee511",
+      "size": 22487,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto_expr_parse_tests.rs",
+      "sha": "e106121d8889256c6e94db59cc2561c98840292d",
+      "size": 9135,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/proto_expr_tests.rs",
+      "sha": "436e97c192bbcabc8b72d94d431b0a90d7830f17",
+      "size": 9192,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/styles.rs",
+      "sha": "a9cad14abe7df8082d9f53e9d5841a3af74b975d",
+      "size": 10847,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/tests.rs",
+      "sha": "a5ead3b7dd511802c2b16d182d655e6403e15fdc",
+      "size": 20310,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/text.rs",
+      "sha": "097dd189b3278743de269ca47e8873090aff8360",
+      "size": 32170,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/vector.rs",
+      "sha": "1165bd6006eac5c707902d83a013068cab47c561",
+      "size": 27204,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/vector_faces.rs",
+      "sha": "050ab821c8e96a71dcc47664add30103b1f4d70d",
+      "size": 23131,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/vector_regions.rs",
+      "sha": "cc456bef89b7a43732b2846ba04dfc00db807d1c",
+      "size": 5815,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/vector_regions_tests.rs",
+      "sha": "c09664b4a4366de4c8bc6202f1731e076b5f23d8",
+      "size": 10592,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/width_sides_tests.rs",
+      "sha": "bd754eb771a833090877e5eb1002b4620407e2cc",
+      "size": 4575,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/doc/src/width_tests.rs",
+      "sha": "090e36b70cb35554abf9278cb90ddb249640b651",
+      "size": 4441,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/geom/Cargo.toml",
+      "sha": "25e38e672f30c96b30fa4deb5a78efd22f76c095",
+      "size": 574,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/geom/src/lib.rs",
+      "sha": "da351e5bbd4d6489180e1ecff06c175250d3090a",
+      "size": 11745,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/geom/src/measure.rs",
+      "sha": "7acfe4ed8daaf0de072b189c5a3af19b7882d66d",
+      "size": 8956,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/geom/src/tests.rs",
+      "sha": "b99d7d8c3d0d27f4f56db2699e57f772fbdc3107",
+      "size": 3824,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/geom/src/transform.rs",
+      "sha": "f992060fdba1e21aab3dc581b3e27ff2c2b79837",
+      "size": 2615,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/Cargo.toml",
+      "sha": "b93de2e23ddcb3a4c9db3a48adbd4cd870caa1f2",
+      "size": 598,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/brush.rs",
+      "sha": "bfd7f9212215d1f5641dad7bf6d79900f63ec17d",
+      "size": 8318,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/brush_tests.rs",
+      "sha": "403935ddde9ec101af2e3be30b1c53aa6acf22af",
+      "size": 3160,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/lib.rs",
+      "sha": "fb9cfcfec909b74fcece45e448dbcc544d824808",
+      "size": 25048,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/ops_tests.rs",
+      "sha": "f3b474f2cd41e311407e9301e983bd2fc630a87b",
+      "size": 3440,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/points.rs",
+      "sha": "05f58216d4077e347a702d2d591b2453e2541cb3",
+      "size": 4959,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/sides_tests.rs",
+      "sha": "f0c9622fd81ba440bda02b28ac47771dce515ad1",
+      "size": 3475,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/width.rs",
+      "sha": "03240284b1c96adc9eed2728c94e5287795b03ce",
+      "size": 12103,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/craft/pathops/src/width_tests.rs",
+      "sha": "4ff06c5f030c52c167a8533572f5437928346319",
+      "size": 7556,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/128x128.png",
+      "sha": "b34112ef7211099d68e9bd365bdd4ebeb7909f28",
+      "size": 7535,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/128x128@2x.png",
+      "sha": "2f6254e512f691f35c4e12296c9f1451313a568b",
+      "size": 14090,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/32x32.png",
+      "sha": "435364eba399dcf6e770ca9ce44f96bbd98e5f16",
+      "size": 1731,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/64x64.png",
+      "sha": "1cc3395065a7e3283d2b4f35796bf88c53c29c25",
+      "size": 3637,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square107x107Logo.png",
+      "sha": "a044322c8fed79a553227df1327f2bdb89fd0a42",
+      "size": 6029,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square142x142Logo.png",
+      "sha": "d6ea085b0237d65874c2b7674795ac27e3e7fcf0",
+      "size": 8446,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square150x150Logo.png",
+      "sha": "a0976e5062e31de01419ab7abf5be84e12059465",
+      "size": 8937,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square284x284Logo.png",
+      "sha": "1b0322fa4b8b38d9548b440427879cd6218c798f",
+      "size": 21870,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square30x30Logo.png",
+      "sha": "abf2c6bda6f0e3003f41515f1748fac8582322c2",
+      "size": 1628,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square310x310Logo.png",
+      "sha": "aad83a3021e21beff4d2984f669c5f268b73d370",
+      "size": 25486,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square44x44Logo.png",
+      "sha": "751b5ecba3949abf3e7632fef94affe3194fea88",
+      "size": 2304,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square71x71Logo.png",
+      "sha": "c8cb9950d2252c85088c277b4d14abe77c9e4479",
+      "size": 4093,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/Square89x89Logo.png",
+      "sha": "c021d56608c3431d59202a5bc1374a20b085d044",
+      "size": 5049,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/StoreLogo.png",
+      "sha": "00873c41a2e44e7ffafe44fd4248e64900cf211b",
+      "size": 2690,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/icon.icns",
+      "sha": "9015d6e734c0ff0a0d3b18c404d3c9ac5ec7f2b6",
+      "size": 321279,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/icon.ico",
+      "sha": "035803b7f38c95e44055dcb8306845e815a1be0e",
+      "size": 25264,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/icon.png",
+      "sha": "c0e87e3196da4a7bd569635c01524c569d08ecb8",
+      "size": 53942,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "sha": "518cf8b49b423464caea6ad0767549d4e4669812",
+      "size": 969,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "sha": "5ce5dbddc366dae1dba3d443b2aa048562f92f0f",
+      "size": 2097,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "sha": "5ce5dbddc366dae1dba3d443b2aa048562f92f0f",
+      "size": 2097,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "sha": "8b7982be8f5673c36a58c7af1118426500760477",
+      "size": 3231,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "sha": "0a7a4ad5b61e239f46a13c50693c15dee9993d34",
+      "size": 1466,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "sha": "8d5907103ea0da5ca4fd622e9b99fd1e0d3403ab",
+      "size": 3141,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "sha": "8d5907103ea0da5ca4fd622e9b99fd1e0d3403ab",
+      "size": 3141,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "sha": "b401819b5e2924445c9120ea5249b170bc17de2f",
+      "size": 4773,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "sha": "5ce5dbddc366dae1dba3d443b2aa048562f92f0f",
+      "size": 2097,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "sha": "3fb6e985f3e1b900e96c34406224da8c92eacf84",
+      "size": 4413,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "sha": "3fb6e985f3e1b900e96c34406224da8c92eacf84",
+      "size": 4413,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "sha": "21455c3c8917c5e5228617babc73d23746205d36",
+      "size": 6619,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-512@2x.png",
+      "sha": "6f1e818aa7c2dd9eaccedeef0454f13e5da2aabc",
+      "size": 160421,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "sha": "21455c3c8917c5e5228617babc73d23746205d36",
+      "size": 6619,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "sha": "73bc495f6ccaac9d257169eb6c8b0944fbf23a14",
+      "size": 10721,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "sha": "5ce83906a5edb2fc4cb87ab8c111e0bd48bff2ea",
+      "size": 4181,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "sha": "bd94d9d5a04e23d804a58795c994d16783fd669a",
+      "size": 8652,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "sha": "1b442c58e249eb8cd3d95c879e6ce49514e2da19",
+      "size": 9747,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/ponte.js",
+      "sha": "334e563ef130520a21763442d4854900ab339867",
+      "size": 4558,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/src/craft_vetor.rs",
+      "sha": "14388536f5066a4bdd1a23d53e31f35ff4c770e8",
+      "size": 5591,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/src/lib.rs",
+      "sha": "3af3dd1d6d980ad08eadbe58ff58e1770d630f33",
+      "size": 9103,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/src/main.rs",
+      "sha": "b2a64efee9bd348722373b691abb78e6bbac1b52",
+      "size": 191,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/src-tauri/tauri.conf.json",
+      "sha": "c0f81c118985d002ef44fab4ab8e846710fbcb2d",
+      "size": 974,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/terceiros/vectorcraft/LICENSE-MIT",
+      "sha": "ac0ca44a4bfdf33240b8a5bcc76ae3b8df5ac388",
+      "size": 1103,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/terceiros/vectorcraft/README.md",
+      "sha": "d85cef156eb3aeca6b64b19e8a8ec43bbd0059fc",
+      "size": 25236,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/terceiros/vectorcraft/edit.rs",
+      "sha": "75a2017535414120c80823eb0a00a3aa5479e1ae",
+      "size": 26082,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/terceiros/vectorcraft/offset.rs",
+      "sha": "39eaddff9cb8d1daf0f9740a478cc9ac7a2ebe15",
+      "size": 13359,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/agente.test.mjs",
+      "sha": "3d85ee31380d127ca86b571eb8109b8f91fa7d36",
+      "size": 12808,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/agrupamento-documentos.test.mjs",
+      "sha": "c0de138aacd23b59be315e940e5716188f102cdb",
+      "size": 3438,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/armazem.test.mjs",
+      "sha": "2d6cca20a3b5cb645626cf54fecab8d2ae708633",
+      "size": 9161,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/auditoria.test.mjs",
+      "sha": "b28a287d91c206d54e7d2474d1ea7abe5970bf87",
+      "size": 11706,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/blocos-menu.test.mjs",
+      "sha": "f8769ebf64cbca11eee8b9d4d17dc5701a470185",
+      "size": 3863,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/botoes.test.mjs",
+      "sha": "579bf860cb338c19f675a4eeaba160c19ad55bc9",
+      "size": 3665,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/complemento.test.mjs",
+      "sha": "4a99d10a0dbd5f4b6de8c167aeb46075212305fa",
+      "size": 3152,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/comportamentos-lote.test.mjs",
+      "sha": "2e750609ba43c1cf5904ff87cc2a28c2ca25b485",
+      "size": 2107,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/consolidacao.test.mjs",
+      "sha": "c9d6b994359a3833a49f651138ac9a67427a9446",
+      "size": 7069,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/construtor.test.mjs",
+      "sha": "13aeb195cc78263e88b036e02cf692f2686ccaa9",
+      "size": 25132,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/controlador.test.mjs",
+      "sha": "fcde49722f2125f787adf8413c70c2f251c45318",
+      "size": 3474,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/dist.test.mjs",
+      "sha": "7b1eb67513e66f36140aefefc01cb564bf6be615",
+      "size": 647,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/enquadramento.test.mjs",
+      "sha": "b0227eadde450d060c93c0a698139a471df9df6f",
+      "size": 791,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/especificacao-software.test.mjs",
+      "sha": "299a1eba094f815b1cc6a56811d7024c55a6bddd",
+      "size": 1453,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/expertise-menus.test.mjs",
+      "sha": "c7649aed09df123c3f1ac4a70a79d1f95a8085a0",
+      "size": 6330,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/fixtures/botao-engrenagem.html",
+      "sha": "e6ddb3d30c6e6cc768b2e30c1fc26cda436ab397",
+      "size": 10432,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/fixtures/carrossel-animado.html",
+      "sha": "cae5c168d7d086253b63239f6e7e19b7304be2f9",
+      "size": 5816,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/fluxo.test.mjs",
+      "sha": "df8acfd6926680db24828fcdcd634cd1c40f8f73",
+      "size": 2057,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/forja-objetos.test.mjs",
+      "sha": "5047f1f9f3661cfa7293ddfcafc491339575b70e",
+      "size": 4327,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/guia-construcao.test.mjs",
+      "sha": "c9aaa9f4dc0b0fee614b60e1dc8cf0875f625f6b",
+      "size": 1506,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/hephaestus-preview2.test.mjs",
+      "sha": "2299bc22ce68862b5f8b4b6033eca8dcc563f644",
+      "size": 6103,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/hephaestus.test.mjs",
+      "sha": "3d311ac858c77c61e1d30db196d1e73a81f9a0d4",
+      "size": 5675,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/importar-html.test.mjs",
+      "sha": "ac22869f6d1da790b864cd4f6a2a3b4395d7d15a",
+      "size": 9052,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/limites-movimento.test.mjs",
+      "sha": "94b8083033d5f081a0b82a906d3d3a929ba6cabd",
+      "size": 3211,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/mcp.test.mjs",
+      "sha": "bd71d16e7d182f73cca2f65d4ccbbaaf0aafe09a",
+      "size": 7989,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/menuEngine.test.mjs",
+      "sha": "95471a3d9d7b9e59ba5e6b5b50d3885c331d4bd0",
+      "size": 3788,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/menus-adaptativos.test.mjs",
+      "sha": "002d1153cc2e23cd5442878314196efef47a2727",
+      "size": 5723,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/nucleo.test.mjs",
+      "sha": "5585e0c549c9f63d2bd2493cfee05c2ca4e14e46",
+      "size": 21141,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/oficinaMenus.test.mjs",
+      "sha": "9caa3eaf594c26473a96d9872544809ad0d33ec7",
+      "size": 2948,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/orquestrador.test.mjs",
+      "sha": "4f99984b51ed723145298d0ebf34ad4c7bc134a3",
+      "size": 4573,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/pacote-windows.test.mjs",
+      "sha": "5e76313d274f73c9bfd04ce3922a651afef17e64",
+      "size": 3612,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/pincel-formatacao.test.mjs",
+      "sha": "0296340f1a7163620d2d8152312ea0a5f8de8493",
+      "size": 4910,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/ponte.test.mjs",
+      "sha": "0bdda16c4e9f40222f2e685f12f8ac173d1d60c3",
+      "size": 5858,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/protecao.test.ts",
+      "sha": "10d1c2fa255f1c222ed704dbaf4b1484f9665de4",
+      "size": 10926,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/reconhecer.test.mjs",
+      "sha": "7718378fe4e8056b47afcc70c33816ee75a18c90",
+      "size": 7888,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/recuperacao.test.mjs",
+      "sha": "c60ed76b0ff60fb6bf8010469304c4dc12fc900b",
+      "size": 8913,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/referencias.test.mjs",
+      "sha": "1f6225947a48975f8467d3a29db6636292a492ff",
+      "size": 2410,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/ribbonEvolucao.test.mjs",
+      "sha": "22742148d00e7c906dc27cba357f3825736a7463",
+      "size": 4094,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/selecao.test.mjs",
+      "sha": "8e90aa22e74de7388bf0c8246864714445ea1217",
+      "size": 2181,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/sistemas.test.mjs",
+      "sha": "e9f9b80e9346a8b19152acac49886bbe55629e84",
+      "size": 1438,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/superficies.test.mjs",
+      "sha": "bbeb483fb8cdbbc99fff2e78b816743ba378f5e3",
+      "size": 6665,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/temasCuradoria.test.mjs",
+      "sha": "4301e45d5efeb6adc8d5dfaefed5e1a75665d84c",
+      "size": 4283,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/vetor.test.mjs",
+      "sha": "4e30feaf6c3430637c795acd006ec6f397246d00",
+      "size": 6681,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/testes/workspace.test.mjs",
+      "sha": "73da7b9d54982e2dbcd0834a0f878033ed480271",
+      "size": 1365,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/tools/gerar-faixa-axiom.mjs",
+      "sha": "6dc01919a2b13312f8211d2100daaa49c44bae50",
+      "size": 932,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/tools/gerar-menu-hefestus.mjs",
+      "sha": "55874720a0d19632d945795d67213d0cf26273b1",
+      "size": 1765,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/validacao-hephaestus.txt",
+      "sha": "8a8fce70608aac6fa42f086b5000ecff2e1ba89c",
+      "size": 28173,
+      "mode": "100644"
+    },
+    {
+      "path": "hefestus/web_import.py",
+      "sha": "ab431859bfa33765ed9f70adec68ab69d95c7ea2",
+      "size": 7885,
+      "mode": "100644"
+    }
+  ],
+  "verificados": 438,
+  "divergencias": [],
+  "obtencao": "Snapshot parcial do monorepositório pelo conector GitHub; bytes locais aproveitados apenas após igualdade de blob SHA-1; não é clone do histórico."
+}

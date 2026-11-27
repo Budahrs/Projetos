@@ -1,0 +1,17 @@
+{
+  "programa": "hefestus",
+  "nomePublico": "Hephaestus",
+  "versao": "2.1.0",
+  "canal": "reconstrucao-em-validacao",
+  "formatoProjeto": 1,
+  "bibliaMestra": "2.0.0",
+  "bibliaProjeto": "2.4",
+  "origem": {
+    "repositorio": "rsampietro-code/programas",
+    "commit": "b130843db46aa5a22831fbf19eaff5189ac5f263"
+  },
+  "entrada": "hephaestus.html",
+  "documentacao": "BIBLIA.md",
+  "requisitos": "docs/matriz-reconstrucao.md",
+  "instaladorHomologado": false
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Menu Carrossel de Cards — animado</title>
+<style>
+*{box-sizing:border-box}body{background:#0f172a;color:white;font:16px 'Segoe UI',sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px;overflow-x:hidden}
+.carrossel{width:min(100%,800px)}.palco{height:370px;position:relative;perspective:1000px;outline-offset:4px}.card{position:absolute;left:50%;top:10px;width:min(260px,calc(100% - 32px));height:350px;margin-left:calc(min(260px,100% - 32px)/-2);border:1px solid #ffffff26;border-radius:16px;padding:20px;background:#1e293b;box-shadow:0 15px 35px #0008;display:flex;flex-direction:column;justify-content:space-between;transition:transform .5s cubic-bezier(.25,1,.5,1),opacity .5s ease;cursor:pointer;--passo:clamp(48px,20vw,140px)}
+.card[data-pos="0"]{transform:translate3d(0,0,0) scale(1);opacity:1;z-index:3}.card[data-pos="1"]{transform:translate3d(var(--passo),0,-100px) scale(.85);opacity:.55;z-index:2}.card[data-pos="2"]{transform:translate3d(calc(-1 * var(--passo)),0,-100px) scale(.85);opacity:.55;z-index:1}
+h2{margin:0;color:#38bdf8;font-size:1.5rem}p{color:#94a3b8;line-height:1.5}.card button,.controles button{border:0;border-radius:8px;padding:10px;font:inherit;cursor:pointer}.card button{background:#38bdf8;color:#0f172a;font-weight:700}.card button:hover{background:#0ea5e9}.controles{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px}.controles button{background:#243349;color:white}.controles button[aria-current="true"]{background:#38bdf8;color:#0f172a}.controles button:focus-visible,.card button:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}.status{min-height:24px;text-align:center;font-size:13px;color:#94a3b8}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+</style></head>
+<body><section class="carrossel" aria-label="Menu carrossel de cards">
+<div class="palco" tabindex="0" aria-label="Cards. Use as setas para navegar">
+<article class="card" data-pos="0"><div><h2>Explorar</h2><p>Descubra novos horizontes com uma interface fluida e design imersivo.</p></div><button type="button">Acessar</button></article>
+<article class="card" data-pos="1"><div><h2>Artefatos</h2><p>Combine ferramentas e componentes para criar novos artefatos reutilizáveis.</p></div><button type="button">Acessar</button></article>
+<article class="card" data-pos="2"><div><h2>Configurações</h2><p>Personalize a aparência e conecte eventos às suas ferramentas.</p></div><button type="button">Acessar</button></article>
+</div>
+<div class="controles"><button type="button" id="anterior" aria-label="Card anterior">←</button><button type="button" data-indice="0" aria-label="Selecionar Explorar" aria-current="true">1</button><button type="button" data-indice="1" aria-label="Selecionar Artefatos" aria-current="false">2</button><button type="button" data-indice="2" aria-label="Selecionar Configurações" aria-current="false">3</button><button type="button" id="proximo" aria-label="Próximo card">→</button><button type="button" id="pausar">Pausar avanço</button></div>
+<p class="status" role="status" aria-live="polite"></p></section>
+<script>
+(()=>{
+ const host=document.querySelector('.carrossel'),palco=host.querySelector('.palco'),cards=[...host.querySelectorAll('.card')],indicadores=[...host.querySelectorAll('[data-indice]')],pausa=host.querySelector('#pausar'),status=host.querySelector('.status'),reduz=matchMedia('(prefers-reduced-motion: reduce)');
+ let atual=0,pausado=reduz.matches,timer=0,dentro=false,focado=false;
+ const sinal=(s,dados)=>document.dispatchEvent(new CustomEvent('hefestus:sinal',{detail:{sinal:s,...dados},bubbles:true}));
+ const selecionar=(indice,manual=false)=>{atual=(indice+cards.length)%cards.length;cards.forEach((card,i)=>{card.dataset.pos=String((i-atual+cards.length)%cards.length);card.setAttribute('aria-hidden',String(i!==atual));card.querySelector('button').tabIndex=i===atual?0:-1;});indicadores.forEach((b,i)=>b.setAttribute('aria-current',String(i===atual)));if(manual){status.textContent=cards[atual].querySelector('h2').textContent+' selecionado';sinal('carrossel_selecionado',{indice:atual});}};
+ const agendar=()=>{clearInterval(timer);timer=0;pausa.textContent=pausado?'Ativar avanço':'Pausar avanço';pausa.setAttribute('aria-pressed',String(pausado));if(!pausado&&!dentro&&!focado&&!document.hidden)timer=setInterval(()=>selecionar(atual+1),3500);};
+ cards.forEach((card,i)=>card.addEventListener('click',e=>{if(i!==atual){selecionar(i,true);return;}if(e.target.closest('button')){status.textContent='Ação solicitada: '+card.querySelector('h2').textContent;sinal('carrossel_acessar',{indice:i,nome:card.querySelector('h2').textContent});}}));
+ indicadores.forEach((b,i)=>b.addEventListener('click',()=>selecionar(i,true)));
+ host.querySelector('#anterior').addEventListener('click',()=>selecionar(atual-1,true));host.querySelector('#proximo').addEventListener('click',()=>selecionar(atual+1,true));
+ pausa.addEventListener('click',()=>{pausado=!pausado;agendar();});
+ palco.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();selecionar(atual+(e.key==='ArrowRight'?1:-1),true);}});
+ host.addEventListener('mouseenter',()=>{dentro=true;agendar();});host.addEventListener('mouseleave',()=>{dentro=false;agendar();});host.addEventListener('focusin',()=>{focado=true;agendar();});host.addEventListener('focusout',()=>setTimeout(()=>{focado=host.contains(document.activeElement);agendar();},0));document.addEventListener('visibilitychange',agendar);
+ reduz.addEventListener?.('change',e=>{if(e.matches)pausado=true;agendar();});selecionar(0);agendar();
+})();
+</script></body></html>

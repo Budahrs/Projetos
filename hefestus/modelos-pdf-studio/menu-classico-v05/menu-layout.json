@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "classico-0",
+    "nome": "Arquivo",
+    "grupos": [
+      {
+        "id": "grupo-0-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-0-0",
+            "rotulo": "Abrir PDF",
+            "ferramentaId": "open",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Abrir PDF"
+          },
+          {
+            "id": "cmd-0-1",
+            "rotulo": "Novo PDF",
+            "ferramentaId": "new",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Novo PDF"
+          },
+          {
+            "id": "cmd-0-2",
+            "rotulo": "Salvar cópia",
+            "ferramentaId": "save",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Salvar cópia"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-3",
+            "rotulo": "Imprimir",
+            "ferramentaId": "print",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Imprimir"
+          },
+          {
+            "id": "cmd-0-4",
+            "rotulo": "Word / Excel / PowerPoint → PDF",
+            "ferramentaId": "officein",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Word / Excel / PowerPoint → PDF"
+          },
+          {
+            "id": "cmd-0-5",
+            "rotulo": "Imagens → PDF",
+            "ferramentaId": "fromimages",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Imagens → PDF"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-6",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-6",
+            "rotulo": "HTML → PDF",
+            "ferramentaId": "html",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "HTML → PDF"
+          },
+          {
+            "id": "cmd-0-7",
+            "rotulo": "PDF → Word",
+            "ferramentaId": "docx",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "PDF → Word"
+          },
+          {
+            "id": "cmd-0-8",
+            "rotulo": "PDF → Excel",
+            "ferramentaId": "xlsx",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "PDF → Excel"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-9",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-9",
+            "rotulo": "PDF → PowerPoint",
+            "ferramentaId": "pptx",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "PDF → PowerPoint"
+          },
+          {
+            "id": "cmd-0-10",
+            "rotulo": "PDF → Markdown",
+            "ferramentaId": "markdown",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "PDF → Markdown"
+          },
+          {
+            "id": "cmd-0-11",
+            "rotulo": "PDF/A",
+            "ferramentaId": "pdfa",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "PDF/A"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-12",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-12",
+            "rotulo": "PDF/X CMYK (experimental)",
+            "ferramentaId": "pdfx",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "PDF/X CMYK (experimental)"
+          },
+          {
+            "id": "cmd-0-13",
+            "rotulo": "Páginas → JPG",
+            "ferramentaId": "jpg",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Páginas → JPG"
+          },
+          {
+            "id": "cmd-0-14",
+            "rotulo": "Página → PNG",
+            "ferramentaId": "png",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Página → PNG"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-15",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-15",
+            "rotulo": "Todas → PNG",
+            "ferramentaId": "allpng",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Todas → PNG"
+          },
+          {
+            "id": "cmd-0-16",
+            "rotulo": "Extrair texto / buscar",
+            "ferramentaId": "textout",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Extrair texto / buscar"
+          },
+          {
+            "id": "cmd-0-17",
+            "rotulo": "Propriedades",
+            "ferramentaId": "metadata",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Propriedades"
+          }
+        ]
+      },
+      {
+        "id": "grupo-0-18",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-0-18",
+            "rotulo": "Fechar documento",
+            "ferramentaId": "close",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Fechar documento"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-1",
+    "nome": "Editar",
+    "grupos": [
+      {
+        "id": "grupo-1-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-1-0",
+            "rotulo": "Desfazer",
+            "ferramentaId": "undo",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Desfazer"
+          },
+          {
+            "id": "cmd-1-1",
+            "rotulo": "Refazer",
+            "ferramentaId": "redo",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Refazer"
+          },
+          {
+            "id": "cmd-1-2",
+            "rotulo": "Editar texto original / objetos",
+            "ferramentaId": "objects",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Editar texto original / objetos"
+          }
+        ]
+      },
+      {
+        "id": "grupo-1-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-1-3",
+            "rotulo": "Adicionar texto",
+            "ferramentaId": "text",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Adicionar texto"
+          },
+          {
+            "id": "cmd-1-4",
+            "rotulo": "Inserir imagem",
+            "ferramentaId": "image",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Inserir imagem"
+          },
+          {
+            "id": "cmd-1-5",
+            "rotulo": "Recortar página",
+            "ferramentaId": "crop",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Recortar página"
+          }
+        ]
+      },
+      {
+        "id": "grupo-1-6",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-1-6",
+            "rotulo": "Remover recorte",
+            "ferramentaId": "uncrop",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Remover recorte"
+          },
+          {
+            "id": "cmd-1-7",
+            "rotulo": "Recortar texto selecionado",
+            "ferramentaId": "cut-native",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Recortar texto selecionado"
+          },
+          {
+            "id": "cmd-1-8",
+            "rotulo": "Copiar texto selecionado",
+            "ferramentaId": "copy-native",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Copiar texto selecionado"
+          }
+        ]
+      },
+      {
+        "id": "grupo-1-9",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-1-9",
+            "rotulo": "Colar no campo de texto",
+            "ferramentaId": "paste-native",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Colar no campo de texto"
+          },
+          {
+            "id": "cmd-1-10",
+            "rotulo": "Extrair texto / buscar",
+            "ferramentaId": "textout",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Extrair texto / buscar"
+          },
+          {
+            "id": "cmd-1-11",
+            "rotulo": "Personalizar acesso rápido",
+            "ferramentaId": "quickcustom",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Personalizar acesso rápido"
+          }
+        ]
+      },
+      {
+        "id": "grupo-1-12",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-1-12",
+            "rotulo": "Temas",
+            "ferramentaId": "themes",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Temas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-2",
+    "nome": "Visualizar",
+    "grupos": [
+      {
+        "id": "grupo-2-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-2-0",
+            "rotulo": "Todas as ferramentas",
+            "ferramentaId": "center",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Todas as ferramentas"
+          },
+          {
+            "id": "cmd-2-1",
+            "rotulo": "Página anterior",
+            "ferramentaId": "prev",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Página anterior"
+          },
+          {
+            "id": "cmd-2-2",
+            "rotulo": "Próxima página",
+            "ferramentaId": "next",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Próxima página"
+          }
+        ]
+      },
+      {
+        "id": "grupo-2-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-2-3",
+            "rotulo": "Ampliar",
+            "ferramentaId": "zoomin",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Ampliar"
+          },
+          {
+            "id": "cmd-2-4",
+            "rotulo": "Reduzir zoom",
+            "ferramentaId": "zoomout",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Reduzir zoom"
+          },
+          {
+            "id": "cmd-2-5",
+            "rotulo": "Ajustar à janela",
+            "ferramentaId": "fit",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Ajustar à janela"
+          }
+        ]
+      },
+      {
+        "id": "grupo-2-6",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-2-6",
+            "rotulo": "Recolher / expandir faixa",
+            "ferramentaId": "ribbon",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Recolher / expandir faixa"
+          },
+          {
+            "id": "cmd-2-7",
+            "rotulo": "Tela cheia",
+            "ferramentaId": "fullscreen",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Tela cheia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-3",
+    "nome": "Documento",
+    "grupos": [
+      {
+        "id": "grupo-3-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-3-0",
+            "rotulo": "Girar 90°",
+            "ferramentaId": "rotate",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Girar 90°"
+          },
+          {
+            "id": "cmd-3-1",
+            "rotulo": "Mover antes",
+            "ferramentaId": "left",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Mover antes"
+          },
+          {
+            "id": "cmd-3-2",
+            "rotulo": "Mover depois",
+            "ferramentaId": "right",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Mover depois"
+          }
+        ]
+      },
+      {
+        "id": "grupo-3-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-3-3",
+            "rotulo": "Duplicar página",
+            "ferramentaId": "duplicate",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Duplicar página"
+          },
+          {
+            "id": "cmd-3-4",
+            "rotulo": "Página em branco",
+            "ferramentaId": "blank",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Página em branco"
+          },
+          {
+            "id": "cmd-3-5",
+            "rotulo": "Excluir página",
+            "ferramentaId": "delete",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Excluir página"
+          }
+        ]
+      },
+      {
+        "id": "grupo-3-6",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-3-6",
+            "rotulo": "Numerar páginas",
+            "ferramentaId": "numbers",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Numerar páginas"
+          },
+          {
+            "id": "cmd-3-7",
+            "rotulo": "Marca d'água",
+            "ferramentaId": "watermark",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Marca d'água"
+          },
+          {
+            "id": "cmd-3-8",
+            "rotulo": "Juntar PDFs",
+            "ferramentaId": "merge",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Juntar PDFs"
+          }
+        ]
+      },
+      {
+        "id": "grupo-3-9",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-3-9",
+            "rotulo": "Inserir outro PDF",
+            "ferramentaId": "insertpdf",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Inserir outro PDF"
+          },
+          {
+            "id": "cmd-3-10",
+            "rotulo": "Extrair páginas",
+            "ferramentaId": "extract",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Extrair páginas"
+          },
+          {
+            "id": "cmd-3-11",
+            "rotulo": "Intercalar PDFs",
+            "ferramentaId": "mix",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Intercalar PDFs"
+          }
+        ]
+      },
+      {
+        "id": "grupo-3-12",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-3-12",
+            "rotulo": "Dividir por página",
+            "ferramentaId": "split",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Dividir por página"
+          },
+          {
+            "id": "cmd-3-13",
+            "rotulo": "Dividir em grupos",
+            "ferramentaId": "splitgroups",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Dividir em grupos"
+          },
+          {
+            "id": "cmd-3-14",
+            "rotulo": "Dividir por tamanho",
+            "ferramentaId": "splitsize",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Dividir por tamanho"
+          }
+        ]
+      },
+      {
+        "id": "grupo-3-15",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-3-15",
+            "rotulo": "Dividir por marcadores",
+            "ferramentaId": "splitbookmarks",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Dividir por marcadores"
+          },
+          {
+            "id": "cmd-3-16",
+            "rotulo": "Intervalos personalizados",
+            "ferramentaId": "splitranges",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Intervalos personalizados"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-4",
+    "nome": "Comentário",
+    "grupos": [
+      {
+        "id": "grupo-4-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-4-0",
+            "rotulo": "Comentário",
+            "ferramentaId": "comment",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Comentário"
+          },
+          {
+            "id": "cmd-4-1",
+            "rotulo": "Realçar área",
+            "ferramentaId": "highlight",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Realçar área"
+          },
+          {
+            "id": "cmd-4-2",
+            "rotulo": "Retângulo",
+            "ferramentaId": "rectangle",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Retângulo"
+          }
+        ]
+      },
+      {
+        "id": "grupo-4-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-4-3",
+            "rotulo": "Assinatura desenhada",
+            "ferramentaId": "drawsignature",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Assinatura desenhada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-5",
+    "nome": "Formulário",
+    "grupos": [
+      {
+        "id": "grupo-5-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-5-0",
+            "rotulo": "Preencher formulário",
+            "ferramentaId": "forms",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Preencher formulário"
+          },
+          {
+            "id": "cmd-5-1",
+            "rotulo": "Criar campo de texto",
+            "ferramentaId": "fieldtext",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Criar campo de texto"
+          },
+          {
+            "id": "cmd-5-2",
+            "rotulo": "Criar caixa de seleção",
+            "ferramentaId": "fieldcheck",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Criar caixa de seleção"
+          }
+        ]
+      },
+      {
+        "id": "grupo-5-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-5-3",
+            "rotulo": "Criar lista",
+            "ferramentaId": "fieldcombo",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Criar lista"
+          },
+          {
+            "id": "cmd-5-4",
+            "rotulo": "Criar escolha única",
+            "ferramentaId": "fieldradio",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Criar escolha única"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-6",
+    "nome": "Ferramentas",
+    "grupos": [
+      {
+        "id": "grupo-6-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-6-0",
+            "rotulo": "Capturar área da tela",
+            "ferramentaId": "capture",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Capturar área da tela"
+          },
+          {
+            "id": "cmd-6-1",
+            "rotulo": "Digitalizar (scanner)",
+            "ferramentaId": "scan",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Digitalizar (scanner)"
+          },
+          {
+            "id": "cmd-6-2",
+            "rotulo": "Colar imagem",
+            "ferramentaId": "clipboard",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Colar imagem"
+          }
+        ]
+      },
+      {
+        "id": "grupo-6-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-6-3",
+            "rotulo": "Reconstruir imagem",
+            "ferramentaId": "reconstructimage",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Reconstruir imagem"
+          },
+          {
+            "id": "cmd-6-4",
+            "rotulo": "Reconstruir página atual",
+            "ferramentaId": "reconstructpage",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Reconstruir página atual"
+          },
+          {
+            "id": "cmd-6-5",
+            "rotulo": "OCR → PDF pesquisável",
+            "ferramentaId": "searchable",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "OCR → PDF pesquisável"
+          }
+        ]
+      },
+      {
+        "id": "grupo-6-6",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-6-6",
+            "rotulo": "OCR integrado",
+            "ferramentaId": "ocr",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "OCR integrado"
+          },
+          {
+            "id": "cmd-6-7",
+            "rotulo": "Comparar PDFs",
+            "ferramentaId": "compare",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Comparar PDFs"
+          },
+          {
+            "id": "cmd-6-8",
+            "rotulo": "Compactar",
+            "ferramentaId": "compress",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Compactar"
+          }
+        ]
+      },
+      {
+        "id": "grupo-6-9",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-6-9",
+            "rotulo": "Reparar arquivo",
+            "ferramentaId": "repair",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Reparar arquivo"
+          },
+          {
+            "id": "cmd-6-10",
+            "rotulo": "Extrair imagens",
+            "ferramentaId": "extractimages",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Extrair imagens"
+          },
+          {
+            "id": "cmd-6-11",
+            "rotulo": "Resumir documento",
+            "ferramentaId": "summary",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Resumir documento"
+          }
+        ]
+      },
+      {
+        "id": "grupo-6-12",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-6-12",
+            "rotulo": "Traduzir texto ou PDF",
+            "ferramentaId": "translate",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Traduzir texto ou PDF"
+          },
+          {
+            "id": "cmd-6-13",
+            "rotulo": "Lote / fluxos",
+            "ferramentaId": "batch",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Lote / fluxos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-7",
+    "nome": "Proteger",
+    "grupos": [
+      {
+        "id": "grupo-7-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-7-0",
+            "rotulo": "Proteger com senha",
+            "ferramentaId": "protect",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Proteger com senha"
+          },
+          {
+            "id": "cmd-7-1",
+            "rotulo": "Remover senha da cópia",
+            "ferramentaId": "unlock",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Remover senha da cópia"
+          },
+          {
+            "id": "cmd-7-2",
+            "rotulo": "Censurar área",
+            "ferramentaId": "redact",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Censurar área"
+          }
+        ]
+      },
+      {
+        "id": "grupo-7-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-7-3",
+            "rotulo": "Assinar com A1 / PFX",
+            "ferramentaId": "sign",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Assinar com A1 / PFX"
+          },
+          {
+            "id": "cmd-7-4",
+            "rotulo": "Verificar assinaturas",
+            "ferramentaId": "verify",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Verificar assinaturas"
+          },
+          {
+            "id": "cmd-7-5",
+            "rotulo": "Assinatura desenhada",
+            "ferramentaId": "drawsignature",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Assinatura desenhada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classico-8",
+    "nome": "Ajuda",
+    "grupos": [
+      {
+        "id": "grupo-8-0",
+        "nome": "Ações",
+        "comandos": [
+          {
+            "id": "cmd-8-0",
+            "rotulo": "Recursos e limitações",
+            "ferramentaId": "help",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Recursos e limitações"
+          },
+          {
+            "id": "cmd-8-1",
+            "rotulo": "Todas as ferramentas",
+            "ferramentaId": "center",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Todas as ferramentas"
+          },
+          {
+            "id": "cmd-8-2",
+            "rotulo": "Personalizar acesso rápido",
+            "ferramentaId": "quickcustom",
+            "templateId": "acao",
+            "destaque": false,
+            "icone": "documento",
+            "descricao": "Personalizar acesso rápido"
+          }
+        ]
+      },
+      {
+        "id": "grupo-8-3",
+        "nome": "Mais ações",
+        "comandos": [
+          {
+            "id": "cmd-8-3",
+            "rotulo": "Temas",
+            "ferramentaId": "themes",
+            "templateId": "acao",
+            "destaque": true,
+            "icone": "documento",
+            "descricao": "Temas"
+          }
+        ]
+      }
+    ]
+  }
+]

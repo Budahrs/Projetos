@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rsampietro-code/programas/hefestus/perfis/perfil.schema.json",
+  "title": "Perfil do App Shell do Hefestus (issue #43, fase S0)",
+  "description": "Um projeto entra no shell declarando suas áreas, painéis, comandos, tema e motor. O shell oferece uma vez só comandos, desfazer/refazer, temas, persistência e MCP; o perfil não reimplementa nada disso.",
+  "type": "object",
+  "required": ["formato", "versao", "id", "nome", "areas", "areaInicial", "paineis", "acessoRapido", "temaPadrao", "destinos", "motor"],
+  "additionalProperties": false,
+  "properties": {
+    "formato": { "const": "hefestus.perfil" },
+    "versao": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{1,40}$", "description": "Estável; mudar exige migração." },
+    "nome": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "descricao": { "type": "string", "maxLength": 300 },
+    "projeto": { "type": "string", "pattern": "^prj-[a-z0-9-]+$", "description": "ID do projeto no Catálogo Vivo (CONTRATOS-F1)." },
+    "areas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "abas", "abaInicial"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{1,40}$" },
+          "nome": { "type": "string", "minLength": 1 },
+          "abas": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]{1,40}$" } },
+          "abaInicial": { "type": "string" }
+        }
+      }
+    },
+    "areaInicial": { "type": "string" },
+    "paineis": {
+      "type": "object",
+      "required": ["esquerda", "direita"],
+      "additionalProperties": false,
+      "properties": {
+        "esquerda": { "type": "array", "items": { "type": "string" } },
+        "direita": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "acessoRapido": { "type": "array", "items": { "type": "string", "pattern": "^[_a-z][a-z0-9._-]*$" }, "description": "IDs de comandos do CommandRegistry ou da faixa." },
+    "temaPadrao": { "type": "string", "description": "Chave de TEMAS_UI ou apelido de ALIAS_TEMA_UI (js/ui/temas.js)." },
+    "destinos": { "type": "array", "minItems": 1, "items": { "enum": ["web", "desktop", "android"] } },
+    "motor": {
+      "type": "object",
+      "required": ["tipo"],
+      "additionalProperties": false,
+      "properties": {
+        "tipo": { "enum": ["js", "python", "rust", "externo"] },
+        "entrada": { "type": "string", "description": "Módulo, script ou comando do motor do próprio projeto." },
+        "nota": { "type": "string" }
+      }
+    },
+    "mcp": {
+      "type": "object",
+      "required": ["comando"],
+      "additionalProperties": false,
+      "properties": {
+        "comando": { "type": "string" },
+        "args": { "type": "array", "items": { "type": "string" } }
+      },
+      "description": "Servidor MCP do projeto; precisa cumprir o contrato do acervo (orq.mjs mcp-verificar)."
+    },
+    "estado": { "enum": ["proposto", "especificado", "implementado", "testado", "homologado"] }
+  }
+}

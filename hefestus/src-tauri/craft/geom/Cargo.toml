@@ -1,0 +1,17 @@
+# Incorporado do FigCraft (https://github.com/storytold/figcraft, commit d9c924c), licença MIT OU Apache-2.0.
+# Pode ser modificado à vontade; mantenha LICENSE-MIT, LICENSE-APACHE e NOTICE na pasta craft/.
+[package]
+name = "figcraft-geom"
+version = "0.8.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT OR Apache-2.0"
+description = "Geometria: transformações e construtores de caminhos"
+publish = false
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+kurbo = { version = "0.13", features = ["serde"] }
+serde = { version = "1", features = ["derive", "rc"] }

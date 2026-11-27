@@ -1,0 +1,123 @@
+[
+  {
+    "projeto": "Anima_Studio",
+    "manifestos": 5,
+    "tecnologias": [
+      "Python",
+      "JavaScript modular"
+    ],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Antares",
+    "manifestos": 8,
+    "tecnologias": [
+      "Tauri/Rust",
+      "JavaScript modular"
+    ],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Atalhos",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Axiom",
+    "manifestos": 1,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Axiom-Daedalus-NOC",
+    "manifestos": 3,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Axiom-Studio-Completo",
+    "manifestos": 1,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "BI_Desktop",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "EcosNote",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Estudio-Voz",
+    "manifestos": 2,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "HeartPulse",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Hefestus",
+    "manifestos": 1,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Hefestus_0.46",
+    "manifestos": 10,
+    "tecnologias": [
+      "Tauri/Rust",
+      "JavaScript modular"
+    ],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Inventario_Rede",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Morpheus-Nightreign",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "NexusOps",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Nightreign",
+    "manifestos": 0,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "Nightreign-Engine",
+    "manifestos": 1,
+    "tecnologias": [],
+    "acessosPendentes": []
+  },
+  {
+    "projeto": "PDF-Studio",
+    "manifestos": 14,
+    "tecnologias": [
+      "Tauri/Rust",
+      "WPF/.NET",
+      "JavaScript modular"
+    ],
+    "acessosPendentes": []
+  }
+]

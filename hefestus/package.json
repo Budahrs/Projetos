@@ -1,0 +1,31 @@
+{
+  "name": "hephaestus",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri",
+    "build": "node build.mjs",
+    "test": "node --experimental-strip-types --test --test-concurrency=4 testes/*.test.mjs testes/*.test.ts",
+    "test:interface": "node ferramentas/verificar-janelas.cjs",
+    "janela": "tauri dev",
+    "instalador": "tauri build",
+    "cli": "node ferramentas/hefestus-cli.mjs",
+    "test:blocos": "node ferramentas/verificar-blocos.cjs",
+    "banco:atualizar": "node ferramentas/gerar-banco-ferramentas.mjs",
+    "arquitetura:inventariar": "node ferramentas/inventariar-projetos.mjs",
+    "android:preparar": "node ferramentas/preparar-android.mjs",
+    "android:dev": "tauri android dev",
+    "android:apk": "tauri android build --apk",
+    "voz:abertura": "node ferramentas/gerar-voz-abertura.mjs",
+    "mcp:fichas": "node ferramentas/fichas-mcp.mjs",
+    "engenharia": "node ferramentas/engenharia.mjs",
+    "verify:reconstrucao": "node ferramentas/verificar-reconstrucao.mjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "dependencies": {
+    "blockly": "13.4.0"
+  }
+}

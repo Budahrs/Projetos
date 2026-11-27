@@ -1,0 +1,2535 @@
+{
+  "formato": "hefestus.menu",
+  "versao": 1,
+  "id": "pdf-studio-classico-v05",
+  "nome": "Editor PDF · menu clássico e ferramentas",
+  "designer": {
+    "prefixoSinal": "pdf",
+    "limiteVisivel": 3,
+    "menusClassicos": [
+      {
+        "name": "Arquivo",
+        "commands": [
+          "open",
+          "new",
+          "save",
+          "print",
+          "-",
+          "officein",
+          "fromimages",
+          "html",
+          "-",
+          "docx",
+          "xlsx",
+          "pptx",
+          "markdown",
+          "pdfa",
+          "pdfx",
+          "jpg",
+          "png",
+          "allpng",
+          "textout",
+          "-",
+          "metadata",
+          "close"
+        ]
+      },
+      {
+        "name": "Editar",
+        "commands": [
+          "undo",
+          "redo",
+          "-",
+          "objects",
+          "text",
+          "image",
+          "crop",
+          "uncrop",
+          "-",
+          "cut-native",
+          "copy-native",
+          "paste-native",
+          "textout",
+          "-",
+          "quickcustom",
+          "themes"
+        ]
+      },
+      {
+        "name": "Visualizar",
+        "commands": [
+          "center",
+          "prev",
+          "next",
+          "zoomin",
+          "zoomout",
+          "fit",
+          "ribbon",
+          "fullscreen"
+        ]
+      },
+      {
+        "name": "Documento",
+        "commands": [
+          "rotate",
+          "left",
+          "right",
+          "duplicate",
+          "blank",
+          "delete",
+          "numbers",
+          "watermark",
+          "-",
+          "merge",
+          "insertpdf",
+          "extract",
+          "mix",
+          "split",
+          "splitgroups",
+          "splitsize",
+          "splitbookmarks",
+          "splitranges"
+        ]
+      },
+      {
+        "name": "Comentário",
+        "commands": [
+          "comment",
+          "highlight",
+          "rectangle",
+          "drawsignature"
+        ]
+      },
+      {
+        "name": "Formulário",
+        "commands": [
+          "forms",
+          "fieldtext",
+          "fieldcheck",
+          "fieldcombo",
+          "fieldradio"
+        ]
+      },
+      {
+        "name": "Ferramentas",
+        "commands": [
+          "capture",
+          "scan",
+          "clipboard",
+          "reconstructimage",
+          "reconstructpage",
+          "searchable",
+          "ocr",
+          "-",
+          "compare",
+          "compress",
+          "repair",
+          "extractimages",
+          "summary",
+          "translate",
+          "batch"
+        ]
+      },
+      {
+        "name": "Proteger",
+        "commands": [
+          "protect",
+          "unlock",
+          "redact",
+          "sign",
+          "verify",
+          "drawsignature"
+        ]
+      },
+      {
+        "name": "Ajuda",
+        "commands": [
+          "help",
+          "center",
+          "quickcustom",
+          "themes"
+        ]
+      }
+    ],
+    "abas": [
+      {
+        "id": "classico-0",
+        "nome": "Arquivo",
+        "grupos": [
+          {
+            "id": "grupo-0-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-0-0",
+                "rotulo": "Abrir PDF",
+                "ferramentaId": "open",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Abrir PDF"
+              },
+              {
+                "id": "cmd-0-1",
+                "rotulo": "Novo PDF",
+                "ferramentaId": "new",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Novo PDF"
+              },
+              {
+                "id": "cmd-0-2",
+                "rotulo": "Salvar cópia",
+                "ferramentaId": "save",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Salvar cópia"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-3",
+                "rotulo": "Imprimir",
+                "ferramentaId": "print",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Imprimir"
+              },
+              {
+                "id": "cmd-0-4",
+                "rotulo": "Word / Excel / PowerPoint → PDF",
+                "ferramentaId": "officein",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Word / Excel / PowerPoint → PDF"
+              },
+              {
+                "id": "cmd-0-5",
+                "rotulo": "Imagens → PDF",
+                "ferramentaId": "fromimages",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Imagens → PDF"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-6",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-6",
+                "rotulo": "HTML → PDF",
+                "ferramentaId": "html",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "HTML → PDF"
+              },
+              {
+                "id": "cmd-0-7",
+                "rotulo": "PDF → Word",
+                "ferramentaId": "docx",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "PDF → Word"
+              },
+              {
+                "id": "cmd-0-8",
+                "rotulo": "PDF → Excel",
+                "ferramentaId": "xlsx",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "PDF → Excel"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-9",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-9",
+                "rotulo": "PDF → PowerPoint",
+                "ferramentaId": "pptx",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "PDF → PowerPoint"
+              },
+              {
+                "id": "cmd-0-10",
+                "rotulo": "PDF → Markdown",
+                "ferramentaId": "markdown",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "PDF → Markdown"
+              },
+              {
+                "id": "cmd-0-11",
+                "rotulo": "PDF/A",
+                "ferramentaId": "pdfa",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "PDF/A"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-12",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-12",
+                "rotulo": "PDF/X CMYK (experimental)",
+                "ferramentaId": "pdfx",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "PDF/X CMYK (experimental)"
+              },
+              {
+                "id": "cmd-0-13",
+                "rotulo": "Páginas → JPG",
+                "ferramentaId": "jpg",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Páginas → JPG"
+              },
+              {
+                "id": "cmd-0-14",
+                "rotulo": "Página → PNG",
+                "ferramentaId": "png",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Página → PNG"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-15",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-15",
+                "rotulo": "Todas → PNG",
+                "ferramentaId": "allpng",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Todas → PNG"
+              },
+              {
+                "id": "cmd-0-16",
+                "rotulo": "Extrair texto / buscar",
+                "ferramentaId": "textout",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Extrair texto / buscar"
+              },
+              {
+                "id": "cmd-0-17",
+                "rotulo": "Propriedades",
+                "ferramentaId": "metadata",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Propriedades"
+              }
+            ]
+          },
+          {
+            "id": "grupo-0-18",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-0-18",
+                "rotulo": "Fechar documento",
+                "ferramentaId": "close",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Fechar documento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-1",
+        "nome": "Editar",
+        "grupos": [
+          {
+            "id": "grupo-1-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-1-0",
+                "rotulo": "Desfazer",
+                "ferramentaId": "undo",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Desfazer"
+              },
+              {
+                "id": "cmd-1-1",
+                "rotulo": "Refazer",
+                "ferramentaId": "redo",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Refazer"
+              },
+              {
+                "id": "cmd-1-2",
+                "rotulo": "Editar texto original / objetos",
+                "ferramentaId": "objects",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Editar texto original / objetos"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-1-3",
+                "rotulo": "Adicionar texto",
+                "ferramentaId": "text",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Adicionar texto"
+              },
+              {
+                "id": "cmd-1-4",
+                "rotulo": "Inserir imagem",
+                "ferramentaId": "image",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Inserir imagem"
+              },
+              {
+                "id": "cmd-1-5",
+                "rotulo": "Recortar página",
+                "ferramentaId": "crop",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Recortar página"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-6",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-1-6",
+                "rotulo": "Remover recorte",
+                "ferramentaId": "uncrop",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Remover recorte"
+              },
+              {
+                "id": "cmd-1-7",
+                "rotulo": "Recortar texto selecionado",
+                "ferramentaId": "cut-native",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Recortar texto selecionado"
+              },
+              {
+                "id": "cmd-1-8",
+                "rotulo": "Copiar texto selecionado",
+                "ferramentaId": "copy-native",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Copiar texto selecionado"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-9",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-1-9",
+                "rotulo": "Colar no campo de texto",
+                "ferramentaId": "paste-native",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Colar no campo de texto"
+              },
+              {
+                "id": "cmd-1-10",
+                "rotulo": "Extrair texto / buscar",
+                "ferramentaId": "textout",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Extrair texto / buscar"
+              },
+              {
+                "id": "cmd-1-11",
+                "rotulo": "Personalizar acesso rápido",
+                "ferramentaId": "quickcustom",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Personalizar acesso rápido"
+              }
+            ]
+          },
+          {
+            "id": "grupo-1-12",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-1-12",
+                "rotulo": "Temas",
+                "ferramentaId": "themes",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Temas"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-2",
+        "nome": "Visualizar",
+        "grupos": [
+          {
+            "id": "grupo-2-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-2-0",
+                "rotulo": "Todas as ferramentas",
+                "ferramentaId": "center",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Todas as ferramentas"
+              },
+              {
+                "id": "cmd-2-1",
+                "rotulo": "Página anterior",
+                "ferramentaId": "prev",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Página anterior"
+              },
+              {
+                "id": "cmd-2-2",
+                "rotulo": "Próxima página",
+                "ferramentaId": "next",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Próxima página"
+              }
+            ]
+          },
+          {
+            "id": "grupo-2-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-2-3",
+                "rotulo": "Ampliar",
+                "ferramentaId": "zoomin",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Ampliar"
+              },
+              {
+                "id": "cmd-2-4",
+                "rotulo": "Reduzir zoom",
+                "ferramentaId": "zoomout",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Reduzir zoom"
+              },
+              {
+                "id": "cmd-2-5",
+                "rotulo": "Ajustar à janela",
+                "ferramentaId": "fit",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Ajustar à janela"
+              }
+            ]
+          },
+          {
+            "id": "grupo-2-6",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-2-6",
+                "rotulo": "Recolher / expandir faixa",
+                "ferramentaId": "ribbon",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Recolher / expandir faixa"
+              },
+              {
+                "id": "cmd-2-7",
+                "rotulo": "Tela cheia",
+                "ferramentaId": "fullscreen",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Tela cheia"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-3",
+        "nome": "Documento",
+        "grupos": [
+          {
+            "id": "grupo-3-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-3-0",
+                "rotulo": "Girar 90°",
+                "ferramentaId": "rotate",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Girar 90°"
+              },
+              {
+                "id": "cmd-3-1",
+                "rotulo": "Mover antes",
+                "ferramentaId": "left",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Mover antes"
+              },
+              {
+                "id": "cmd-3-2",
+                "rotulo": "Mover depois",
+                "ferramentaId": "right",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Mover depois"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-3-3",
+                "rotulo": "Duplicar página",
+                "ferramentaId": "duplicate",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Duplicar página"
+              },
+              {
+                "id": "cmd-3-4",
+                "rotulo": "Página em branco",
+                "ferramentaId": "blank",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Página em branco"
+              },
+              {
+                "id": "cmd-3-5",
+                "rotulo": "Excluir página",
+                "ferramentaId": "delete",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Excluir página"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-6",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-3-6",
+                "rotulo": "Numerar páginas",
+                "ferramentaId": "numbers",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Numerar páginas"
+              },
+              {
+                "id": "cmd-3-7",
+                "rotulo": "Marca d'água",
+                "ferramentaId": "watermark",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Marca d'água"
+              },
+              {
+                "id": "cmd-3-8",
+                "rotulo": "Juntar PDFs",
+                "ferramentaId": "merge",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Juntar PDFs"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-9",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-3-9",
+                "rotulo": "Inserir outro PDF",
+                "ferramentaId": "insertpdf",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Inserir outro PDF"
+              },
+              {
+                "id": "cmd-3-10",
+                "rotulo": "Extrair páginas",
+                "ferramentaId": "extract",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Extrair páginas"
+              },
+              {
+                "id": "cmd-3-11",
+                "rotulo": "Intercalar PDFs",
+                "ferramentaId": "mix",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Intercalar PDFs"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-12",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-3-12",
+                "rotulo": "Dividir por página",
+                "ferramentaId": "split",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Dividir por página"
+              },
+              {
+                "id": "cmd-3-13",
+                "rotulo": "Dividir em grupos",
+                "ferramentaId": "splitgroups",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Dividir em grupos"
+              },
+              {
+                "id": "cmd-3-14",
+                "rotulo": "Dividir por tamanho",
+                "ferramentaId": "splitsize",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Dividir por tamanho"
+              }
+            ]
+          },
+          {
+            "id": "grupo-3-15",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-3-15",
+                "rotulo": "Dividir por marcadores",
+                "ferramentaId": "splitbookmarks",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Dividir por marcadores"
+              },
+              {
+                "id": "cmd-3-16",
+                "rotulo": "Intervalos personalizados",
+                "ferramentaId": "splitranges",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Intervalos personalizados"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-4",
+        "nome": "Comentário",
+        "grupos": [
+          {
+            "id": "grupo-4-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-4-0",
+                "rotulo": "Comentário",
+                "ferramentaId": "comment",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Comentário"
+              },
+              {
+                "id": "cmd-4-1",
+                "rotulo": "Realçar área",
+                "ferramentaId": "highlight",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Realçar área"
+              },
+              {
+                "id": "cmd-4-2",
+                "rotulo": "Retângulo",
+                "ferramentaId": "rectangle",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Retângulo"
+              }
+            ]
+          },
+          {
+            "id": "grupo-4-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-4-3",
+                "rotulo": "Assinatura desenhada",
+                "ferramentaId": "drawsignature",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Assinatura desenhada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-5",
+        "nome": "Formulário",
+        "grupos": [
+          {
+            "id": "grupo-5-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-5-0",
+                "rotulo": "Preencher formulário",
+                "ferramentaId": "forms",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Preencher formulário"
+              },
+              {
+                "id": "cmd-5-1",
+                "rotulo": "Criar campo de texto",
+                "ferramentaId": "fieldtext",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Criar campo de texto"
+              },
+              {
+                "id": "cmd-5-2",
+                "rotulo": "Criar caixa de seleção",
+                "ferramentaId": "fieldcheck",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Criar caixa de seleção"
+              }
+            ]
+          },
+          {
+            "id": "grupo-5-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-5-3",
+                "rotulo": "Criar lista",
+                "ferramentaId": "fieldcombo",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Criar lista"
+              },
+              {
+                "id": "cmd-5-4",
+                "rotulo": "Criar escolha única",
+                "ferramentaId": "fieldradio",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Criar escolha única"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-6",
+        "nome": "Ferramentas",
+        "grupos": [
+          {
+            "id": "grupo-6-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-6-0",
+                "rotulo": "Capturar área da tela",
+                "ferramentaId": "capture",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Capturar área da tela"
+              },
+              {
+                "id": "cmd-6-1",
+                "rotulo": "Digitalizar (scanner)",
+                "ferramentaId": "scan",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Digitalizar (scanner)"
+              },
+              {
+                "id": "cmd-6-2",
+                "rotulo": "Colar imagem",
+                "ferramentaId": "clipboard",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Colar imagem"
+              }
+            ]
+          },
+          {
+            "id": "grupo-6-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-6-3",
+                "rotulo": "Reconstruir imagem",
+                "ferramentaId": "reconstructimage",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Reconstruir imagem"
+              },
+              {
+                "id": "cmd-6-4",
+                "rotulo": "Reconstruir página atual",
+                "ferramentaId": "reconstructpage",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Reconstruir página atual"
+              },
+              {
+                "id": "cmd-6-5",
+                "rotulo": "OCR → PDF pesquisável",
+                "ferramentaId": "searchable",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "OCR → PDF pesquisável"
+              }
+            ]
+          },
+          {
+            "id": "grupo-6-6",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-6-6",
+                "rotulo": "OCR integrado",
+                "ferramentaId": "ocr",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "OCR integrado"
+              },
+              {
+                "id": "cmd-6-7",
+                "rotulo": "Comparar PDFs",
+                "ferramentaId": "compare",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Comparar PDFs"
+              },
+              {
+                "id": "cmd-6-8",
+                "rotulo": "Compactar",
+                "ferramentaId": "compress",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Compactar"
+              }
+            ]
+          },
+          {
+            "id": "grupo-6-9",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-6-9",
+                "rotulo": "Reparar arquivo",
+                "ferramentaId": "repair",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Reparar arquivo"
+              },
+              {
+                "id": "cmd-6-10",
+                "rotulo": "Extrair imagens",
+                "ferramentaId": "extractimages",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Extrair imagens"
+              },
+              {
+                "id": "cmd-6-11",
+                "rotulo": "Resumir documento",
+                "ferramentaId": "summary",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Resumir documento"
+              }
+            ]
+          },
+          {
+            "id": "grupo-6-12",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-6-12",
+                "rotulo": "Traduzir texto ou PDF",
+                "ferramentaId": "translate",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Traduzir texto ou PDF"
+              },
+              {
+                "id": "cmd-6-13",
+                "rotulo": "Lote / fluxos",
+                "ferramentaId": "batch",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Lote / fluxos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-7",
+        "nome": "Proteger",
+        "grupos": [
+          {
+            "id": "grupo-7-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-7-0",
+                "rotulo": "Proteger com senha",
+                "ferramentaId": "protect",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Proteger com senha"
+              },
+              {
+                "id": "cmd-7-1",
+                "rotulo": "Remover senha da cópia",
+                "ferramentaId": "unlock",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Remover senha da cópia"
+              },
+              {
+                "id": "cmd-7-2",
+                "rotulo": "Censurar área",
+                "ferramentaId": "redact",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Censurar área"
+              }
+            ]
+          },
+          {
+            "id": "grupo-7-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-7-3",
+                "rotulo": "Assinar com A1 / PFX",
+                "ferramentaId": "sign",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Assinar com A1 / PFX"
+              },
+              {
+                "id": "cmd-7-4",
+                "rotulo": "Verificar assinaturas",
+                "ferramentaId": "verify",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Verificar assinaturas"
+              },
+              {
+                "id": "cmd-7-5",
+                "rotulo": "Assinatura desenhada",
+                "ferramentaId": "drawsignature",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Assinatura desenhada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "classico-8",
+        "nome": "Ajuda",
+        "grupos": [
+          {
+            "id": "grupo-8-0",
+            "nome": "Ações",
+            "comandos": [
+              {
+                "id": "cmd-8-0",
+                "rotulo": "Recursos e limitações",
+                "ferramentaId": "help",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Recursos e limitações"
+              },
+              {
+                "id": "cmd-8-1",
+                "rotulo": "Todas as ferramentas",
+                "ferramentaId": "center",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Todas as ferramentas"
+              },
+              {
+                "id": "cmd-8-2",
+                "rotulo": "Personalizar acesso rápido",
+                "ferramentaId": "quickcustom",
+                "templateId": "acao",
+                "destaque": false,
+                "icone": "documento",
+                "descricao": "Personalizar acesso rápido"
+              }
+            ]
+          },
+          {
+            "id": "grupo-8-3",
+            "nome": "Mais ações",
+            "comandos": [
+              {
+                "id": "cmd-8-3",
+                "rotulo": "Temas",
+                "ferramentaId": "themes",
+                "templateId": "acao",
+                "destaque": true,
+                "icone": "documento",
+                "descricao": "Temas"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "bancoFerramentas": [
+    {
+      "id": "open",
+      "nome": "Abrir PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "open"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "new",
+      "nome": "Novo PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "new"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "save",
+      "nome": "Salvar cópia",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "save"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "print",
+      "nome": "Imprimir",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "print"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "officein",
+      "nome": "Word / Excel / PowerPoint → PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "officein"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fromimages",
+      "nome": "Imagens → PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fromimages"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "html",
+      "nome": "HTML → PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "html"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "docx",
+      "nome": "PDF → Word",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "docx"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "xlsx",
+      "nome": "PDF → Excel",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "xlsx"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "pptx",
+      "nome": "PDF → PowerPoint",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pptx"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "markdown",
+      "nome": "PDF → Markdown",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "markdown"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "pdfa",
+      "nome": "PDF/A",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pdfa"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "pdfx",
+      "nome": "PDF/X CMYK (experimental)",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "pdfx"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "jpg",
+      "nome": "Páginas → JPG",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "jpg"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "png",
+      "nome": "Página → PNG",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "png"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "allpng",
+      "nome": "Todas → PNG",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "allpng"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "textout",
+      "nome": "Extrair texto / buscar",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "textout"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "metadata",
+      "nome": "Propriedades",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "metadata"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "close",
+      "nome": "Fechar documento",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "close"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "undo",
+      "nome": "Desfazer",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "undo"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "redo",
+      "nome": "Refazer",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "redo"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "objects",
+      "nome": "Editar texto original / objetos",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "objects"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "text",
+      "nome": "Adicionar texto",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "text"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "image",
+      "nome": "Inserir imagem",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "image"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "crop",
+      "nome": "Recortar página",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "crop"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "uncrop",
+      "nome": "Remover recorte",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "uncrop"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "cut-native",
+      "nome": "Recortar texto selecionado",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "cut-native"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "copy-native",
+      "nome": "Copiar texto selecionado",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "copy-native"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "paste-native",
+      "nome": "Colar no campo de texto",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "paste-native"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "quickcustom",
+      "nome": "Personalizar acesso rápido",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "quickcustom"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "themes",
+      "nome": "Temas",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "themes"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "center",
+      "nome": "Todas as ferramentas",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "center"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "prev",
+      "nome": "Página anterior",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "prev"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "next",
+      "nome": "Próxima página",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "next"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "zoomin",
+      "nome": "Ampliar",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "zoomin"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "zoomout",
+      "nome": "Reduzir zoom",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "zoomout"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fit",
+      "nome": "Ajustar à janela",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fit"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "ribbon",
+      "nome": "Recolher / expandir faixa",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "ribbon"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fullscreen",
+      "nome": "Tela cheia",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fullscreen"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "rotate",
+      "nome": "Girar 90°",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "rotate"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "left",
+      "nome": "Mover antes",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "left"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "right",
+      "nome": "Mover depois",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "right"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "duplicate",
+      "nome": "Duplicar página",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "duplicate"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "blank",
+      "nome": "Página em branco",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "blank"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "delete",
+      "nome": "Excluir página",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "delete"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "numbers",
+      "nome": "Numerar páginas",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "numbers"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "watermark",
+      "nome": "Marca d'água",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "watermark"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "merge",
+      "nome": "Juntar PDFs",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "merge"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "insertpdf",
+      "nome": "Inserir outro PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "insertpdf"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "extract",
+      "nome": "Extrair páginas",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "extract"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "mix",
+      "nome": "Intercalar PDFs",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "mix"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "split",
+      "nome": "Dividir por página",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "split"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "splitgroups",
+      "nome": "Dividir em grupos",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitgroups"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "splitsize",
+      "nome": "Dividir por tamanho",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitsize"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "splitbookmarks",
+      "nome": "Dividir por marcadores",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitbookmarks"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "splitranges",
+      "nome": "Intervalos personalizados",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "splitranges"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "comment",
+      "nome": "Comentário",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "comment"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "highlight",
+      "nome": "Realçar área",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "highlight"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "rectangle",
+      "nome": "Retângulo",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "rectangle"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "drawsignature",
+      "nome": "Assinatura desenhada",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "drawsignature"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "forms",
+      "nome": "Preencher formulário",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "forms"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fieldtext",
+      "nome": "Criar campo de texto",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldtext"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fieldcheck",
+      "nome": "Criar caixa de seleção",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldcheck"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fieldcombo",
+      "nome": "Criar lista",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldcombo"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "fieldradio",
+      "nome": "Criar escolha única",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "fieldradio"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "capture",
+      "nome": "Capturar área da tela",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "capture"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "scan",
+      "nome": "Digitalizar (scanner)",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "scan"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "clipboard",
+      "nome": "Colar imagem",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "clipboard"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "reconstructimage",
+      "nome": "Reconstruir imagem",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "reconstructimage"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "reconstructpage",
+      "nome": "Reconstruir página atual",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "reconstructpage"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "searchable",
+      "nome": "OCR → PDF pesquisável",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "searchable"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "ocr",
+      "nome": "OCR integrado",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "ocr"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "compare",
+      "nome": "Comparar PDFs",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "compare"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "compress",
+      "nome": "Compactar",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "compress"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "repair",
+      "nome": "Reparar arquivo",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "repair"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "extractimages",
+      "nome": "Extrair imagens",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "extractimages"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "summary",
+      "nome": "Resumir documento",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "summary"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "translate",
+      "nome": "Traduzir texto ou PDF",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "translate"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "batch",
+      "nome": "Lote / fluxos",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "batch"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "protect",
+      "nome": "Proteger com senha",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "protect"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "unlock",
+      "nome": "Remover senha da cópia",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "unlock"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "redact",
+      "nome": "Censurar área",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "redact"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "sign",
+      "nome": "Assinar com A1 / PFX",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "sign"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "verify",
+      "nome": "Verificar assinaturas",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "verify"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    },
+    {
+      "id": "help",
+      "nome": "Recursos e limitações",
+      "execucao": {
+        "tipo": "comando-host",
+        "host": "pdf-studio",
+        "comando": "help"
+      },
+      "origem": {
+        "projeto": "Editor PDF do usuário",
+        "arquivo": "ProfessionalMenu.cs",
+        "licenca": "Projeto local; licenças de dependências separadas"
+      },
+      "estado": "implementado-no-host"
+    }
+  ],
+  "catalogoTemplates": [
+    {
+      "id": "acao",
+      "tipo": "botao"
+    }
+  ],
+  "codigos": {
+    "web": {
+      "origem": "gerado",
+      "estado": "executável",
+      "texto": "<!doctype html><html lang=\"pt-BR\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width\"><title>Editor PDF · menu clássico e ferramentas</title><style>body{margin:0;font:14px system-ui;background:#eef2f6;color:#182b36}button{min-height:36px;padding:8px 12px;border:1px solid #87989f;border-radius:4px;background:white;color:inherit;cursor:pointer}button:focus-visible{outline:3px solid #12665d;outline-offset:2px}.abas{display:flex;gap:4px;flex-wrap:wrap;padding:8px;background:#173d38;color:white}.abas button[aria-selected=true]{background:#d8f88c;color:#182b36}.painel{display:flex;flex-wrap:wrap;gap:12px;padding:12px;background:white}.painel[hidden]{display:none}.grupo{border-right:1px solid #87989f;padding:0 12px 0 0;max-width:400px}.acoes{display:flex;flex-wrap:wrap;gap:4px}.destaque{font-weight:700;background:#e3f2e9}h2{font-size:12px;color:#4b6068;margin:8px 0}#estado{padding:16px}</style><nav class=\"abas\" role=\"tablist\" aria-label=\"Áreas\"><button role=\"tab\" aria-selected=\"true\" data-tab=\"classico-0\" aria-controls=\"classico-0\">Arquivo</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-1\" aria-controls=\"classico-1\">Editar</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-2\" aria-controls=\"classico-2\">Visualizar</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-3\" aria-controls=\"classico-3\">Documento</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-4\" aria-controls=\"classico-4\">Comentário</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-5\" aria-controls=\"classico-5\">Formulário</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-6\" aria-controls=\"classico-6\">Ferramentas</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-7\" aria-controls=\"classico-7\">Proteger</button><button role=\"tab\" aria-selected=\"false\" data-tab=\"classico-8\" aria-controls=\"classico-8\">Ajuda</button></nav><section class=\"painel\" role=\"tabpanel\" id=\"classico-0\" ><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"open\" title=\"Abrir PDF\">Abrir PDF</button><button class=\"\" data-command=\"new\" title=\"Novo PDF\">Novo PDF</button><button class=\"\" data-command=\"save\" title=\"Salvar cópia\">Salvar cópia</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"print\" title=\"Imprimir\">Imprimir</button><button class=\"\" data-command=\"officein\" title=\"Word / Excel / PowerPoint → PDF\">Word / Excel / PowerPoint → PDF</button><button class=\"\" data-command=\"fromimages\" title=\"Imagens → PDF\">Imagens → PDF</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"html\" title=\"HTML → PDF\">HTML → PDF</button><button class=\"\" data-command=\"docx\" title=\"PDF → Word\">PDF → Word</button><button class=\"\" data-command=\"xlsx\" title=\"PDF → Excel\">PDF → Excel</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pptx\" title=\"PDF → PowerPoint\">PDF → PowerPoint</button><button class=\"\" data-command=\"markdown\" title=\"PDF → Markdown\">PDF → Markdown</button><button class=\"\" data-command=\"pdfa\" title=\"PDF/A\">PDF/A</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"pdfx\" title=\"PDF/X CMYK (experimental)\">PDF/X CMYK (experimental)</button><button class=\"\" data-command=\"jpg\" title=\"Páginas → JPG\">Páginas → JPG</button><button class=\"\" data-command=\"png\" title=\"Página → PNG\">Página → PNG</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"allpng\" title=\"Todas → PNG\">Todas → PNG</button><button class=\"\" data-command=\"textout\" title=\"Extrair texto / buscar\">Extrair texto / buscar</button><button class=\"\" data-command=\"metadata\" title=\"Propriedades\">Propriedades</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"close\" title=\"Fechar documento\">Fechar documento</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-1\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"undo\" title=\"Desfazer\">Desfazer</button><button class=\"\" data-command=\"redo\" title=\"Refazer\">Refazer</button><button class=\"\" data-command=\"objects\" title=\"Editar texto original / objetos\">Editar texto original / objetos</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"text\" title=\"Adicionar texto\">Adicionar texto</button><button class=\"\" data-command=\"image\" title=\"Inserir imagem\">Inserir imagem</button><button class=\"\" data-command=\"crop\" title=\"Recortar página\">Recortar página</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"uncrop\" title=\"Remover recorte\">Remover recorte</button><button class=\"\" data-command=\"cut-native\" title=\"Recortar texto selecionado\">Recortar texto selecionado</button><button class=\"\" data-command=\"copy-native\" title=\"Copiar texto selecionado\">Copiar texto selecionado</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"paste-native\" title=\"Colar no campo de texto\">Colar no campo de texto</button><button class=\"\" data-command=\"textout\" title=\"Extrair texto / buscar\">Extrair texto / buscar</button><button class=\"\" data-command=\"quickcustom\" title=\"Personalizar acesso rápido\">Personalizar acesso rápido</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"themes\" title=\"Temas\">Temas</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-2\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"center\" title=\"Todas as ferramentas\">Todas as ferramentas</button><button class=\"\" data-command=\"prev\" title=\"Página anterior\">Página anterior</button><button class=\"\" data-command=\"next\" title=\"Próxima página\">Próxima página</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"zoomin\" title=\"Ampliar\">Ampliar</button><button class=\"\" data-command=\"zoomout\" title=\"Reduzir zoom\">Reduzir zoom</button><button class=\"\" data-command=\"fit\" title=\"Ajustar à janela\">Ajustar à janela</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ribbon\" title=\"Recolher / expandir faixa\">Recolher / expandir faixa</button><button class=\"\" data-command=\"fullscreen\" title=\"Tela cheia\">Tela cheia</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-3\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"rotate\" title=\"Girar 90°\">Girar 90°</button><button class=\"\" data-command=\"left\" title=\"Mover antes\">Mover antes</button><button class=\"\" data-command=\"right\" title=\"Mover depois\">Mover depois</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"duplicate\" title=\"Duplicar página\">Duplicar página</button><button class=\"\" data-command=\"blank\" title=\"Página em branco\">Página em branco</button><button class=\"\" data-command=\"delete\" title=\"Excluir página\">Excluir página</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"numbers\" title=\"Numerar páginas\">Numerar páginas</button><button class=\"\" data-command=\"watermark\" title=\"Marca d&#39;água\">Marca d&#39;água</button><button class=\"\" data-command=\"merge\" title=\"Juntar PDFs\">Juntar PDFs</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"insertpdf\" title=\"Inserir outro PDF\">Inserir outro PDF</button><button class=\"\" data-command=\"extract\" title=\"Extrair páginas\">Extrair páginas</button><button class=\"\" data-command=\"mix\" title=\"Intercalar PDFs\">Intercalar PDFs</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"split\" title=\"Dividir por página\">Dividir por página</button><button class=\"\" data-command=\"splitgroups\" title=\"Dividir em grupos\">Dividir em grupos</button><button class=\"\" data-command=\"splitsize\" title=\"Dividir por tamanho\">Dividir por tamanho</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"splitbookmarks\" title=\"Dividir por marcadores\">Dividir por marcadores</button><button class=\"\" data-command=\"splitranges\" title=\"Intervalos personalizados\">Intervalos personalizados</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-4\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"comment\" title=\"Comentário\">Comentário</button><button class=\"\" data-command=\"highlight\" title=\"Realçar área\">Realçar área</button><button class=\"\" data-command=\"rectangle\" title=\"Retângulo\">Retângulo</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"drawsignature\" title=\"Assinatura desenhada\">Assinatura desenhada</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-5\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"forms\" title=\"Preencher formulário\">Preencher formulário</button><button class=\"\" data-command=\"fieldtext\" title=\"Criar campo de texto\">Criar campo de texto</button><button class=\"\" data-command=\"fieldcheck\" title=\"Criar caixa de seleção\">Criar caixa de seleção</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"fieldcombo\" title=\"Criar lista\">Criar lista</button><button class=\"\" data-command=\"fieldradio\" title=\"Criar escolha única\">Criar escolha única</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-6\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"capture\" title=\"Capturar área da tela\">Capturar área da tela</button><button class=\"\" data-command=\"scan\" title=\"Digitalizar (scanner)\">Digitalizar (scanner)</button><button class=\"\" data-command=\"clipboard\" title=\"Colar imagem\">Colar imagem</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"reconstructimage\" title=\"Reconstruir imagem\">Reconstruir imagem</button><button class=\"\" data-command=\"reconstructpage\" title=\"Reconstruir página atual\">Reconstruir página atual</button><button class=\"\" data-command=\"searchable\" title=\"OCR → PDF pesquisável\">OCR → PDF pesquisável</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"ocr\" title=\"OCR integrado\">OCR integrado</button><button class=\"\" data-command=\"compare\" title=\"Comparar PDFs\">Comparar PDFs</button><button class=\"\" data-command=\"compress\" title=\"Compactar\">Compactar</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"repair\" title=\"Reparar arquivo\">Reparar arquivo</button><button class=\"\" data-command=\"extractimages\" title=\"Extrair imagens\">Extrair imagens</button><button class=\"\" data-command=\"summary\" title=\"Resumir documento\">Resumir documento</button></div><h2>Mais ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"translate\" title=\"Traduzir texto ou PDF\">Traduzir texto ou PDF</button><button class=\"\" data-command=\"batch\" title=\"Lote / fluxos\">Lote / fluxos</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-7\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"protect\" title=\"Proteger com senha\">Proteger com senha</button><button class=\"\" data-command=\"unlock\" title=\"Remover senha da cópia\">Remover senha da cópia</button><button class=\"\" data-command=\"redact\" title=\"Censurar área\">Censurar área</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"sign\" title=\"Assinar com A1 / PFX\">Assinar com A1 / PFX</button><button class=\"\" data-command=\"verify\" title=\"Verificar assinaturas\">Verificar assinaturas</button><button class=\"\" data-command=\"drawsignature\" title=\"Assinatura desenhada\">Assinatura desenhada</button></div><h2>Mais ações</h2></section></section><section class=\"painel\" role=\"tabpanel\" id=\"classico-8\" hidden><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"help\" title=\"Recursos e limitações\">Recursos e limitações</button><button class=\"\" data-command=\"center\" title=\"Todas as ferramentas\">Todas as ferramentas</button><button class=\"\" data-command=\"quickcustom\" title=\"Personalizar acesso rápido\">Personalizar acesso rápido</button></div><h2>Ações</h2></section><section class=\"grupo\"><div class=\"acoes\"><button class=\"destaque\" data-command=\"themes\" title=\"Temas\">Temas</button></div><h2>Mais ações</h2></section></section><p id=\"estado\" role=\"status\">Prévia da interface. Conecte os comandos ao motor do programa.</p><script>document.addEventListener('click',e=>{const t=e.target.closest('[data-tab]');if(t){document.querySelectorAll('[role=tab]').forEach(b=>b.setAttribute('aria-selected',String(b===t)));document.querySelectorAll('[role=tabpanel]').forEach(p=>p.hidden=p.id!==t.dataset.tab);}const c=e.target.closest('[data-command]');if(c){document.querySelector('#estado').textContent='Comando: '+c.dataset.command;document.dispatchEvent(new CustomEvent('hefestus:comando',{detail:{id:c.dataset.command}}));}});</script></html>"
+    },
+    "desktopWpf": {
+      "origem": "gerado",
+      "estado": "fragmento: conectar comandos ao host",
+      "texto": "<TabControl xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">\n <TabItem Header=\"Arquivo\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Abrir PDF\" Tag=\"open\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Novo PDF\" Tag=\"new\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Salvar cópia\" Tag=\"save\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Imprimir\" Tag=\"print\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Word / Excel / PowerPoint → PDF\" Tag=\"officein\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Imagens → PDF\" Tag=\"fromimages\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"HTML → PDF\" Tag=\"html\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → Word\" Tag=\"docx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → Excel\" Tag=\"xlsx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"PDF → PowerPoint\" Tag=\"pptx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF → Markdown\" Tag=\"markdown\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"PDF/A\" Tag=\"pdfa\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"PDF/X CMYK (experimental)\" Tag=\"pdfx\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Páginas → JPG\" Tag=\"jpg\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Página → PNG\" Tag=\"png\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Todas → PNG\" Tag=\"allpng\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair texto / buscar\" Tag=\"textout\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Propriedades\" Tag=\"metadata\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Fechar documento\" Tag=\"close\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Editar\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Desfazer\" Tag=\"undo\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Refazer\" Tag=\"redo\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Editar texto original / objetos\" Tag=\"objects\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Adicionar texto\" Tag=\"text\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Inserir imagem\" Tag=\"image\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Recortar página\" Tag=\"crop\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Remover recorte\" Tag=\"uncrop\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Recortar texto selecionado\" Tag=\"cut-native\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Copiar texto selecionado\" Tag=\"copy-native\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Colar no campo de texto\" Tag=\"paste-native\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair texto / buscar\" Tag=\"textout\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Personalizar acesso rápido\" Tag=\"quickcustom\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Temas\" Tag=\"themes\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Visualizar\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Todas as ferramentas\" Tag=\"center\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Página anterior\" Tag=\"prev\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Próxima página\" Tag=\"next\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Ampliar\" Tag=\"zoomin\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Reduzir zoom\" Tag=\"zoomout\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Ajustar à janela\" Tag=\"fit\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Recolher / expandir faixa\" Tag=\"ribbon\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Tela cheia\" Tag=\"fullscreen\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Documento\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Girar 90°\" Tag=\"rotate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Mover antes\" Tag=\"left\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Mover depois\" Tag=\"right\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Duplicar página\" Tag=\"duplicate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Página em branco\" Tag=\"blank\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Excluir página\" Tag=\"delete\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Numerar páginas\" Tag=\"numbers\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Marca d&#39;água\" Tag=\"watermark\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Juntar PDFs\" Tag=\"merge\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Inserir outro PDF\" Tag=\"insertpdf\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair páginas\" Tag=\"extract\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Intercalar PDFs\" Tag=\"mix\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Dividir por página\" Tag=\"split\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir em grupos\" Tag=\"splitgroups\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Dividir por tamanho\" Tag=\"splitsize\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Dividir por marcadores\" Tag=\"splitbookmarks\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Intervalos personalizados\" Tag=\"splitranges\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Comentário\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Comentário\" Tag=\"comment\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Realçar área\" Tag=\"highlight\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Retângulo\" Tag=\"rectangle\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Assinatura desenhada\" Tag=\"drawsignature\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Formulário\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Preencher formulário\" Tag=\"forms\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar campo de texto\" Tag=\"fieldtext\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar caixa de seleção\" Tag=\"fieldcheck\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Criar lista\" Tag=\"fieldcombo\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Criar escolha única\" Tag=\"fieldradio\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Ferramentas\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Capturar área da tela\" Tag=\"capture\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Digitalizar (scanner)\" Tag=\"scan\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Colar imagem\" Tag=\"clipboard\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Reconstruir imagem\" Tag=\"reconstructimage\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Reconstruir página atual\" Tag=\"reconstructpage\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"OCR → PDF pesquisável\" Tag=\"searchable\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"OCR integrado\" Tag=\"ocr\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Comparar PDFs\" Tag=\"compare\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Compactar\" Tag=\"compress\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Reparar arquivo\" Tag=\"repair\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Extrair imagens\" Tag=\"extractimages\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Resumir documento\" Tag=\"summary\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Traduzir texto ou PDF\" Tag=\"translate\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Lote / fluxos\" Tag=\"batch\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Proteger\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Proteger com senha\" Tag=\"protect\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Remover senha da cópia\" Tag=\"unlock\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Censurar área\" Tag=\"redact\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Assinar com A1 / PFX\" Tag=\"sign\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Verificar assinaturas\" Tag=\"verify\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Assinatura desenhada\" Tag=\"drawsignature\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n <TabItem Header=\"Ajuda\"><WrapPanel><GroupBox Header=\"Ações\" Margin=\"4\"><WrapPanel><Button Content=\"Recursos e limitações\" Tag=\"help\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Todas as ferramentas\" Tag=\"center\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/><Button Content=\"Personalizar acesso rápido\" Tag=\"quickcustom\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox><GroupBox Header=\"Mais ações\" Margin=\"4\"><WrapPanel><Button Content=\"Temas\" Tag=\"themes\" MinHeight=\"36\" Padding=\"12,8\" Margin=\"2\"/></WrapPanel></GroupBox></WrapPanel></TabItem>\n</TabControl>"
+    },
+    "mobile": {
+      "origem": "não disponível",
+      "estado": "adaptador ainda não implementado"
+    }
+  },
+  "metricas": {
+    "abas": 9,
+    "grupos": 34,
+    "comandos": 90,
+    "limiteVisivel": 3,
+    "maximoPorGrupo": 3,
+    "comandosEmMais": 0,
+    "alvoMinimo": 32,
+    "vinculosValidos": 90,
+    "reusoTemplatesPercentual": 100
+  }
+}

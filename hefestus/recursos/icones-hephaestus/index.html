@@ -1,0 +1,299 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ícones Hefestus 2.0</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Cinzel:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: réplica da janela do Hefestus — barra de título, catálogo central em grade, painel "Propriedades do ícone" à direita. */
+:root {
+  --bg: #14171C; --panel: #1B1F26; --panel-2: #232831; --line: #313744; --fg: #E6E3DC; --muted: #969DA8;
+  --amber: #E3A24A; --amber-ink: #1A1206; --sel-bg: #3A2D1A;
+  --i-a: #E3A24A; --i-b: #4AA3F0; --i-e: #F2913D; --i-l: #A97BF0; --i-v: #3CC98A; --i-x: #4C8DFF; --i-r: #E5534B;
+  --font-ui: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-brand: "Cinzel", Georgia, serif;
+  --font-code: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #ECEDEF; --panel: #FFFFFF; --panel-2: #F3F4F6; --line: #D5D8DE; --fg: #22262D; --muted: #5D6470;
+  --amber: #B5741A; --amber-ink: #FFFFFF; --sel-bg: #F6E7CF;
+  --i-a: #B5741A; --i-b: #1F6FB8; --i-e: #C8611A; --i-l: #7046C8; --i-v: #16875A; --i-x: #2560D6; --i-r: #C33A33;
+  color-scheme: light; } }
+:root[data-theme="light"] {
+  --bg: #ECEDEF; --panel: #FFFFFF; --panel-2: #F3F4F6; --line: #D5D8DE; --fg: #22262D; --muted: #5D6470;
+  --amber: #B5741A; --amber-ink: #FFFFFF; --sel-bg: #F6E7CF;
+  --i-a: #B5741A; --i-b: #1F6FB8; --i-e: #C8611A; --i-l: #7046C8; --i-v: #16875A; --i-x: #2560D6; --i-r: #C33A33;
+  color-scheme: light; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 15px; }
+
+/* ícones */
+svg.ic { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+svg.ic .f { fill: currentColor; stroke: none; }
+svg.ic .a { stroke: var(--i-a); } svg.ic .af { fill: var(--i-a); stroke: none; } svg.ic .at { stroke: var(--i-a); fill: var(--i-a); fill-opacity: .22; }
+svg.ic .b { stroke: var(--i-b); } svg.ic .bf { fill: var(--i-b); stroke: none; } svg.ic .bt { stroke: var(--i-b); fill: var(--i-b); fill-opacity: .22; }
+svg.ic .e { stroke: var(--i-e); } svg.ic .ef { fill: var(--i-e); stroke: none; } svg.ic .et { stroke: var(--i-e); fill: var(--i-e); fill-opacity: .22; }
+svg.ic .l { stroke: var(--i-l); } svg.ic .lf { fill: var(--i-l); stroke: none; } svg.ic .lt { stroke: var(--i-l); fill: var(--i-l); fill-opacity: .22; }
+svg.ic .v { stroke: var(--i-v); } svg.ic .vf { fill: var(--i-v); stroke: none; } svg.ic .vt { stroke: var(--i-v); fill: var(--i-v); fill-opacity: .22; }
+svg.ic .x { stroke: var(--i-x); } svg.ic .xf { fill: var(--i-x); stroke: none; } svg.ic .xt { stroke: var(--i-x); fill: var(--i-x); fill-opacity: .22; }
+svg.ic .r { stroke: var(--i-r); } svg.ic .rf { fill: var(--i-r); stroke: none; } svg.ic .rt { stroke: var(--i-r); fill: var(--i-r); fill-opacity: .22; }
+
+/* barra de título */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line);
+  padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand b { font-family: var(--font-brand); font-size: 20px; letter-spacing: .06em; }
+.brand b span { color: var(--amber); font-family: var(--font-ui); font-weight: 600; font-size: 17px; letter-spacing: 0; }
+.brand small { color: var(--muted); font-size: 14px; border-left: 1px solid var(--line); padding-left: 10px; }
+.search { flex: 1 1 220px; max-width: 360px; display: flex; align-items: center; gap: 8px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 6px 10px; color: var(--muted); }
+.search input { flex: 1; min-width: 0; background: none; border: 0; color: var(--fg); font: inherit; outline: none; }
+.search:focus-within { border-color: var(--amber); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.seg button { font: 600 13px/1 var(--font-ui); letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; background: var(--panel-2); color: var(--fg); border: 0; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--amber); color: var(--amber-ink); }
+.seg button:focus-visible, .tile:focus-visible, .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.sizes { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+.sizes select { font: inherit; background: var(--panel-2); color: var(--fg); border: 1px solid var(--line); border-radius: 4px; padding: 5px 8px; }
+
+/* corpo */
+.wrap { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 0; align-items: start;
+  padding-left: max(0px, env(safe-area-inset-left, 0px)); padding-right: max(0px, env(safe-area-inset-right, 0px)); }
+main { min-width: 0; padding: 20px max(16px, env(safe-area-inset-left, 0px)) 48px max(16px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 28px; }
+
+.spec { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.spec div { background: var(--panel); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.spec dt { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.spec dd { margin: 0; font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+
+/* ribbon em contexto */
+.ribbons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 16px; }
+.ribbon { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; min-width: 0; }
+.ribbon header { display: flex; gap: 18px; padding: 8px 14px; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); overflow-x: auto; white-space: nowrap; }
+.ribbon header .on { color: var(--amber); box-shadow: inset 0 -2px 0 var(--amber); padding-bottom: 4px; }
+.ribbon .row { display: flex; overflow-x: auto; }
+.rgroup { display: flex; flex-direction: column; border-right: 1px solid var(--line); flex: none; }
+.rgroup .btns { display: flex; padding: 10px 8px 4px; gap: 2px; }
+.rbtn { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 64px; padding: 4px 2px; border-radius: 4px; font-size: 12.5px; text-align: center; color: var(--fg); }
+.rbtn:hover { background: var(--panel-2); }
+.rgroup > span { font-size: 12.5px; color: var(--muted); text-align: center; padding: 2px 6px 8px; }
+
+/* grupos */
+.group h2 { font-size: 18px; font-weight: 600; margin: 0; text-wrap: balance; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.group h2 .mode { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 3px 7px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); font-weight: 600; }
+.group h2 .mode.designer { color: var(--amber); border-color: var(--amber); }
+.group h2 .mode.script { color: var(--i-x); border-color: var(--i-x); }
+.group p { margin: 4px 0 12px; color: var(--muted); font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
+.tile { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 108px; padding: 14px 8px 10px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 5px; color: var(--fg); cursor: pointer; font: inherit; font-size: 13.5px; line-height: 1.2; text-align: center; }
+.tile:hover { background: var(--panel-2); }
+.tile[aria-selected="true"] { background: var(--sel-bg); border-color: var(--amber); }
+.tile kbd { position: absolute; top: 5px; right: 6px; font: 500 10.5px var(--font-code); color: var(--muted); }
+.empty { color: var(--muted); padding: 24px 0; }
+
+/* painel de propriedades */
+aside { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 58px); max-height: calc(100vh - 58px); overflow-y: auto; background: var(--panel); border-left: 1px solid var(--line); min-width: 0; }
+aside section { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+aside h3 { margin: 0; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.hero { display: flex; gap: 14px; align-items: center; }
+.hero .big { width: 72px; height: 72px; display: grid; place-items: center; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; flex: none;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 6px 6px; background-position: -1px -1px; }
+.hero strong { font-size: 19px; display: block; }
+.hero code { font-family: var(--font-code); font-size: 12.5px; color: var(--muted); }
+.hero .meta { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+.scales { display: flex; align-items: flex-end; gap: 14px; flex-wrap: wrap; }
+.scales figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; font: 11px var(--font-code); color: var(--muted); }
+.states { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.states div { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 4px 8px; border-radius: 4px; border: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.states .hov { background: var(--panel-2); }
+.states .act { background: var(--sel-bg); border-color: var(--amber); color: var(--fg); }
+.states .act svg { color: var(--amber); }
+.states .dis svg { opacity: .35; }
+pre { margin: 0; font: 11.5px/1.5 var(--font-code); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 10px; max-height: 200px; overflow: auto; white-space: pre-wrap; word-break: break-all; color: var(--muted); }
+.btns2 { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { font: 600 13.5px var(--font-ui); padding: 8px 12px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel-2); color: var(--fg); cursor: pointer; }
+.btn.primary { background: var(--amber); color: var(--amber-ink); border-color: var(--amber); }
+.toast { font-size: 13px; color: var(--i-v); min-height: 1em; }
+
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: minmax(0, 1fr); }
+  aside { position: static; max-height: none; border-left: 0; border-top: 1px solid var(--line); order: -1; }
+  .top { position: static; }
+}
+@media (prefers-reduced-motion: no-preference) { .tile { transition: background .12s, border-color .12s; } }
+</style>
+
+<header class="top">
+  <div class="brand">
+    <svg class="ic" id="brandmark" width="30" height="30" viewBox="0 0 24 24"></svg>
+    <b>HEFESTUS <span>2.0</span></b>
+    <small>Biblioteca de ícones</small>
+  </div>
+  <label class="search" for="q">
+    <svg class="ic" width="18" height="18" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg>
+    <input id="q" type="search" placeholder="Pesquisar ícones" autocomplete="off">
+  </label>
+  <div class="seg" role="group" aria-label="Filtrar por tela">
+    <button type="button" data-mode="all" aria-pressed="true">Todos</button>
+    <button type="button" data-mode="designer" aria-pressed="false">Designer</button>
+    <button type="button" data-mode="script" aria-pressed="false">Visual Script</button>
+  </div>
+  <label class="sizes" for="size">Tamanho
+    <select id="size">
+      <option value="20">20 px</option>
+      <option value="24" selected>24 px</option>
+      <option value="32">32 px</option>
+      <option value="40">40 px</option>
+    </select>
+  </label>
+</header>
+
+<div class="wrap">
+  <main>
+    <dl class="spec">
+      <div><dt>Grade</dt><dd>24 × 24 px</dd></div>
+      <div><dt>Traço</dt><dd>1,5 px · arredondado</dd></div>
+      <div><dt>Área útil</dt><dd>2 px de respiro</dd></div>
+      <div><dt>Ícones</dt><dd id="count">—</dd></div>
+    </dl>
+    <div class="legend" aria-label="Cores semânticas">
+      <span><i style="background:var(--fg)"></i>Base · branco gelo</span>
+      <span><i style="background:var(--i-a)"></i>Âmbar · destaque e seleção</span>
+      <span><i style="background:var(--i-b)"></i>Azul · vetor e mídia</span>
+      <span><i style="background:var(--i-e)"></i>Evento</span>
+      <span><i style="background:var(--i-l)"></i>Lógica</span>
+      <span><i style="background:var(--i-v)"></i>Variável</span>
+      <span><i style="background:var(--i-x)"></i>Ação</span>
+      <span><i style="background:var(--i-r)"></i>Erro</span>
+    </div>
+
+    <div class="ribbons" id="ribbons"></div>
+    <div id="groups"></div>
+  </main>
+
+  <aside aria-live="polite">
+    <section>
+      <h3>Propriedades do ícone</h3>
+      <div class="hero">
+        <div class="big" id="pBig"></div>
+        <div><strong id="pName"></strong><code id="pId"></code><div class="meta" id="pMeta"></div></div>
+      </div>
+    </section>
+    <section>
+      <h3>Escalas</h3>
+      <div class="scales" id="pScales"></div>
+    </section>
+    <section>
+      <h3>Estados</h3>
+      <div class="states" id="pStates"></div>
+    </section>
+    <section>
+      <h3>SVG</h3>
+      <pre id="pCode"></pre>
+      <div class="btns2">
+        <button class="btn primary" type="button" id="copyFixed">Copiar SVG</button>
+        <button class="btn" type="button" id="copyCurrent">Copiar com currentColor</button>
+      </div>
+      <div class="toast" id="toast"></div>
+    </section>
+  </aside>
+</div>
+
+<script src="icons.js"></script>
+<script>
+(function () {
+  const { GROUPS, toSVG } = window.HEF_ICONS;
+  const byId = {};
+  GROUPS.forEach(g => g.items.forEach(it => { byId[it[0]] = { id: it[0], label: it[1], inner: it[2], key: it[3], group: g }; }));
+  const ic = (inner, s) => `<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" aria-hidden="true">${inner}</svg>`;
+  const $ = id => document.getElementById(id);
+  const state = { mode: 'all', q: '', size: 24, sel: 'caneta' };
+  try { const s = JSON.parse(localStorage.getItem('hef-icons') || '{}'); Object.assign(state, s); } catch (e) {}
+  const save = () => { try { localStorage.setItem('hef-icons', JSON.stringify({ mode: state.mode, size: state.size, sel: state.sel })); } catch (e) {} };
+
+  $('brandmark').innerHTML = byId.logo.inner;
+  $('count').textContent = Object.keys(byId).length + ' em ' + GROUPS.length + ' grupos';
+  $('size').value = String(state.size);
+
+  // Ribbons de exemplo, como aparecem no aplicativo
+  const RIBBONS = [
+    { tabs: ['Arquivo', 'Página Inicial', 'Inserir', 'Modificar Formas', 'Design & Aparência', 'Layout Responsivo', 'Exibir'], on: 2,
+      groups: [['Formas geométricas', ['retangulo', 'elipse', 'poligono', 'estrela']], ['Desenho de precisão', ['caneta-ins', 'curvatura', 'lapis', 'pincel']],
+               ['Tipografia', ['texto-ponto', 'texto-area', 'texto-caminho']], ['Mídia', ['imagem', 'vetorizar', 'video', 'modelo-3d']]] },
+    { tabs: ['Arquivo', 'Eventos de Gatilho', 'Ações & Animações', 'Variáveis & Dados', 'Lógica & Condições', 'Compilar & Dev'], on: 1,
+      groups: [['Interação', ['ao-clicar', 'ao-passar-mouse', 'ao-arrastar']], ['Ciclo de vida', ['ao-carregar', 'ao-abrir', 'ao-fechar']],
+               ['Entrada', ['teclado', 'campo-alterado']], ['Execução', ['executar', 'depurar']]] },
+  ];
+  $('ribbons').innerHTML = RIBBONS.map(r => `<div class="ribbon"><header>${r.tabs.map((t, i) => `<span class="${i === r.on ? 'on' : ''}">${t}</span>`).join('')}</header>
+    <div class="row">${r.groups.map(([n, ids]) => `<div class="rgroup"><div class="btns">${ids.map(id => `<div class="rbtn">${ic(byId[id].inner, 28)}${byId[id].label}</div>`).join('')}</div><span>${n}</span></div>`).join('')}</div></div>`).join('');
+
+  const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+  function renderGroups() {
+    const q = norm(state.q.trim());
+    let html = '', shown = 0;
+    GROUPS.forEach(g => {
+      if (state.mode !== 'all' && g.mode !== state.mode && g.mode !== 'global') return;
+      const items = g.items.filter(it => !q || norm(it[1] + ' ' + it[0] + ' ' + g.name).includes(q));
+      if (!items.length) return;
+      shown += items.length;
+      const modeLabel = { designer: 'Designer', script: 'Visual Script', global: 'Ambas as telas' }[g.mode];
+      html += `<section class="group"><h2>${g.name}<span class="mode ${g.mode}">${modeLabel}</span></h2><p>${g.note}</p><div class="grid" role="listbox" aria-label="${g.name}">` +
+        items.map(it => `<button type="button" class="tile" role="option" data-id="${it[0]}" aria-selected="${it[0] === state.sel}">${it[3] ? `<kbd>${it[3]}</kbd>` : ''}${ic(it[2], state.size)}<span>${it[1]}</span></button>`).join('') +
+        '</div></section>';
+    });
+    $('groups').innerHTML = html || `<p class="empty">Nenhum ícone corresponde a “${state.q}”. Tente “seta”, “texto” ou “nó”.</p>`;
+    $('groups').style.display = 'flex'; $('groups').style.flexDirection = 'column'; $('groups').style.gap = '28px';
+  }
+
+  function renderPanel() {
+    const it = byId[state.sel] || byId.caneta;
+    $('pBig').innerHTML = ic(it.inner, 48);
+    $('pName').textContent = it.label;
+    $('pId').textContent = it.id + '.svg';
+    $('pMeta').textContent = it.group.name + (it.key ? ' · atalho ' + it.key : '');
+    $('pScales').innerHTML = [16, 20, 24, 32, 48].map(s => `<figure>${ic(it.inner, s)}<figcaption>${s}</figcaption></figure>`).join('');
+    $('pStates').innerHTML = [['', 'Normal'], ['hov', 'Hover'], ['act', 'Ativo'], ['dis', 'Inativo']]
+      .map(([c, n]) => `<div class="${c}">${ic(it.inner, 24)}${n}</div>`).join('');
+    $('pCode').textContent = toSVG(it.inner);
+    $('toast').textContent = '';
+  }
+
+  async function copy(text, label) {
+    try { await navigator.clipboard.writeText(text); $('toast').textContent = label + ' copiado.'; }
+    catch (e) {
+      const r = document.createRange(); r.selectNodeContents($('pCode'));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      $('toast').textContent = 'Código selecionado. Use Ctrl+C para copiar.';
+    }
+  }
+  $('copyFixed').addEventListener('click', () => copy(toSVG(byId[state.sel].inner), 'SVG'));
+  $('copyCurrent').addEventListener('click', () => { const t = toSVG(byId[state.sel].inner, { currentColor: true }); $('pCode').textContent = t; copy(t, 'SVG com currentColor'); });
+
+  $('groups').addEventListener('click', e => {
+    const t = e.target.closest('.tile'); if (!t) return;
+    document.querySelectorAll('.tile[aria-selected="true"]').forEach(x => x.setAttribute('aria-selected', 'false'));
+    t.setAttribute('aria-selected', 'true');
+    state.sel = t.dataset.id; save(); renderPanel();
+  });
+  $('q').addEventListener('input', e => { state.q = e.target.value; renderGroups(); });
+  $('size').addEventListener('change', e => { state.size = +e.target.value; save(); renderGroups(); });
+  document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+    state.mode = b.dataset.mode; save();
+    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    renderGroups();
+  }));
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.mode === state.mode)));
+
+  renderGroups(); renderPanel();
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,6 @@
+{
+  "importar": 0,
+  "verificar": 0,
+  "recusaSobrescrita": true,
+  "mensagem": "{\"ok\":false,\"codigo\":\"OPERACAO_FALHOU\",\"erro\":\"A saída existe. Use outro caminho ou --substituir.\"}"
+}

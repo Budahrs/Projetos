@@ -1,0 +1,426 @@
+{
+  "formato": "hefestus.ligacoes",
+  "versao": 1,
+  "descricao": "Liga os sinais da interface do PDF Studio à ponte do PDF Studio original (Antares.PdfBridge). O que não está aqui o Hefestus liga sozinho (motor de PDF embutido e ações de interface).",
+  "motor": {
+    "nome": "PDF Studio (motores locais)",
+    "executavel": "motores/pdf-studio/Antares.PdfBridge.exe",
+    "ambiente": {
+      "PDFSTUDIO_LIBREOFFICE": "recurso:motores/libreoffice/program/soffice.com"
+    },
+    "caminhoExtra": [
+      "motores/libreoffice/System64"
+    ],
+    "saude": {
+      "operation": "health"
+    }
+  },
+  "documento": {
+    "tipo": "pdf",
+    "filtros": [
+      {
+        "nome": "PDF",
+        "extensoes": [
+          "pdf"
+        ]
+      }
+    ]
+  },
+  "sinais": {
+    "pdf|open": {
+      "acao": "abrir"
+    },
+    "pdf|close": {
+      "acao": "fechar"
+    },
+    "pdf|new": {
+      "acao": "operacao",
+      "rotulo": "Novo PDF",
+      "semDocumento": true,
+      "contrato": {
+        "operation": "create"
+      },
+      "saida": {
+        "sugestao": "novo.pdf",
+        "filtros": [
+          {
+            "nome": "PDF",
+            "extensoes": [
+              "pdf"
+            ]
+          }
+        ]
+      },
+      "abrirResultado": true
+    },
+    "pdf|merge": {
+      "acao": "operacao",
+      "rotulo": "Juntar PDFs",
+      "contrato": {
+        "operation": "merge"
+      },
+      "pedir": {
+        "inputs": {
+          "tipo": "arquivos",
+          "titulo": "PDFs para juntar ao atual",
+          "filtros": [
+            {
+              "nome": "PDF",
+              "extensoes": [
+                "pdf"
+              ]
+            }
+          ]
+        }
+      },
+      "saida": {
+        "sugestao": "{nome}-juntado.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|insertpdf": {
+      "acao": "operacao",
+      "rotulo": "Inserir PDF",
+      "contrato": {
+        "operation": "merge"
+      },
+      "pedir": {
+        "inputs": {
+          "tipo": "arquivos",
+          "titulo": "PDF para inserir no final",
+          "filtros": [
+            {
+              "nome": "PDF",
+              "extensoes": [
+                "pdf"
+              ]
+            }
+          ]
+        }
+      },
+      "saida": {
+        "sugestao": "{nome}-com-insercao.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|extract": {
+      "acao": "operacao",
+      "rotulo": "Extrair páginas",
+      "contrato": {
+        "operation": "extract"
+      },
+      "pedir": {
+        "pages": {
+          "tipo": "paginas",
+          "titulo": "Páginas para extrair",
+          "exemplo": "1, 3-5"
+        }
+      },
+      "saida": {
+        "sugestao": "{nome}-paginas.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|fromimages": {
+      "acao": "operacao",
+      "rotulo": "Imagens para PDF",
+      "semDocumento": true,
+      "contrato": {
+        "operation": "from-images"
+      },
+      "pedir": {
+        "inputs": {
+          "tipo": "arquivos",
+          "titulo": "Imagens",
+          "filtros": [
+            {
+              "nome": "Imagens",
+              "extensoes": [
+                "png",
+                "jpg",
+                "jpeg",
+                "bmp",
+                "tif",
+                "tiff"
+              ]
+            }
+          ]
+        }
+      },
+      "saida": {
+        "sugestao": "imagens.pdf",
+        "filtros": [
+          {
+            "nome": "PDF",
+            "extensoes": [
+              "pdf"
+            ]
+          }
+        ]
+      },
+      "abrirResultado": true
+    },
+    "pdf|officein": {
+      "acao": "operacao",
+      "rotulo": "Office para PDF",
+      "semDocumento": true,
+      "contrato": {
+        "operation": "office-in"
+      },
+      "pedir": {
+        "input": {
+          "tipo": "arquivo",
+          "titulo": "Documento do Office",
+          "filtros": [
+            {
+              "nome": "Office",
+              "extensoes": [
+                "doc",
+                "docx",
+                "xls",
+                "xlsx",
+                "ppt",
+                "pptx",
+                "odt",
+                "ods",
+                "odp",
+                "rtf"
+              ]
+            }
+          ]
+        }
+      },
+      "saida": {
+        "sugestao": "{arquivo}.pdf",
+        "filtros": [
+          {
+            "nome": "PDF",
+            "extensoes": [
+              "pdf"
+            ]
+          }
+        ]
+      },
+      "abrirResultado": true
+    },
+    "pdf|html": {
+      "acao": "operacao",
+      "rotulo": "HTML para PDF",
+      "semDocumento": true,
+      "contrato": {
+        "operation": "office-in"
+      },
+      "pedir": {
+        "input": {
+          "tipo": "arquivo",
+          "titulo": "Página HTML",
+          "filtros": [
+            {
+              "nome": "HTML",
+              "extensoes": [
+                "html",
+                "htm"
+              ]
+            }
+          ]
+        }
+      },
+      "saida": {
+        "sugestao": "{arquivo}.pdf",
+        "filtros": [
+          {
+            "nome": "PDF",
+            "extensoes": [
+              "pdf"
+            ]
+          }
+        ]
+      },
+      "abrirResultado": true
+    },
+    "pdf|docx": {
+      "acao": "operacao",
+      "rotulo": "PDF para Word",
+      "contrato": {
+        "operation": "office-out",
+        "format": "docx"
+      },
+      "saida": {
+        "sugestao": "{nome}.docx",
+        "filtros": [
+          {
+            "nome": "Word",
+            "extensoes": [
+              "docx"
+            ]
+          }
+        ]
+      }
+    },
+    "pdf|xlsx": {
+      "acao": "operacao",
+      "rotulo": "PDF para Excel",
+      "contrato": {
+        "operation": "office-out",
+        "format": "xlsx"
+      },
+      "saida": {
+        "sugestao": "{nome}.xlsx",
+        "filtros": [
+          {
+            "nome": "Excel",
+            "extensoes": [
+              "xlsx"
+            ]
+          }
+        ]
+      }
+    },
+    "pdf|pptx": {
+      "acao": "operacao",
+      "rotulo": "PDF para PowerPoint",
+      "contrato": {
+        "operation": "office-out",
+        "format": "pptx"
+      },
+      "saida": {
+        "sugestao": "{nome}.pptx",
+        "filtros": [
+          {
+            "nome": "PowerPoint",
+            "extensoes": [
+              "pptx"
+            ]
+          }
+        ]
+      }
+    },
+    "pdf|pdfa": {
+      "acao": "operacao",
+      "rotulo": "PDF/A",
+      "contrato": {
+        "operation": "pdfa"
+      },
+      "saida": {
+        "sugestao": "{nome}-pdfa.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|compress": {
+      "acao": "operacao",
+      "rotulo": "Compactar",
+      "contrato": {
+        "operation": "compress",
+        "dpi": 120,
+        "quality": 75
+      },
+      "saida": {
+        "sugestao": "{nome}-compactado.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|repair": {
+      "acao": "operacao",
+      "rotulo": "Reparar arquivo",
+      "contrato": {
+        "operation": "repair"
+      },
+      "saida": {
+        "sugestao": "{nome}-reparado.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|ocr": {
+      "acao": "operacao",
+      "rotulo": "OCR",
+      "contrato": {
+        "operation": "ocr",
+        "languages": "por+eng"
+      },
+      "saida": {
+        "sugestao": "{nome}-ocr.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|searchable": {
+      "acao": "operacao",
+      "rotulo": "PDF pesquisável",
+      "contrato": {
+        "operation": "ocr",
+        "languages": "por+eng"
+      },
+      "saida": {
+        "sugestao": "{nome}-pesquisavel.pdf"
+      },
+      "abrirResultado": true
+    },
+    "pdf|text": {
+      "acao": "operacao",
+      "rotulo": "Extrair texto",
+      "contrato": {
+        "operation": "text"
+      },
+      "mostrar": "text",
+      "vazio": "Este PDF não tem texto selecionável. Use OCR para reconhecer o texto das imagens."
+    },
+    "pdf|textout": {
+      "acao": "operacao",
+      "rotulo": "PDF para texto",
+      "contrato": {
+        "operation": "text"
+      },
+      "salvarTexto": {
+        "campo": "text",
+        "sugestao": "{nome}.txt",
+        "filtros": [
+          {
+            "nome": "Texto",
+            "extensoes": [
+              "txt"
+            ]
+          }
+        ]
+      }
+    },
+    "pdf|markdown": {
+      "acao": "operacao",
+      "rotulo": "PDF para Markdown",
+      "contrato": {
+        "operation": "text"
+      },
+      "salvarTexto": {
+        "campo": "text",
+        "sugestao": "{nome}.md",
+        "titulo": "# {nome}\n\n",
+        "filtros": [
+          {
+            "nome": "Markdown",
+            "extensoes": [
+              "md"
+            ]
+          }
+        ]
+      }
+    },
+    "pdf|verify": {
+      "acao": "operacao",
+      "rotulo": "Verificar assinaturas",
+      "contrato": {
+        "operation": "verify"
+      },
+      "mostrar": "tudo",
+      "vazio": "Nenhuma assinatura digital encontrada neste documento."
+    },
+    "pdf|metadata": {
+      "acao": "operacao",
+      "rotulo": "Propriedades do documento",
+      "contrato": {
+        "operation": "inspect"
+      },
+      "mostrar": "tudo"
+    },
+    "pdf|fullscreen": {
+      "acao": "telaCheia"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "data": "2026-10-28",
+  "produto": "2.1.0",
+  "canal": "reconstrucao-em-validacao",
+  "testes": {
+    "total": 380,
+    "passaram": 380,
+    "falharam": 0,
+    "registro": "regressao-reimportacao-estrutural.txt",
+    "concorrencia": 4,
+    "observacao": "Execução inicial foi interrompida pelo limite externo de 55 segundos; execução com prazo suficiente concluiu integralmente."
+  },
+  "build": "HTML compilado com node build.mjs",
+  "ui": {
+    "navegador": "ChatGPT in-app browser",
+    "designer": "HTML inline importado como 4 objetos além dos 5 iniciais; seleção e inspetor funcionais",
+    "visualScript": "9 objetos listados e nós sincronizados",
+    "biblia": "Painel abriu pela aba Compilar & Dev",
+    "calculadora": {
+      "independente": true,
+      "entradaValida": "2 + 3 = 5",
+      "invalida": "abc: Preencha os dois campos com números válidos.",
+      "recuperacao": "2,5 + 3 = 5.5",
+      "auditoria": []
+    },
+    "localizarDiagnostico": "Verificado no navegador: Localizar fechou diálogo, ativou Designer e selecionou objeto; testes cobrem grafo/nó e alvo ausente.",
+    "designerCodigo": {
+      "blocos": "Rascunho preservado entre Grafo/Blocos; aplicar, desfazer e refazer verificados na interface.",
+      "fonte": "F7 preservou seleção; rascunho CSS preservado ao retornar; aplicação e desfazer verificados.",
+      "limite": "Rascunhos de sessão exigem aplicar e salvar; sem conversão arbitrária JS para grafo ou novo transpiler TS.",
+      "evidencia": "interface-designer-codigo.png"
+    }
+  },
+  "instalador": "não compilado/não homologado",
+  "mcpNovo": {
+    "estado": "implementado e testado por stdio",
+    "ferramentas": [
+      "hefestus_verificar_projeto",
+      "hefestus_importar_html_nativo",
+      "hefestus_preparar_reimportacao_html",
+      "hefestus_aplicar_reimportacao_html"
+    ],
+    "testes": "testes/engenharia-mcp.test.mjs",
+    "clienteExterno": "não homologado",
+    "revisaoArquivo": "SHA-256",
+    "tokens": {
+      "validadeMinutos": 10,
+      "maximo": 32
+    },
+    "limites": {
+      "projetoMB": 64,
+      "htmlMB": 2
+    }
+  },
+  "baseline": "baseline-github.json",
+  "referencias": {
+    "fontes": [
+      {
+        "nome": "Construct 3",
+        "url": "https://www.construct.net/en/make-games/manuals/construct-3/scripting/overview"
+      },
+      {
+        "nome": "Node-RED",
+        "url": "https://nodered.org/docs/user-guide/handling-errors"
+      },
+      {
+        "nome": "FlutterFlow",
+        "url": "https://docs.flutterflow.io/concepts/custom-code/custom-actions/"
+      },
+      {
+        "nome": "GDevelop",
+        "url": "https://wiki.gdevelop.io/gdevelop5/events/js-code/javascript-in-extensions/"
+      }
+    ],
+    "aplicado": "Localizar diagnóstico usa objeto ou grafo/nó; fecha diálogo",
+    "propostas": "JS/TS contextual, contratos de ações/condições/expressões, assíncrono e dependências seletivas"
+  },
+  "organizacaoLocal": {
+    "versaoAtualUnica": true,
+    "pdfStudio": "17 arquivos migrados e comparados por SHA-256; somente local e ignorado no Git",
+    "novosBackups": false
+  },
+  "verificador": "ferramentas/verificar-reconstrucao.mjs passou: 438 originais presentes, Bíblia normativa preservada, 53 requisitos indexados, exemplo com zero diagnósticos",
+  "cliReimportacao": {
+    "estado": "implementado e testado por processos CLI reais",
+    "comandos": [
+      "comparar-html",
+      "atualizar-html"
+    ],
+    "testes": "testes/engenharia-cli.test.mjs",
+    "revisoes": [
+      "revisaoArquivo",
+      "revisaoFonte"
+    ],
+    "resolucoes": "JSON local/fonte, até 1 MB",
+    "planoPersistido": false,
+    "moduloComum": "ferramentas/engenhariaArquivos.mjs"
+  },
+  "reimportacaoEstrutural": {
+    "estado": "implementado e testado",
+    "testes": "testes/reimportacao-estrutural.test.mjs e integrações CLI/MCP",
+    "identidade": "IDs HTML explícitos para mudanças estruturais; IDs comuns preservados",
+    "remocao": "escolha local/fonte; dependências remanescentes impedem a aplicação",
+    "ui": "resumo, escolha local, fonte alterada, aplicação e desfazer conferidos; QA revertido",
+    "evidencia": "interface-reimportacao-estrutural.png",
+    "limites": [
+      "tipos existentes não são transformados",
+      "nova fonte deve conter elemento suportado",
+      "referências dinâmicas em código não têm rastreamento universal"
+    ]
+  }
+}

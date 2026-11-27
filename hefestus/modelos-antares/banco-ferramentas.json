@@ -1,0 +1,927 @@
+[
+  {
+    "id": "pedido.especificar",
+    "nome": "Gerar especificação rastreável",
+    "categoria": "Pedidos",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pedido.especificar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "contexto.buscar",
+    "nome": "Buscar originais e artefatos com BM25 local",
+    "categoria": "Pedidos",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "contexto.buscar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.health",
+    "nome": "Verificar motor PDF",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.health"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.inspect",
+    "nome": "Inspecionar documento",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.inspect"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.text",
+    "nome": "Extrair texto",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.text"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.create",
+    "nome": "Criar PDF",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.create"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.edit",
+    "nome": "Editar páginas/texto",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.edit"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.merge",
+    "nome": "Juntar PDFs",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.merge"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.extract",
+    "nome": "Extrair páginas",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.extract"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.from-images",
+    "nome": "Imagens para PDF",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.from-images"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.office-in",
+    "nome": "Office para PDF",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.office-in"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.office-out",
+    "nome": "PDF para Office",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.office-out"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.pdfa",
+    "nome": "Exportar PDF/A visual",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.pdfa"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.compress",
+    "nome": "Compactar por rasterização",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.compress"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.verify",
+    "nome": "Verificar assinatura",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.verify"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.repair",
+    "nome": "Reparar PDF",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.repair"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "pdf.ocr",
+    "nome": "OCR pesquisável",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "pdf.ocr"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ia.local",
+    "nome": "Consultar modelo local",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ia.local"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ia.gateway",
+    "nome": "Gateway local-first; provedor externo configurável",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ia.gateway"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "workflow.executar",
+    "nome": "Executar fluxo de ferramentas com limite de profundidade",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "workflow.executar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "voz.sintetizar",
+    "nome": "Narrar texto em WAV com voz instalada",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "voz.sintetizar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "imagens.mesclar",
+    "nome": "Mesclar imagens por sobreposição local",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "imagens.mesclar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "estilo.registrar",
+    "nome": "Registrar referências e paleta de estilo",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "estilo.registrar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "conector.local",
+    "nome": "Chamar serviço local configurado",
+    "categoria": "Fila e ferramentas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "conector.local"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "projetos.indexar",
+    "nome": "Atualizar catálogo de projetos",
+    "categoria": "Projetos e biblioteca",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "projetos.indexar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "banco.sincronizar",
+    "nome": "Indexar artefatos e contratos",
+    "categoria": "Projetos e biblioteca",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "banco.sincronizar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "hefestus.gerar-menu",
+    "nome": "Gerar menu, componente, HTML e XAML",
+    "categoria": "Projetos e biblioteca",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "hefestus.gerar-menu"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "projeto.criar",
+    "nome": "Criar aplicação com ferramentas do catálogo",
+    "categoria": "Projetos e biblioteca",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "projeto.criar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "revisao.codigo",
+    "nome": "Revisar sintaxe e metadados locais",
+    "categoria": "Projetos e biblioteca",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "revisao.codigo"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "skills.descobrir",
+    "nome": "Descobrir metadados de skills locais e catálogos configurados",
+    "categoria": "Gestores e skills",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "skills.descobrir"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "repo.verificar",
+    "nome": "Verificar skills assinadas de um checkout",
+    "categoria": "Gestores e skills",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "repo.verificar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "repo.atualizar",
+    "nome": "Atualizar checkout Git sem push e verificar pacotes",
+    "categoria": "Gestores e skills",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "repo.atualizar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "repo.exportar",
+    "nome": "Exportar skills verificadas do checkout para uma IA",
+    "categoria": "Gestores e skills",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "repo.exportar"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/tools.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ui.4",
+    "nome": "Abrir Métricas",
+    "categoria": "Métricas",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ui.4"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/gui.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ui.5",
+    "nome": "Abrir Aprendizado",
+    "categoria": "Aprendizado",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ui.5"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/gui.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ui.6",
+    "nome": "Abrir Requisitos",
+    "categoria": "Requisitos",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ui.6"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/gui.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  },
+  {
+    "id": "ui.7",
+    "nome": "Abrir Configuração",
+    "categoria": "Configuração",
+    "entrada": {
+      "schema": {
+        "type": "object"
+      }
+    },
+    "saida": {
+      "tipo": "resultado-json-ou-arquivo"
+    },
+    "execucao": {
+      "tipo": "comando-host",
+      "host": "Antares",
+      "comando": "ui.7"
+    },
+    "origem": {
+      "projeto": "Antares",
+      "arquivo": "antares/gui.py",
+      "licenca": "Projeto local; dependências têm licenças próprias"
+    },
+    "estado": "implementado-no-host",
+    "limitacoes": "Prévia emite sinais; executar requer host Antares configurado."
+  }
+]

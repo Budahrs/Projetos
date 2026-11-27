@@ -1,0 +1,712 @@
+{
+  "format": "hefestus.score-seed",
+  "format_version": "1.0.0",
+  "dataset_version": "1.1.0",
+  "date": "2026-10-23",
+  "title": "Score inicial de adequação arquitetural para a fábrica Hefestus",
+  "status": "alimentado_com_heuristicas_sem_medicoes",
+  "scope": "Orientar IAs no modo integrado ou arquitetural; não declara score ativo no aplicativo.",
+  "method": {
+    "kind": "heuristic_contextual_fit",
+    "formula": "100 * soma((nota_dimensao / 5) * peso_dimensao)",
+    "rubric": {
+      "0": "Incompatível pelo contexto declarado; exige portão de rejeição separado",
+      "1": "Adequação fraca, vários impedimentos a investigar",
+      "2": "Adequação limitada",
+      "3": "Viável com compromissos",
+      "4": "Boa hipótese para o perfil",
+      "5": "Hipótese mais direta no perfil, ainda não comprovada"
+    },
+    "dimensions": [
+      {
+        "id": "adequacao_capacidade",
+        "weight": 0.35,
+        "meaning": "Adequação arquitetural à capacidade do contexto, avaliada como hipótese"
+      },
+      {
+        "id": "simplicidade_integracao",
+        "weight": 0.25,
+        "meaning": "Simplicidade esperada no perfil informado, ainda sujeita à implementação"
+      },
+      {
+        "id": "distribuicao",
+        "weight": 0.2,
+        "meaning": "Viabilidade esperada de empacotamento no perfil, sem estimativa de bytes"
+      },
+      {
+        "id": "manutencao",
+        "weight": 0.2,
+        "meaning": "Simplicidade esperada de manter contrato e toolchain no escopo"
+      }
+    ],
+    "weights_status": "preferencia_inicial_proposta_revisavel",
+    "unknown_policy": "Não converter desconhecido em zero ou em medição; elegibilidade desconhecida impede promoção.",
+    "ties": "Empate não decide automaticamente; comparar critérios e evidência.",
+    "performance_claim": false
+  },
+  "hard_gates": [
+    "requisito_e_destino_compativeis",
+    "contrato_e_saida_corretos",
+    "licenca_e_origem_verificadas",
+    "dependencias_e_recursos_resolvidos",
+    "permissoes_e_efeitos_aceitaveis",
+    "integridade_e_recuperacao_aplicaveis"
+  ],
+  "promotion": {
+    "requires_all_hard_gates": true,
+    "requires_context_measurement_for_performance_claim": true,
+    "requires_contract_tests": true,
+    "requires_target_validation": true,
+    "automatic_adoption_enabled": false,
+    "editing_score_to_pass_forbidden": true
+  },
+  "sources": [
+    {
+      "id": "SRC-USR-NUCLEO",
+      "kind": "decisao_usuario",
+      "description": "Preferir núcleo reutilizável em vez de aplicativo completo; escolher organização e ferramentas por evidência."
+    },
+    {
+      "id": "SRC-USR-FACTORY",
+      "kind": "decisao_usuario",
+      "description": "Manual para IAs com Go/Rust/C++, utilizável sem o Hefestus instalado, biblioteca local de decisões e linha de produção."
+    },
+    {
+      "id": "SRC-PASTED-1",
+      "kind": "historico_nao_homologado",
+      "name": "Pasted text(1).txt",
+      "library_file_id": "libfile_3b41322168788191a5afc00a422185ac",
+      "file_id": "file_000000002650820e82a4d98de9c7dbcd",
+      "lines": 5147,
+      "usage": "Intenções e propostas; exemplos, rankings, percentuais e comandos citados não são resultados observados."
+    },
+    {
+      "id": "SRC-BIBLE",
+      "kind": "norma_documental",
+      "path": "../../BIBLIA_ARQUITETURA_GDD.md"
+    },
+    {
+      "id": "SRC-REVIEW",
+      "kind": "proposta_assistente",
+      "description": "Pesos e notas de adequação contextual desta edição; não medidos e não aprovados como ranking de desempenho."
+    },
+    {
+      "id": "SRC-USR-PROFILES",
+      "kind": "decisao_usuario",
+      "description": "Adicionar perfis C#, TypeScript, JavaScript, Java, SQL, ActionScript, HTML, CSS, PHP, Objective-C, Swift, Kotlin, Shell Script e PowerShell; sem afirmação de métricas."
+    }
+  ],
+  "contexts": [
+    {
+      "id": "cli-local-sem-biblioteca-nativa",
+      "assumptions": [
+        "CLI pequeno, Windows x64 como primeiro alvo a confirmar",
+        "Sem biblioteca nativa ou UI obrigatória",
+        "Uma linguagem, operação simples e I/O comum"
+      ],
+      "platform_status": "a_confirmar"
+    },
+    {
+      "id": "servico-http-com-io",
+      "assumptions": [
+        "Serviço HTTP simples com I/O e cancelamento",
+        "Sem requisito de hard real-time",
+        "Bibliotecas, carga e operação reais ainda não definidos"
+      ],
+      "platform_status": "a_confirmar"
+    },
+    {
+      "id": "nucleo-embutivel-sem-legado",
+      "assumptions": [
+        "Biblioteca de domínio com API pequena",
+        "Sem dependência legado ou requisito de linguagem fixada",
+        "Invariantes e erros explícitos; consumidor futuro por adaptador"
+      ],
+      "platform_status": "a_confirmar"
+    },
+    {
+      "id": "adaptador-biblioteca-cpp-existente",
+      "assumptions": [
+        "Há biblioteca C++ real que atende à capacidade",
+        "Licença, versão e destino ainda serão verificados",
+        "Comparar wrapper mínimo com reescrita, sem presumir equivalência"
+      ],
+      "platform_status": "a_confirmar"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cli-local-sem-biblioteca-nativa.go",
+      "context_id": "cli-local-sem-biblioteca-nativa",
+      "language": "go",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 5,
+        "simplicidade_integracao": 5,
+        "distribuicao": 4,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 92,
+      "rationale": "Hipótese favorável para CLI com biblioteca padrão e toolchain único; confirmar cgo e distribuição.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "cli-local-sem-biblioteca-nativa.rust",
+      "context_id": "cli-local-sem-biblioteca-nativa",
+      "language": "rust",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 4,
+        "simplicidade_integracao": 4,
+        "distribuicao": 4,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 80,
+      "rationale": "Hipótese de boa composição e distribuição; necessidade não demonstra vantagem sobre a solução Go neste contexto.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "cli-local-sem-biblioteca-nativa.cpp",
+      "context_id": "cli-local-sem-biblioteca-nativa",
+      "language": "cpp",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 3,
+        "simplicidade_integracao": 3,
+        "distribuicao": 3,
+        "manutencao": 3
+      },
+      "seed_score_0_100": 60,
+      "rationale": "Viável; sem dependência C++ prévia, o custo adicional de build/ABI precisa de justificativa.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "servico-http-com-io.go",
+      "context_id": "servico-http-com-io",
+      "language": "go",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 5,
+        "simplicidade_integracao": 5,
+        "distribuicao": 4,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 92,
+      "rationale": "Hipótese de composição direta para HTTP/I/O; não é afirmação de maior throughput.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "servico-http-com-io.rust",
+      "context_id": "servico-http-com-io",
+      "language": "rust",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 4,
+        "simplicidade_integracao": 3,
+        "distribuicao": 4,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 75,
+      "rationale": "Viável; escolher runtime/stack conforme contrato e recursos medidos.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "servico-http-com-io.cpp",
+      "context_id": "servico-http-com-io",
+      "language": "cpp",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 3,
+        "simplicidade_integracao": 3,
+        "distribuicao": 3,
+        "manutencao": 3
+      },
+      "seed_score_0_100": 60,
+      "rationale": "Viável; sem stack existente, validar custo e dependências antes de incorporar.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "nucleo-embutivel-sem-legado.go",
+      "context_id": "nucleo-embutivel-sem-legado",
+      "language": "go",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 3,
+        "simplicidade_integracao": 3,
+        "distribuicao": 3,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 64,
+      "rationale": "Possível; se houver ABI nativa, avaliar runtime, cgo e limitações da ponte.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "nucleo-embutivel-sem-legado.rust",
+      "context_id": "nucleo-embutivel-sem-legado",
+      "language": "rust",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 5,
+        "simplicidade_integracao": 4,
+        "distribuicao": 4,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 87,
+      "rationale": "Hipótese favorável para núcleo com recursos e invariantes explícitos; não exclui C++/Go.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "nucleo-embutivel-sem-legado.cpp",
+      "context_id": "nucleo-embutivel-sem-legado",
+      "language": "cpp",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 4,
+        "simplicidade_integracao": 4,
+        "distribuicao": 3,
+        "manutencao": 3
+      },
+      "seed_score_0_100": 72,
+      "rationale": "Forte candidata a API nativa, com contrato de propriedade/ABI e manutenção a explicitar.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "adaptador-biblioteca-cpp-existente.go",
+      "context_id": "adaptador-biblioteca-cpp-existente",
+      "language": "go",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 3,
+        "simplicidade_integracao": 3,
+        "distribuicao": 3,
+        "manutencao": 3
+      },
+      "seed_score_0_100": 60,
+      "rationale": "Ponte por processo/cgo é hipótese; confirmar custo, runtime e propriedade dos dados.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "adaptador-biblioteca-cpp-existente.rust",
+      "context_id": "adaptador-biblioteca-cpp-existente",
+      "language": "rust",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 4,
+        "simplicidade_integracao": 3,
+        "distribuicao": 3,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 71,
+      "rationale": "Adaptador possível com fronteira explícita; não reescrever a biblioteca apenas para usar Rust.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    },
+    {
+      "id": "adaptador-biblioteca-cpp-existente.cpp",
+      "context_id": "adaptador-biblioteca-cpp-existente",
+      "language": "cpp",
+      "source_type": "heuristica_arquitetural",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "ratings": {
+        "adequacao_capacidade": 5,
+        "simplicidade_integracao": 5,
+        "distribuicao": 3,
+        "manutencao": 4
+      },
+      "seed_score_0_100": 88,
+      "rationale": "Hipótese favorável a wrapper na linguagem da biblioteca, preservando contrato e recursos.",
+      "measurement": {
+        "time_p50_ms": null,
+        "time_p95_ms": null,
+        "peak_memory_bytes": null,
+        "artifact_bytes": null,
+        "startup_ms": null,
+        "corpus_id": null,
+        "hardware_signature": null,
+        "toolchain": null,
+        "run_count": 0
+      },
+      "evidence_ids": [],
+      "use": "priorizar_avaliacao_nao_adotar_automaticamente"
+    }
+  ],
+  "capability_backlog": [
+    {
+      "id": "editor-codigo",
+      "candidates": [
+        "Monaco",
+        "CodeMirror"
+      ],
+      "state": "referencia_documentada",
+      "score": null,
+      "reason": "Pacotes/versões/recursos e contexto ainda não auditados."
+    },
+    {
+      "id": "parser-dsl",
+      "candidates": [
+        "Tree-sitter",
+        "pest",
+        "chumsky",
+        "LALRPOP"
+      ],
+      "state": "referencia_documentada",
+      "score": null,
+      "reason": "Parsing incremental, parser de DSL e codegen têm contratos distintos; não ranquear sem definir capacidade."
+    },
+    {
+      "id": "empacotamento",
+      "candidates": [
+        "Tauri/toolchain existente",
+        "empacotador específico do destino"
+      ],
+      "state": "referencia_documentada",
+      "score": null,
+      "reason": "Não fixar fornecedor antes da baseline e do destino."
+    }
+  ],
+  "next_measurements": [
+    "Escolher um contexto real e fixar corpus/saída esperada.",
+    "Conferir elegibilidade, versões e licença dos candidatos.",
+    "Implementar uma operação equivalente e medir no mesmo ambiente.",
+    "Registrar correção, tempo, memória, tamanho, carga e custo de fronteira quando relevante.",
+    "Revisar pesos por requisito, preservar versão anterior e comparar sem relaxar os portões."
+  ],
+  "profile_evaluation_backlog": [
+    {
+      "profile_id": "csharp",
+      "label": "C#",
+      "role": "aplicacao_dotnet",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 2
+    },
+    {
+      "profile_id": "typescript",
+      "label": "TypeScript",
+      "role": "aplicacao_web_ou_servidor",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 3
+    },
+    {
+      "profile_id": "javascript",
+      "label": "JavaScript",
+      "role": "aplicacao_web_ou_runtime",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 4
+    },
+    {
+      "profile_id": "java",
+      "label": "Java",
+      "role": "aplicacao_jvm",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 5
+    },
+    {
+      "profile_id": "sql",
+      "label": "SQL",
+      "role": "dados_consultas_migracoes",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 6
+    },
+    {
+      "profile_id": "actionscript",
+      "label": "ActionScript",
+      "role": "aplicacao_air_ou_legado",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 7
+    },
+    {
+      "profile_id": "html",
+      "label": "HTML",
+      "role": "marcacao_apresentacao",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 8
+    },
+    {
+      "profile_id": "css",
+      "label": "CSS",
+      "role": "estilo_layout",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 9
+    },
+    {
+      "profile_id": "php",
+      "label": "PHP",
+      "role": "backend_ou_cli",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 10
+    },
+    {
+      "profile_id": "objective_c",
+      "label": "Objective-C",
+      "role": "aplicacao_apple_ou_integracao",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 11
+    },
+    {
+      "profile_id": "swift",
+      "label": "Swift",
+      "role": "aplicacao_ou_biblioteca_por_destino",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 12
+    },
+    {
+      "profile_id": "kotlin",
+      "label": "Kotlin",
+      "role": "aplicacao_jvm_android_ou_multiplataforma",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 13
+    },
+    {
+      "profile_id": "shell_script",
+      "label": "Shell Script",
+      "role": "automacao_shell",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 14
+    },
+    {
+      "profile_id": "powershell",
+      "label": "PowerShell",
+      "role": "automacao_powershell",
+      "source_type": "pedido_usuario",
+      "state": "pending_eval",
+      "eligibility": "unknown",
+      "score": null,
+      "measurement": null,
+      "reason": "Perfil documental adicionado; contexto, toolchain, destino e medições ainda não definidos.",
+      "profile_reference": "PERFIS_TECNOLOGICOS.md",
+      "profile_section": 15
+    }
+  ]
+}

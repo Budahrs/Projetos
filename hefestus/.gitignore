@@ -1,0 +1,34 @@
+# Saída de build (gerada por: node build.mjs)
+dist/
+
+# Dependências e caches
+node_modules/
+.cache/
+
+# Segredos locais
+.env
+.env.*
+!.env.example
+
+# Logs e sistema
+*.log
+*.zip
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Tauri (janela própria)
+src-tauri/target/
+src-tauri/gen/schemas
+
+# Cópias geradas por build.mjs na raiz (abrir com duplo clique)
+/hephaestus.html
+/hefestus.html
+/blockly-media/
+
+# Projeto Android gerado por npm run android:preparar (keystore.properties fica fora)
+src-tauri/gen/android/
+
+# Programas autorais locais exportados pela fábrica
+/programas/
