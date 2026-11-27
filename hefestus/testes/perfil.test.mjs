@@ -37,8 +37,10 @@ test("o perfil em JS (usado pelo editor) é igual ao JSON do repositório", () =
   assert.deepEqual(PERFIL_HEFESTUS, ler("perfis/hefestus.perfil.json"));
 });
 
-test("motores e servidores MCP declarados existem no repositório", () => {
+test("motores e servidores MCP declarados existem no repositório", t => {
   for (const arq of ["perfis/hefestus.perfil.json", "perfis/l-seed.perfil.json"]) {
+    // O perfil L-SEED aponta para ../l-seed, que só existe no acervo completo.
+    if (arq.includes("l-seed") && !existsSync(resolve(raiz, "../l-seed"))) { t.diagnostic(`${arq}: L-SEED ausente, não conferido`); continue; }
     const p = ler(arq);
     assert.ok(existsSync(join(raiz, p.motor.entrada)), `${arq}: motor ${p.motor.entrada}`);
     for (const a of p.mcp?.args ?? []) assert.ok(existsSync(join(raiz, a)), `${arq}: mcp ${a}`);

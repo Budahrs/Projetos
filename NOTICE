@@ -1,0 +1,10 @@
+Hefestus (Hephaestus)
+Copyright 2026 Budahrs e colaboradores do Hefestus
+
+Este produto é distribuído sob a Apache License, Version 2.0 (arquivo LICENSE).
+
+Inclui software de terceiros, cada um sob a própria licença:
+- Blockly (Apache-2.0) — hefestus/licencas/Blockly-Apache-2.0.txt
+- Material Design Icons (Pictogrammers Free License, Apache-2.0) — hefestus/licencas/MaterialDesignIcons-LICENSE.txt
+- VectorCraft (MIT) — hefestus/terceiros/vectorcraft/LICENSE-MIT
+Detalhes em hefestus/THIRD-PARTY-NOTICES.md.

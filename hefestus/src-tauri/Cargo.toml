@@ -3,6 +3,7 @@ name = "hefestus"
 version = "2.1.0"
 description = "Hefestus: fábrica visual de programas"
 authors = ["Sampietro"]
+license = "Apache-2.0"
 edition = "2021"
 
 [lib]

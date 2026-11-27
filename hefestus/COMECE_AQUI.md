@@ -23,7 +23,6 @@ Esta é a cópia pública do Hefestus (sem o restante do acervo do dono).
 git clone <endereço-deste-repositório> hefestus
 ```
 
-O teste `contrato-acervo.test.mjs` usa o Orquestrador do acervo privado e falha nesta cópia; os demais não dependem dele.
 
 ## 3. Instalar, gerar e abrir
 
@@ -48,10 +47,8 @@ O projeto em edição fica salvo no navegador (IndexedDB) daquela máquina.
 npm test
 ```
 
-Resultado esperado numa cópia sem a parte privada (425 testes):
+Resultado esperado: **424 passam, 1 é pulado, 0 falham**. O pulado (`contrato-acervo.test.mjs`) confere a integração com o Orquestrador do acervo completo do mantenedor, que não faz parte desta cópia. O perfil L-SEED também só é conferido quando a pasta `l-seed/` existe.
 
-- **Com `hefestus` + `orquestrador`:** 424 passam, 1 falha — `perfil.test.mjs › motores e servidores MCP declarados existem`, porque `perfis/l-seed.perfil.json` aponta para `../l-seed/…`, que é privado. Pode ignorar.
-- **Só `hefestus`:** 423 passam, 2 falham — a de cima e `contrato-acervo.test.mjs`, que importa `../orquestrador/`.
 - Se `dist.test.mjs` falhar com `ENOENT dist/hefestus.html`, faltou rodar `npm run build` antes.
 
 ## 5. Construir um programa pelo terminal (CLI)
@@ -137,19 +134,9 @@ A IA deve ler [AGENTS.md](AGENTS.md) (manual de uso das ferramentas) antes de co
 | Chaves Android (`~/.chaves-android`) | APK assinado | Gere as suas |
 | `D:\L-SEED` e caminhos Windows citados em LEIA-MEs antigos | Histórico de versões | Ignore; use os caminhos da sua cópia |
 
-## 8. Distribuir para quem não tem acesso ao repositório
+## 8. Licença e contribuição
 
-Para entregar só o Hefestus, sem o resto do acervo, publique um repositório separado a partir da pasta:
-
-```bash
-git subtree split --prefix=hefestus -b hefestus-publico
-```
-
-Antes de publicar, decida sobre três pontos:
-
-- `banco/ferramentas.hefestus.json` contém **cópia integral do código-fonte do PDF Studio** (registro `compartilhado/pdf-studio/fontes`). Se o PDF Studio não deve sair, remova esses registros ou gere um banco só com as fontes do Hefestus.
-- `perfis/l-seed.perfil.json` e `js/shell/*Lseed*` revelam a existência e a API local da Central L-SEED (sem dados pessoais).
-- Licenças de terceiros: `THIRD-PARTY-NOTICES.md`, `licencas/` e `terceiros/` devem ir junto.
+Apache 2.0 ([LICENSE](LICENSE), [NOTICE](NOTICE)). Para contribuir, veja o [CONTRIBUTING.md](../CONTRIBUTING.md) na raiz do repositório: commits assinados com DCO (`git commit -s`).
 
 ## Estado
 
