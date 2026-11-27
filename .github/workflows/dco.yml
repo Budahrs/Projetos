@@ -1,0 +1,33 @@
+name: DCO
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  assinatura:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Conferir Signed-off-by em todos os commits do PR
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          faltando=0
+          for c in $(git rev-list --no-merges "$BASE..$HEAD"); do
+            autor=$(git log -1 --format='%ae' "$c")
+            if ! git log -1 --format='%B' "$c" | grep -qiE "^Signed-off-by: .+ <.+>$"; then
+              echo "::error::Commit $(git log -1 --format='%h %s' "$c") sem 'Signed-off-by' (autor: $autor)."
+              faltando=1
+            fi
+          done
+          if [ "$faltando" = 1 ]; then
+            echo "Assine os commits com 'git commit -s' ou 'git rebase --signoff origin/main' (ver CONTRIBUTING.md)."
+            exit 1
+          fi
+          echo "Todos os commits estão assinados."
